@@ -149,6 +149,20 @@
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
+             <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <finalName>truelove</finalName>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>build-info</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 		    <plugin>    
 		        <artifactId>maven-compiler-plugin</artifactId>
 		        <configuration>
