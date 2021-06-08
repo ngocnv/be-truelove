@@ -30,7 +30,7 @@ spec:
           image: ngoc123/truelove:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
+            - containerPort: 7000
           resources:
             limits:
               memory: 500Mi
