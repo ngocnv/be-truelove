@@ -3,4 +3,4 @@ WORKDIR /opt/app
 RUN pwd
 COPY /target/truelove.jar truelove.jar
 ENTRYPOINT ["java", "-jar", "truelove.jar"]
-EXPOSE 8080
+EXPOSE 7000
