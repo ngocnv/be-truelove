@@ -42,13 +42,13 @@ spec:
               memory: 300Mi
           readinessProbe:
             httpGet:
-              path: /health
+              path: /actuator/health/readiness
               port: 8080
             initialDelaySeconds: 60
             timeoutSeconds: 5
           livenessProbe:
             httpGet:
-              path: /liveness
+              path: /actuator/health/liveness
               port: 8080
             initialDelaySeconds: 130           
          
