@@ -45,7 +45,6 @@ spring:
             authorization-grant-type: authorization_code
             scope: openid
             redirect-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}/*
-  port: 7000
 keycloak-client:
   server-url: http://localhost:8181/auth
   realm: truelove
