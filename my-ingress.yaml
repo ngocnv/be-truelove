@@ -9,6 +9,10 @@ spec:
   rules:
   - http:
       paths:
+      - path: /*
+        backend:
+          serviceName: hello-world
+          servicePort: 60000
       - path: /truelove
         backend:
           serviceName: truelove
