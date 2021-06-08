@@ -1,0 +1,21 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: backend-db-service
+spec:
+  clusterIP: None
+  ports:
+  - port: 5432
+---
+kind: Endpoints
+apiVersion: v1
+metadata:
+  name: backend-db-service
+subsets:
+  - addresses:
+        - ip: 10.148.0.5
+    ports:
+      - port: 5432
+        name: backend-db-service
+
