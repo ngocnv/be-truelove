@@ -48,6 +48,9 @@ spring:
 keycloak-client:
   server-url: https://10.148.0.5/auth
   realm: truelove
+server:
+  servlet:
+    context-path: /truelove
 keycloak:
   realm: truelove
   resource: truelove
