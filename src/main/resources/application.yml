@@ -41,12 +41,12 @@ spring:
           keycloak:
             provider: keycloak
             client-id: truelove-app
-            client-secret: 544b9233-d565-4e46-a001-db4cf25626ec
+            client-secret: 19a0029f-cea8-405c-b796-a50864729cb8
             authorization-grant-type: authorization_code
             scope: openid
             redirect-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}/*
 keycloak-client:
-  server-url: http://localhost:8181/auth
+  server-url: https://10.148.0.5/auth
   realm: truelove
 keycloak:
   realm: truelove
