@@ -27,7 +27,7 @@ public class UserController {
 
     @GetMapping(path = "/users")
     public ResponseEntity<PageableObject<UserDTO>> getUsers(HttpServletRequest request, UserCriteria criteria, Pageable pageable) {
-       
+        
         Page<UserDTO> page = userService.getUsers(criteria, pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/users");
         return new ResponseEntity<>(new PageableObject<>(page), headers, HttpStatus.OK);

@@ -48,15 +48,15 @@ spring:
 keycloak-client:
   server-url: https://10.148.0.5/auth
   realm: truelove
-server:
-  servlet:
-    context-path: /truelove
 keycloak:
   realm: truelove
   resource: truelove
-  auth-server-url: ${keycloak-client.server-url}
+  auth-server-url: ${keycloak-client.server-url} 
 management:
   endpoints:
     jmx:
       exposure:
         include: "health,info"
+logging:
+  level:
+    org.keycloak: TRACE
