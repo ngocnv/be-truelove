@@ -32,7 +32,7 @@ public class RequestJsonLogFilter extends GenericFilterBean {
 		HttpServletRequest httpRequest = (HttpServletRequest) req;
 		String contentType = httpRequest.getHeader(HTTP_HEADER_CONTENT_TYPE);
 		String token=httpRequest.getHeader("Authorization");
-		if (!httpRequest.getRequestURI().startsWith("/actuator")) {
+		if (!httpRequest.getRequestURI().startsWith("/truelove/actuator")) {
 			logger.info("receive request ---- "+ httpRequest.getMethod()+" " +httpRequest.getRequestURI() );
 			CachedBodyHttpServletRequest cachedBodyHttpServletRequest = new CachedBodyHttpServletRequest(httpRequest);
 			InputStream inputStream = cachedBodyHttpServletRequest.getInputStream();

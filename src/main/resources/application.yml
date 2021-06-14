@@ -60,3 +60,6 @@ management:
 logging:
   level:
     org.keycloak: TRACE
+server:
+  servlet:
+    context-path: /truelove
