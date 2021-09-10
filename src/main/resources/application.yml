@@ -46,20 +46,32 @@ spring:
             scope: openid
             redirect-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}/*
 keycloak-client:
-  server-url: https://keycloak.nvgroupitech.org/auth
+  server-url: http://localhost:8181/auth
   realm: truelove
 keycloak:
   realm: truelove
   resource: truelove
   auth-server-url: ${keycloak-client.server-url} 
+admin:
+  keycloak:
+    username: admin
+    password: admin123
 management:
   endpoints:
     jmx:
       exposure:
         include: "health,info"
 logging:
-  level:
-    org.keycloak: TRACE
+   level:
+      root: WARN
+      org:
+        springframework:
+          web: DEBUG
+        hibernate: ERROR
+      com.nvgroupitech.truelove: DEBUG
+   pattern:
+     console: "%d{HH:mm:ss} || %highlight(%5p) < %highlight(%-35.35logger{35}) > %highlight(%m%n)"
 server:
   servlet:
     context-path: /truelove
+  port: 8282
