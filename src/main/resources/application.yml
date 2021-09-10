@@ -46,7 +46,7 @@ spring:
             scope: openid
             redirect-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}/*
 keycloak-client:
-  server-url: http://localhost:8181/auth
+  server-url: https://keycloak.nvgroupitech.org/auth
   realm: truelove
 keycloak:
   realm: truelove
@@ -74,4 +74,3 @@ logging:
 server:
   servlet:
     context-path: /truelove
-  port: 8282
