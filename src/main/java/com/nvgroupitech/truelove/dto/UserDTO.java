@@ -5,35 +5,56 @@ import java.io.Serializable;
 import java.time.Instant;
 import java.util.UUID;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
-public class UserDTO implements Serializable {
+import com.nvgroupitech.truelove.annotation.EnumNamePattern;
+import com.nvgroupitech.truelove.enums.DatingType;
+import com.nvgroupitech.truelove.enums.Gender;
+
+
+public class UserDTO extends BaseDTO implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 
 	private UUID userId;
-
+	
+	@NotBlank(message="{username.notblank}")	
+	@Size(min = 3,max = 255,message = "{username.size}" )
 	private String username;
 
+	@NotBlank(message="{fullname.notblank}")	
+	@Size(min=3, max=255,message= "{fullname.size}")
 	private String fullname;
 	
+	@NotBlank(message="{emailaddress.notblank}")	
+	@Size(min=3,max=255,message="{emailladdress.size}")
 	private String emailAddress;
 
+	@NotBlank(message="{mobile.notblank}")	
+	@Size(min=8,max=20,message="{mobile.size}")
 	private String mobile;
 
+	@NotBlank(message="{password.notblank}")	
+	@Size(min=3,max=255)
 	private String password;
 
-	private String datingType;
+	@EnumNamePattern(regexp = "SEEKER|PROVIDER",message="{datingtype.notblank}")
+	private DatingType datingType;
 
-	private Instant lastSession;
+	@EnumNamePattern(regexp = "EN|VN",message="{datingtype.notblank}")
+	private LanguageCode languageCode;
 
-	private String languageCode;
-
+	@NotBlank(message="{birthday.notblank}")	
+	@Size(min = 8,max=8,message="{birthday.size}")
 	private String birthday;
 
-	private String gender;
-
+	@EnumNamePattern(regexp = "MALE|FEMALE",message="{gender.notblank}")
+	private Gender gender;
+	
+	@NotBlank(message="{avatar.notblank}")	
 	private String avatar;
-
+	
 	private Instant createdDate;
 
 	private Instant modifiedDate;
@@ -54,19 +75,12 @@ public class UserDTO implements Serializable {
 		this.username = username;
 	}
 
-	public Instant getLastSession() {
-		return lastSession;
-	}
 
-	public void setLastSession(Instant lastSession) {
-		this.lastSession = lastSession;
-	}
-
-	public String getLanguageCode() {
+	public LanguageCode getLanguageCode() {
 		return languageCode;
 	}
 
-	public void setLanguageCode(String languageCode) {
+	public void setLanguageCode(LanguageCode languageCode) {
 		this.languageCode = languageCode;
 	}
 
@@ -78,11 +92,11 @@ public class UserDTO implements Serializable {
 		this.birthday = birthday;
 	}
 
-	public String getGender() {
+	public Gender getGender() {
 		return gender;
 	}
 
-	public void setGender(String gender) {
+	public void setGender(Gender gender) {
 		this.gender = gender;
 	}
 
@@ -118,11 +132,11 @@ public class UserDTO implements Serializable {
 		this.password = password;
 	}
 
-	public String getDatingType() {
+	public DatingType getDatingType() {
 		return datingType;
 	}
 
-	public void setDatingType(String datingType) {
+	public void setDatingType(DatingType datingType) {
 		this.datingType = datingType;
 	}
 

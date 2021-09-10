@@ -1,24 +1,5 @@
 package com.nvgroupitech.truelove.dto;
 
-public class ErrorDTO {
+public class ErrorDTO extends BaseDTO {
 	
-	private String message ;
-	
-	private String errorCode;
-
-	public String getMessage() {
-		return message;
-	}
-
-	public void setMessage(String message) {
-		this.message = message;
-	}
-
-	public void setErrorCode(String errorCode) {
-		this.errorCode = errorCode;
-	}
-	
-	public String errorCode () {
-		return this.errorCode;
-	}
 }

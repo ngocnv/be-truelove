@@ -7,14 +7,21 @@ import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
 import org.hibernate.annotations.GenericGenerator;
+
+import com.nvgroupitech.truelove.dto.LanguageCode;
+import com.nvgroupitech.truelove.enums.DatingType;
+import com.nvgroupitech.truelove.enums.Gender;
 
 @Entity
 @Table(name = "users")
-public class UserEntity implements Serializable {
+public class UserEntity extends CommonAudit implements Serializable {
 
 	private static final long serialVersionUID = -5494794506198264824L;
 
@@ -23,6 +30,9 @@ public class UserEntity implements Serializable {
 	@GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     @Column(name = "user_id")
     private UUID userId;
+	
+	@Column(name="keycloak_id")
+	private UUID keycloakId;
 	
 	@Column(name="username")
 	private String username;
@@ -40,28 +50,27 @@ public class UserEntity implements Serializable {
 	private String password;
 	
 	@Column(name="dating_type")
-	private String datingType;
+    @Enumerated(EnumType.STRING)
+	private DatingType datingType;
 
     @Column(name = "last_session")
     private Instant lastSession;
 
     @Column(name = "language_code")
-    private String languageCode;
+    @Enumerated(EnumType.STRING)
+    private LanguageCode languageCode;
 
     @Column(name = "birthday")
     private String birthday;
 
     @Column(name = "gender")
-    private String gender;
+    @Enumerated(EnumType.STRING)
+    private Gender gender;
 
     @Column(name="avatar")
     private String avatar;
     
-    @Column(name="created_date")
-    private Instant createdDate;
-    
-    @Column(name="modified_date")
-    private Instant modifiedDate;
+   
 
 	public UUID getUserId() {
 		return userId;
@@ -87,11 +96,11 @@ public class UserEntity implements Serializable {
 		this.lastSession = lastSession;
 	}
 
-	public String getLanguageCode() {
+	public LanguageCode getLanguageCode() {
 		return languageCode;
 	}
 
-	public void setLanguageCode(String languageCode) {
+	public void setLanguageCode(LanguageCode languageCode) {
 		this.languageCode = languageCode;
 	}
 
@@ -103,14 +112,14 @@ public class UserEntity implements Serializable {
 		this.birthday = birthday;
 	}
 
-	public String getGender() {
+	public Gender getGender() {
 		return gender;
 	}
 
-	public void setGender(String gender) {
+	public void setGender(Gender gender) {
 		this.gender = gender;
 	}
-	
+
 	public String getFullname() {
 		return fullname;
 	}
@@ -143,11 +152,12 @@ public class UserEntity implements Serializable {
 		this.password = password;
 	}
 
-	public String getDatingType() {
+	
+	public DatingType getDatingType() {
 		return datingType;
 	}
 
-	public void setDatingType(String datingType) {
+	public void setDatingType(DatingType datingType) {
 		this.datingType = datingType;
 	}
 
@@ -158,20 +168,14 @@ public class UserEntity implements Serializable {
 	public void setAvatar(String avatar) {
 		this.avatar = avatar;
 	}
-
-	public Instant getCreatedDate() {
-		return createdDate;
+	
+	public UUID getKeycloakId() {
+		return keycloakId;
 	}
 
-	public void setCreatedDate(Instant createdDate) {
-		this.createdDate = createdDate;
+	public void setKeycloakId(UUID keycloakId) {
+		this.keycloakId = keycloakId;
 	}
 
-	public Instant getModifiedDate() {
-		return modifiedDate;
-	}
 
-	public void setModifiedDate(Instant modifiedDate) {
-		this.modifiedDate = modifiedDate;
-	}
 }

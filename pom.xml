@@ -22,22 +22,36 @@
   	<mapstructProcessorVersion>1.4.2.Final</mapstructProcessorVersion>
   	<hibernateAnnotationsVersion>3.5.6-Final</hibernateAnnotationsVersion>
   	<mapstructVersion>1.4.2.Final</mapstructVersion>
-  	<keycloakVersion>12.0.4</keycloakVersion>
+  	<keycloakVersion>15.0.1</keycloakVersion>
+  	<firebase.version>7.1.0</firebase.version>
   </properties>
   <repositories>
   	<repository>
   	 	<id>maven</id>
         <url>https://repo.maven.apache.org/maven2/</url>
   	</repository>
+  	<repository>
+      <id>openkm.com</id>
+      <name>OpenKM Maven Repository</name>
+      <url>https://maven.openkm.com</url>
+    </repository>
   </repositories>
   <dependencies>   
+	
     <dependency>
        <groupId>org.springframework.boot</groupId>
        <artifactId>spring-boot-starter-oauth2-client</artifactId>
+       <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
     </dependency>
      <dependency>
          <groupId>org.springframework.boot</groupId>
          <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+          
         </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -62,7 +76,24 @@
             <groupId>org.keycloak</groupId>
             <artifactId>keycloak-spring-boot-starter</artifactId>
             <version>${keycloakVersion}</version>
+            
       </dependency>
+       <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-admin-client</artifactId>
+            <version>${keycloakVersion}</version>
+
+            <exclusions>
+            	<exclusion>
+            		<groupId>org.jboss.spec.javax.ws.rs</groupId>
+            		<artifactId>jboss-jaxrs-api_2.1_spec</artifactId>
+            	</exclusion>
+            	<exclusion>
+            		<groupId>commons-io</groupId>
+            		<artifactId>commons-io</artifactId>
+            	</exclusion>
+            </exclusions>
+       </dependency>
      <dependency>
         <groupId>io.springfox</groupId>
         <artifactId>springfox-swagger2</artifactId>
@@ -97,6 +128,68 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
+    <dependency>
+			<groupId>com.google.firebase</groupId>
+			<artifactId>firebase-admin</artifactId>
+			<version>${firebase.version}</version>
+	</dependency>
+	<dependency> 
+	    <groupId>org.springframework.boot</groupId> 
+	    <artifactId>spring-boot-starter-validation</artifactId> 
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.commons</groupId>
+	    <artifactId>commons-collections4</artifactId>
+	    <version>4.4</version>
+	</dependency>
+	
+	<!-- LOGGING -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
+        
+         <dependency>
+	     <groupId>com.openkm</groupId>
+	     <artifactId>sdk4j</artifactId>
+	     <version>1.4</version>
+	     <exclusions>
+	     	<exclusion>
+	     		<groupId>com.sun.jersey</groupId>
+	     		<artifactId>jersey-core</artifactId>
+	     	</exclusion>
+	     	<exclusion>
+	     		<groupId>commons-io</groupId>
+	     		<artifactId>commons-io</artifactId>
+	     	</exclusion>
+	     </exclusions>
+         </dependency>
+     <dependency>
+        <groupId>org.glassfish.jersey.core</groupId>
+        <artifactId>jersey-server</artifactId>
+        <version>2.17</version>
+    </dependency>
+    <dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.6</version>
+</dependency>
+<dependency>
+    <groupId>com.sun.jersey</groupId>
+    <artifactId>jersey-client</artifactId>
+    <version>1.19.4</version>
+</dependency>
+
+
+<dependency>
+    <groupId>com.sun.jersey.contribs</groupId>
+    <artifactId>jersey-multipart</artifactId>
+    <version>1.19.4</version>
+</dependency>
+
+   
+    
+
   </dependencies>
   <build>
   <plugins>

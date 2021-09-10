@@ -34,4 +34,11 @@ public class UserServiceImpl implements UserService {
 	                });
 	    return page == null ? new PageImpl<>(new ArrayList<>(), pageable, 0) : page;
 	}
+
+	@Override
+	public UserEntity signupNewUser(UserEntity user) {
+		UserEntity u = userRepository.saveAndFlush(user);
+		return u;
+	}
+	
 }

@@ -1,7 +1,7 @@
-
+ create schema trueloveapp;
 SET search_path to trueloveapp;
 
-CREATE TABLE Users (
+CREATE TABLE trueloveapp.Users (
 	user_id UUID DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY,
 	username VARCHAR(30) NOT NULL,
 	fullname VARCHAR(100) NOT NULL,
@@ -14,6 +14,7 @@ CREATE TABLE Users (
 	birthday VARCHAR(10),
 	gender VARCHAR(10),
 	avatar VARCHAR(100),
+	keycloak_id VARCHAR(100),
 	created_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     modified_date TIMESTAMP
 )
