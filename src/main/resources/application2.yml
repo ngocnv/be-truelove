@@ -1,0 +1,77 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://10.148.0.6:5432/truelove
+    username: trueloveadmin
+    password: truelove@M1e0X210A221N
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    database: POSTGRESQL
+    show-sql: true
+    properties:
+      hibernate.hbm2ddl.auto: none
+      hibernate.default_schema: trueloveapp
+      hibernate.id.new_generator_mappings: true
+      hibernate.connection.provider_disables_autocommit: false
+      hibernate.cache.use_second_level_cache: false
+      hibernate.cache.use_query_cache: false
+      hibernate.generate_statistics: false
+      hibernate.cache.region.factory_class: com.hazelcast.hibernate.HazelcastCacheRegionFactory
+      hibernate.cache.hazelcast.instance_name: truelove
+      hibernate.cache.use_minimal_puts: true
+      hibernate.cache.hazelcast.use_lite_member: true
+      hibernate.temp.use_jdbc_metadata_defaults: false
+      hibernate.naming_strategy: org.hibernate.cfg.EJB3NamingStrategy
+      hibernate.naming.implicit-strategy: org.hibernate.cfg.EJB3NamingStrategy
+      hibernate.naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  security:
+    oauth2:
+      resourceserver:
+        jwt.jwk-set-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}/protocol/openid-connect/certs
+      client:
+        provider:
+          keycloak:
+            token-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}/protocol/openid-connect/token
+            authorization-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}/protocol/openid-connect/auth
+            jwk-set-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}/protocol/openid-connect/certs
+            user-info-authentication-method: header
+            user-name-attribute: username
+            user-info-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}/protocol/openid-connect/userinfo
+        registration:
+          keycloak:
+            provider: keycloak
+            client-id: truelove-app
+            client-secret: 19a0029f-cea8-405c-b796-a50864729cb8
+            authorization-grant-type: authorization_code
+            scope: openid
+            redirect-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}/*
+keycloak-client:
+  server-url: http://localhost:8181/auth
+  realm: truelove
+keycloak:
+  realm: truelove
+  resource: truelove
+  auth-server-url: ${keycloak-client.server-url} 
+admin:
+  keycloak:
+    username: admin
+    password: admin123
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include: "health,info"
+logging:
+   level:
+      root: WARN
+      org:
+        springframework:
+          web: DEBUG
+        hibernate: ERROR
+      com.nvgroupitech.truelove: DEBUG
+   pattern:
+     console: "%d{HH:mm:ss} || %highlight(%5p) < %highlight(%-35.35logger{35}) > %highlight(%m%n)"
+server:
+  servlet:
+    context-path: /truelove
+  port: 8282
