@@ -85,8 +85,8 @@ public class KeycloakServiceImpl implements KeycloakService {
           
             UsersResource usersResource = realmResource.users();
 
-            if (!CollectionUtils.isEmpty(usersResource.search(user.getUsername())) || !CollectionUtils.isEmpty(usersResource.search(user.getUsername()))) {
-                throw new ApiRuntimeException(ErrorMessages.E0002.getErrorCode(),LocaleContextHolder.getLocale());
+            if (!CollectionUtils.isEmpty(usersResource.search(user.getUsername(),true))) {     
+            	throw new ApiRuntimeException(ErrorMessages.E0002.getErrorDefaultMsgCd(),ErrorMessages.E0002,LocaleContextHolder.getLocale());
             }
 
             // Create user (requires manage-users role)

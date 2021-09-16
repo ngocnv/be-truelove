@@ -12,12 +12,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.nvgroupitech.truelove.controller.UserController;
 import com.nvgroupitech.truelove.dto.ErrorDTO;
 import com.nvgroupitech.truelove.enums.ErrorMessages;
+import com.nvgroupitech.truelove.exceptions.ApiRuntimeException;
 import com.nvgroupitech.truelove.utils.ApiUtil;
 
 @Aspect
@@ -50,5 +49,13 @@ public class AppExceptionHandler {
 
 		return new ResponseEntity<>(ApiUtil.getErrorMessage(ErrorMessages.E0001.getErrorCode(),
 				errorMessage), HttpStatus.OK);
+	}
+	
+	@ExceptionHandler(value = { ApiRuntimeException.class })
+	public ResponseEntity<ErrorDTO> apiException(final ApiRuntimeException e) {
+		logger.error("Error : {}", ExceptionUtils.getStackTrace(e));
+		logger.error("[API_ERROR] An error occurred in the validation check（{}）", ApiUtil.getJsonRequestString());
+	
+		return new ResponseEntity<>(ApiUtil.getErrorMessage(e.getError().getErrorCode(),e.getMessage()), HttpStatus.OK);
 	}
 }
