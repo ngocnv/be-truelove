@@ -56,6 +56,10 @@ admin:
   keycloak:
     username: admin
     password: admin123
+openkm:
+  url: http://10.148.0.15/OpenKM
+  user: okmAdmin
+  pass: 4AvoKoF37OIrDf/SCmR8CA==
 management:
   endpoints:
     jmx:
