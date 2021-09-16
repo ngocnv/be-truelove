@@ -1,7 +1,7 @@
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://10.148.0.6:5432/truelove
+    url: jdbc:postgresql://35.240.231.147:5432/truelove
     username: trueloveadmin
     password: truelove@M1e0X210A221N
   jpa:
@@ -57,7 +57,7 @@ admin:
     username: admin
     password: abcmvxsdkK108j23Shark!
 openkm:
-  url: http://10.148.0.15/OpenKM
+  url: http://35.240.233.65/OpenKM
   user: okmAdmin
   pass: 4AvoKoF37OIrDf/SCmR8CA==
 management:

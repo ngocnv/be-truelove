@@ -31,7 +31,7 @@ public class OpenKMFile extends OpenKM {
 			this.resultMap.put("resultMsg", "Error!");
 			throw ex;
 		} catch (Exception ex) {
-			ex.printStackTrace();
+			
 			this.resultMap.put("result", false);
 			this.resultMap.put("resultMsg", ex.getClass().toString() + ": " + ex.getMessage());
 			throw ex;
@@ -48,7 +48,7 @@ public class OpenKMFile extends OpenKM {
 			this.listFolders(path);
 			this.resultMap.put("data", this.retrunDocuments);
 		} catch (Exception var3) {
-			var3.printStackTrace();
+			
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var3.getClass().toString() + ": " + var3.getMessage());
 		}
@@ -56,7 +56,7 @@ public class OpenKMFile extends OpenKM {
 		return this.resultMap;
 	}
 
-	private void listFolders(String path) {
+	private void listFolders(String path) throws Exception {
 		try {
 			List<Document> listDocument = this.okm.getDocumentChildren(path);
 			Iterator var3 = listDocument.iterator();
@@ -75,45 +75,48 @@ public class OpenKMFile extends OpenKM {
 				this.listFolders(fld.getPath());
 			}
 		} catch (Exception var6) {
-			var6.printStackTrace();
+			throw var6;
 		}
 
 	}
 
-	public Map<String, Object> showFilePro(String path) {
+	public Map<String, Object> showFilePro(String path) throws Exception {
 		try {
 			System.out.println("showFileProPath:" + path);
 			this.resultMap.put("resultPro", this.okm.getDocumentProperties(path));
 		} catch (Exception var3) {
-			var3.printStackTrace();
+			
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var3.getClass().toString() + ": " + var3.getMessage());
+			throw var3;
 		}
 
 		return this.resultMap;
 	}
 
-	public Map<String, Object> downloadFile(String path) {
+	public Map<String, Object> downloadFile(String path) throws Exception {
 		try {
 			System.out.println("downloadFilePath:" + path);
 			this.resultMap.put("resultIS", this.okm.getContent(path));
 		} catch (Exception var3) {
-			var3.printStackTrace();
+			
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var3.getClass().toString() + ": " + var3.getMessage());
+			throw var3;
 		}
 
 		return this.resultMap;
 	}
 
-	public Map<String, Object> downloadFileByVersion(String path, String version) {
+	public Map<String, Object> downloadFileByVersion(String path, String version) throws Exception {
 		try {
 			System.out.println("downloadFilePath:" + path);
 			this.resultMap.put("resultIS", this.okm.getContentByVersion(path, version));
 		} catch (Exception var4) {
-			var4.printStackTrace();
+			
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var4.getClass().toString() + ": " + var4.getMessage());
+			throw var4;
 		}
 
 		return this.resultMap;
@@ -132,14 +135,15 @@ public class OpenKMFile extends OpenKM {
 		return this.resultMap;
 	}
 
-	public Map<String, Object> purgeDocument(String path) {
+	public Map<String, Object> purgeDocument(String path) throws Exception {
 		try {
 			System.out.println("purgeDocumentPath:" + path);
 			this.okm.purgeDocument(path);
 		} catch (Exception var3) {
-			var3.printStackTrace();
+			
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var3.getClass().toString() + ": " + var3.getMessage());
+			throw var3;
 		}
 
 		return this.resultMap;
