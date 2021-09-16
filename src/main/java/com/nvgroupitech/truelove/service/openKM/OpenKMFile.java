@@ -122,14 +122,15 @@ public class OpenKMFile extends OpenKM {
 		return this.resultMap;
 	}
 
-	public Map<String, Object> deleteFile(String path) {
+	public Map<String, Object> deleteFile(String path) throws Exception {
 		try {
 			System.out.println("deleteFilePath:" + path);
 			this.okm.deleteDocument(path);
 		} catch (Exception var3) {
-			var3.printStackTrace();
+			
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var3.getClass().toString() + ": " + var3.getMessage());
+			throw var3;
 		}
 
 		return this.resultMap;
@@ -149,28 +150,30 @@ public class OpenKMFile extends OpenKM {
 		return this.resultMap;
 	}
 
-	public Map<String, Object> renameFile(String path, String newName) {
+	public Map<String, Object> renameFile(String path, String newName) throws Exception {
 		try {
 			System.out.println("renameFilePath:" + path);
 			this.okm.renameDocument(path, newName);
 		} catch (Exception var4) {
-			var4.printStackTrace();
+			
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var4.getClass().toString() + ": " + var4.getMessage());
+			throw var4;
 		}
 
 		return this.resultMap;
 	}
 
-	public Map<String, Object> updateFile(String path, InputStream is, String comment) {
+	public Map<String, Object> updateFile(String path, InputStream is, String comment) throws Exception {
 		try {
 			System.out.println("updateFilePath:" + path);
 			this.okm.checkout(path);
 			this.okm.checkin(path, is, comment);
 		} catch (Exception var13) {
-			var13.printStackTrace();
+			
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var13.getClass().toString() + ": " + var13.getMessage());
+			throw var13;
 		} finally {
 			IOUtils.closeQuietly(is);
 
@@ -179,7 +182,7 @@ public class OpenKMFile extends OpenKM {
 					this.okm.cancelCheckout(path);
 				}
 			} catch (Exception var12) {
-				var12.printStackTrace();
+				throw var12;
 			}
 
 		}
@@ -187,53 +190,57 @@ public class OpenKMFile extends OpenKM {
 		return this.resultMap;
 	}
 
-	public Map<String, Object> listFileVersion(String path) {
+	public Map<String, Object> listFileVersion(String path) throws Exception {
 		try {
 			System.out.println("listFileVersionPath:" + path);
 			this.resultMap.put("listVersion", this.okm.getVersionHistory(path));
 		} catch (Exception var3) {
-			var3.printStackTrace();
+			
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var3.getClass().toString() + ": " + var3.getMessage());
+			throw var3;
 		}
 
 		return this.resultMap;
 	}
 
-	public Map<String, Object> resroreVersion(String path, String version) {
+	public Map<String, Object> resroreVersion(String path, String version) throws Exception {
 		try {
 			System.out.println("resroreVersionPath:" + path);
 			this.okm.restoreVersion(path, version);
 		} catch (Exception var4) {
-			var4.printStackTrace();
+			
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var4.getClass().toString() + ": " + var4.getMessage());
+			throw var4;
 		}
 
 		return this.resultMap;
 	}
 
-	public Map<String, Object> moveFile(String path, String toPath) {
+	public Map<String, Object> moveFile(String path, String toPath) throws Exception {
 		try {
 			System.out.println("moveFilePath:" + path);
 			this.okm.moveDocument(path, toPath);
 		} catch (Exception var4) {
-			var4.printStackTrace();
+			
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var4.getClass().toString() + ": " + var4.getMessage());
+			throw var4;
 		}
 
 		return this.resultMap;
 	}
 
-	public Map<String, Object> copyFile(String path, String toPath) {
+	public Map<String, Object> copyFile(String path, String toPath) throws Exception {
 		try {
 			System.out.println("copyFilePath:" + path);
 			this.okm.copyDocument(path, toPath);
 		} catch (Exception var4) {
-			var4.printStackTrace();
+			
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var4.getClass().toString() + ": " + var4.getMessage());
+			throw var4;
 		}
 
 		return this.resultMap;

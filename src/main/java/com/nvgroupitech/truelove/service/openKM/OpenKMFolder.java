@@ -9,13 +9,14 @@ public class OpenKMFolder extends OpenKM {
 		super(url, user, pass);
 	}
 
-	public Map<String, Object> createFolder(String path) {
+	public Map<String, Object> createFolder(String path) throws Exception {
 		try {
 			this.createFolders(path);
 		} catch (Exception var3) {
-			var3.printStackTrace();
+			
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var3.getClass().toString() + ": " + var3.getMessage());
+			throw var3;
 		}
 
 		return this.resultMap;
@@ -29,61 +30,65 @@ public class OpenKMFolder extends OpenKM {
 			this.createFolders(var3.getMessage().substring(var3.getMessage().indexOf("/")));
 			this.okm.createFolderSimple(path);
 		} catch (ItemExistsException var4) {
-			;
+			throw var4;
 		} catch (Exception var5) {
-			var5.printStackTrace();
+			
 			throw var5;
 		}
 
 	}
 
-	public Map<String, Object> showFolderPro(String path) {
+	public Map<String, Object> showFolderPro(String path) throws Exception {
 		try {
 			System.out.println("showFolderProPath:" + path);
 			this.resultMap.put("resultPro", this.okm.getFolderProperties(path));
 		} catch (Exception var3) {
-			var3.printStackTrace();
+			
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var3.getClass().toString() + ": " + var3.getMessage());
+			throw var3;
 		}
 
 		return this.resultMap;
 	}
 
-	public Map<String, Object> deleteFolder(String path) {
+	public Map<String, Object> deleteFolder(String path) throws Exception {
 		try {
 			System.out.println("deleteFolderPath:" + path);
 			this.okm.deleteFolder(path);
 		} catch (Exception var3) {
-			var3.printStackTrace();
+			
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var3.getClass().toString() + ": " + var3.getMessage());
+			throw var3;
 		}
 
 		return this.resultMap;
 	}
 
-	public Map<String, Object> renameFolder(String path, String newName) {
+	public Map<String, Object> renameFolder(String path, String newName) throws Exception {
 		try {
 			System.out.println("renameFolderPath:" + path);
 			this.okm.renameFolder(path, newName);
 		} catch (Exception var4) {
-			var4.printStackTrace();
+		
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var4.getClass().toString() + ": " + var4.getMessage());
+			throw var4;
 		}
 
 		return this.resultMap;
 	}
 
-	public Map<String, Object> moveFolder(String path, String toPath) {
+	public Map<String, Object> moveFolder(String path, String toPath) throws Exception {
 		try {
 			System.out.println("moveFolderPath:" + path);
 			this.okm.moveFolder(path, toPath);
 		} catch (Exception var4) {
-			var4.printStackTrace();
+		
 			this.resultMap.put("resultBoo", false);
 			this.resultMap.put("resultMsg", var4.getClass().toString() + ": " + var4.getMessage());
+			throw var4;
 		}
 
 		return this.resultMap;
