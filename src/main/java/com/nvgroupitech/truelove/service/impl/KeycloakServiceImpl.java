@@ -53,9 +53,10 @@ public class KeycloakServiceImpl implements KeycloakService {
 	private static final Logger logger = LoggerFactory.getLogger(AppExceptionHandler.class);
 
 	private static final String DEFAULT_PASSWORD = "admin123";
-	
+	  private static final Object lockObject = new Object();
+	  
 	private void configKeycloak() {
-		synchronized(keycloak) {
+		synchronized(lockObject) {
 			if(keycloak==null) {
 				 Keycloak newKeycloak = KeycloakBuilder.builder()
 		                 .serverUrl(serverUrl)
