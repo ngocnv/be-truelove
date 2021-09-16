@@ -70,7 +70,7 @@ logging:
       root: WARN
       org:
         springframework:
-          web: DEBUG
+          web: ERROR
         hibernate: ERROR
       com.nvgroupitech.truelove: DEBUG
    pattern:

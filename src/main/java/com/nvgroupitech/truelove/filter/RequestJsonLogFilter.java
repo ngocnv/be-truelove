@@ -30,8 +30,8 @@ public class RequestJsonLogFilter extends GenericFilterBean {
 	public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
 			throws IOException, ServletException {
 		HttpServletRequest httpRequest = (HttpServletRequest) req;
-		logger.info("receive request ---- "+ httpRequest.getMethod()+" " +httpRequest.getRequestURI() );
 		if (!httpRequest.getRequestURI().startsWith("/truelove/actuator")) {
+			logger.info("receive request ---- "+ httpRequest.getMethod()+" " +httpRequest.getRequestURI() );
 			
 			CachedBodyHttpServletRequest cachedBodyHttpServletRequest = new CachedBodyHttpServletRequest(httpRequest);
 			InputStream inputStream = cachedBodyHttpServletRequest.getInputStream();
