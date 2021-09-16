@@ -48,26 +48,32 @@ public class KeycloakServiceImpl implements KeycloakService {
 	@Value("${admin.keycloak.password}")
 	private String password;
 	
+	private static Keycloak keycloak =null;
+	
 	private static final Logger logger = LoggerFactory.getLogger(AppExceptionHandler.class);
 
 	private static final String DEFAULT_PASSWORD = "admin123";
 	
-	private Keycloak configKeycloak() {
-		 Keycloak keycloak = KeycloakBuilder.builder()
-                 .serverUrl(serverUrl)
-                 .realm("master") 
-                 .clientId(clientId)
-                 .username(username) 
-                 .password(password) 
-                 .resteasyClient(new ResteasyClientBuilder().connectionPoolSize(10).build())
-                 .build();
-		 return keycloak;
+	private void configKeycloak() {
+		synchronized(keycloak) {
+			if(keycloak==null) {
+				 Keycloak newKeycloak = KeycloakBuilder.builder()
+		                 .serverUrl(serverUrl)
+		                 .realm("master") 
+		                 .clientId(clientId)
+		                 .username(username) 
+		                 .password(password) 
+		                 .resteasyClient(new ResteasyClientBuilder().connectionPoolSize(10).build())
+		                 .build();
+				 keycloak = newKeycloak;
+		}
+		}
 	}
 
 	@Override
 	public UserEntity createUser(UserEntity user) {
         try {
-           Keycloak keycloak=configKeycloak();
+           configKeycloak();
            
             // Define user
             UserRepresentation userRep = new UserRepresentation();
@@ -114,7 +120,7 @@ public class KeycloakServiceImpl implements KeycloakService {
 	public int deleteUser(UUID keycloakId) {
 		try {
 			// config keycloak
-			Keycloak keycloak = configKeycloak();
+			configKeycloak();
 
 			// Get realm
 			RealmResource realmResource = keycloak.realm(realm);
