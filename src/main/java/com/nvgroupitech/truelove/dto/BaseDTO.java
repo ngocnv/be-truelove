@@ -13,10 +13,10 @@ public abstract class BaseDTO {
 
 	@JsonProperty(value = "errorMessage", defaultValue = Strings.EMPTY, required = true)
 	@JsonSerialize(nullsUsing = NullSerializer.class)
-	@JsonInclude(Include.NON_NULL)
+	@JsonInclude(Include.NON_EMPTY)
 	protected String errorMessage;
 
-	@JsonInclude(Include.NON_NULL)
+	@JsonInclude(Include.NON_EMPTY)
 	@JsonProperty(value = "errorCode", defaultValue = Strings.EMPTY, required = true)
 	@JsonSerialize(nullsUsing = NullSerializer.class)
 	protected String errorCode;
