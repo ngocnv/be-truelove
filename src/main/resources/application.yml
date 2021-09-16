@@ -72,7 +72,7 @@ logging:
         springframework:
           web: ERROR
         hibernate: ERROR
-      com.nvgroupitech.truelove: DEBUG
+      com.nvgroupitech.truelove: ERROR
    pattern:
      console: "%d{HH:mm:ss} || %highlight(%5p) < %highlight(%-35.35logger{35}) > %highlight(%m%n)"
 server:
