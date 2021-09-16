@@ -36,7 +36,7 @@ public class OpenKMFolder extends OpenKM {
 			}
 			
 		} catch (ItemExistsException var4) {
-			throw var4;
+			
 		} catch (Exception var5) {
 			
 			throw var5;
