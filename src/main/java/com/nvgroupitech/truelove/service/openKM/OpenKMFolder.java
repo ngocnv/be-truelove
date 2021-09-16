@@ -29,6 +29,7 @@ public class OpenKMFolder extends OpenKM {
 		} catch (PathNotFoundException var3) {
 			this.createFolders(var3.getMessage().substring(var3.getMessage().indexOf("/")));
 			this.okm.createFolderSimple(path);
+			throw var3;
 		} catch (ItemExistsException var4) {
 			throw var4;
 		} catch (Exception var5) {
