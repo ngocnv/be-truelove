@@ -1,5 +1,5 @@
 spring:
-  jackson.serialization-inclusion: non_null
+  jackson.default-property-inclusion: non_null
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:postgresql://10.148.0.6:5432/truelove
