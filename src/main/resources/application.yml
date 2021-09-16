@@ -47,7 +47,7 @@ spring:
             scope: openid
             redirect-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}/*
 keycloak-client:
-  server-url: https://10.148.0.6/auth
+  server-url: http://10.148.0.6/auth
   realm: truelove
 keycloak:
   realm: truelove
