@@ -3,6 +3,7 @@ package com.nvgroupitech.truelove.config;
 
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationConverter;
@@ -16,7 +17,7 @@ public class OAuth2ResourceServerConfig extends WebSecurityConfigurerAdapter {
         jwtAuthenticationConverter.setJwtGrantedAuthoritiesConverter(new KeycloakRoleConverter());
         http.csrf().disable();
         http.authorizeRequests()
-                .antMatchers("/v1.0/auth").anonymous()
+                .antMatchers(HttpMethod.POST,"/v1.0/users").anonymous()
                 .antMatchers("/actuator/info", "/actuator/health").permitAll()
                 .antMatchers("/v2/api-docs", "/v3/api-docs").permitAll()
                 .anyRequest().authenticated()

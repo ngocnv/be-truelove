@@ -8,9 +8,12 @@ import java.util.UUID;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.nvgroupitech.truelove.annotation.EnumNamePattern;
 import com.nvgroupitech.truelove.enums.DatingType;
 import com.nvgroupitech.truelove.enums.Gender;
+
 
 
 public class UserDTO extends BaseDTO implements Serializable {

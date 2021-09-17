@@ -114,7 +114,7 @@ public class KeycloakServiceImpl implements KeycloakService {
             return user;
         } catch (Exception e) {
             logger.error(ExceptionUtils.getStackTrace(e));
-            throw new ApiRuntimeException(ErrorMessages.E0001.getErrorDefaultMsgCd(),ErrorMessages.E0001, LocaleContextHolder.getLocale());
+            throw e;
         }
 	}
 

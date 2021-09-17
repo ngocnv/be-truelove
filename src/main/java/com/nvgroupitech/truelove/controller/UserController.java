@@ -80,10 +80,10 @@ public class UserController {
   
     @PostMapping(path="/users")
     @Transactional()
-    public ResponseEntity<BaseDTO> createUser(HttpServletRequest request,@Valid @RequestBody UserDTO userDTO, Errors errors ) throws Exception{
+    public ResponseEntity<UserDTO> createUser(HttpServletRequest request,@Valid @RequestBody UserDTO userDTO, Errors errors ) throws Exception{
     	if(errors.hasErrors()) {
     		return new ResponseEntity<>(
-					ApiUtil.getErrorMessage(ErrorDTO.class, errors),HttpStatus.OK);
+					ApiUtil.getErrorMessage(UserDTO.class, errors),HttpStatus.OK);
     	}
     	
      	
