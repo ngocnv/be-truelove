@@ -25,7 +25,7 @@ public class ApiUtil {
 		ErrorDTO error = new ErrorDTO();
 		error.setErrorCode(errorCode);
 		error.setErrorMessage(errorMessage);
-		error.setResult(ResultState.ERROR);
+		error.setResult(ResultState.E);
 		return error;
 	}
 
@@ -43,7 +43,7 @@ public class ApiUtil {
 				E errorRes = clazz.newInstance();
 				errorRes.setErrorCode(errorCode);
 				errorRes.setErrorMessage(errorMessage);
-				errorRes.setResult(ResultState.ERROR);
+				errorRes.setResult(ResultState.E);
 				return errorRes;
 			}
 			return null;

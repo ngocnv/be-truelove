@@ -10,8 +10,7 @@ public abstract class BaseDTO {
 	
 	@JsonProperty(value = "errorCode")
 	protected String errorCode;
-	
-	
+
 	protected ResultState result;
 
 	public String getErrorMessage() {

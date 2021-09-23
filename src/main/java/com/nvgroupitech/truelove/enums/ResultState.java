@@ -1,15 +1,15 @@
 package com.nvgroupitech.truelove.enums;
 
 public enum ResultState {
-	SUCCESSS('S'), ERROR('E');
-	private char result;
-	ResultState(char result){
+	S("Success"), E("Error");
+	private String result;
+	ResultState(String result){
 		this.result=result;
 	}
-	public char getResult() {
+	public String getResult() {
 		return result;
 	}
-	public void setResult(char result) {
+	public void setResult(String result) {
 		this.result = result;
 	}
 

@@ -119,7 +119,7 @@ public class UserController {
     	user.setAvatar(result.get("path"));
     	user = userService.signupNewUser(user);
     	UserDTO response = userMapper.toDto(user);
-    	response.setResult(ResultState.SUCCESSS);
+    	response.setResult(ResultState.S);
     	return new ResponseEntity<>(response, HttpStatus.OK);
     }
     
