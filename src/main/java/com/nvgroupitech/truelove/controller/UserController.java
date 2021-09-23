@@ -85,8 +85,6 @@ public class UserController {
     @Transactional()
     public ResponseEntity<UserDTO> createUser(HttpServletRequest request,@Valid @RequestBody UserDTO userDTO, Errors errors ) throws Exception{
     	if(errors.hasErrors()) {
-    		logger.error("[API_ERROR] An error occurred in the validation check（{}）", ApiUtil.getJsonRequestString());
-    		
     		return new ResponseEntity<>(
 					ApiUtil.getErrorMessage(UserDTO.class, errors),HttpStatus.OK);
     	}

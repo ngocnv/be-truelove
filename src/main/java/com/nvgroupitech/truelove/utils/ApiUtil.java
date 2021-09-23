@@ -34,12 +34,10 @@ public class ApiUtil {
 			if (errors != null && errors.hasErrors()) {
 				String errorCode = errors.getAllErrors().get(0).getCode();
 				String errorMessage = errors.getAllErrors().get(0).getDefaultMessage();
-				if (ErrorMessages.E0001 == ErrorMessages.getErrorMessages(errorCode)) {
-					logger.error("An error occured in validation check（{}）",
-							ApiUtil.getJsonRequestString());
-				} else {
-					logger.error("errorCode: {}, error Message: {}", errorCode, errorMessage);
-				}
+				logger.error("errorCode: {}, error Message: {}", errorCode, errorMessage);
+				logger.error("An error occured in validation check（{}）",ApiUtil.getJsonRequestString());
+				
+				
 				E errorRes = clazz.newInstance();
 				errorRes.setErrorCode(errorCode);
 				errorRes.setErrorMessage(errorMessage);
