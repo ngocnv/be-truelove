@@ -14,6 +14,8 @@ import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -34,8 +36,6 @@ import com.nvgroupitech.truelove.common.PageableObject;
 import com.nvgroupitech.truelove.common.util.PaginationUtil;
 import com.nvgroupitech.truelove.constant.CommonConstant;
 import com.nvgroupitech.truelove.criteria.UserCriteria;
-import com.nvgroupitech.truelove.dto.BaseDTO;
-import com.nvgroupitech.truelove.dto.ErrorDTO;
 import com.nvgroupitech.truelove.dto.UserDTO;
 import com.nvgroupitech.truelove.enums.ResultState;
 import com.nvgroupitech.truelove.models.jpa.entities.UserEntity;
@@ -46,10 +46,12 @@ import com.nvgroupitech.truelove.service.mapper.UserMapper;
 import com.nvgroupitech.truelove.utils.ApiUtil;
 import com.nvgroupitech.truelove.validator.UserValidator;
 
+
 @RestController
 @RequestMapping("/v1.0")
 public class UserController {
-	
+	private static final Logger logger = LoggerFactory.getLogger(UserController.class);
+	  
 	@Autowired
 	private UserService userService;
 	
@@ -83,6 +85,8 @@ public class UserController {
     @Transactional()
     public ResponseEntity<UserDTO> createUser(HttpServletRequest request,@Valid @RequestBody UserDTO userDTO, Errors errors ) throws Exception{
     	if(errors.hasErrors()) {
+    		logger.error("[API_ERROR] An error occurred in the validation check（{}）", ApiUtil.getJsonRequestString());
+    		
     		return new ResponseEntity<>(
 					ApiUtil.getErrorMessage(UserDTO.class, errors),HttpStatus.OK);
     	}
