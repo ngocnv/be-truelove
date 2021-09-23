@@ -15,6 +15,7 @@ import com.nvgroupitech.truelove.dto.BaseDTO;
 import com.nvgroupitech.truelove.dto.ErrorDTO;
 import com.nvgroupitech.truelove.enums.ErrorMessages;
 import com.nvgroupitech.truelove.enums.MessageLanguage;
+import com.nvgroupitech.truelove.enums.ResultState;
 import com.nvgroupitech.truelove.exceptions.ApiRuntimeException;
 
 @Component
@@ -24,6 +25,7 @@ public class ApiUtil {
 		ErrorDTO error = new ErrorDTO();
 		error.setErrorCode(errorCode);
 		error.setErrorMessage(errorMessage);
+		error.setResult(ResultState.ERROR);
 		return error;
 	}
 
@@ -41,6 +43,7 @@ public class ApiUtil {
 				E errorRes = clazz.newInstance();
 				errorRes.setErrorCode(errorCode);
 				errorRes.setErrorMessage(errorMessage);
+				errorRes.setResult(ResultState.ERROR);
 				return errorRes;
 			}
 			return null;

@@ -1,6 +1,7 @@
 package com.nvgroupitech.truelove.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.nvgroupitech.truelove.enums.ResultState;
 
 public abstract class BaseDTO {
 
@@ -9,6 +10,9 @@ public abstract class BaseDTO {
 	
 	@JsonProperty(value = "errorCode")
 	protected String errorCode;
+	
+	
+	protected ResultState result;
 
 	public String getErrorMessage() {
 		return this.errorMessage;
@@ -25,4 +29,13 @@ public abstract class BaseDTO {
 	public void setErrorCode(String newErrorCode) {
 		this.errorCode = newErrorCode;
 	}
+
+	public ResultState getResult() {
+		return result;
+	}
+
+	public void setResult(ResultState result) {
+		this.result = result;
+	}
+	
 }

@@ -37,6 +37,7 @@ import com.nvgroupitech.truelove.criteria.UserCriteria;
 import com.nvgroupitech.truelove.dto.BaseDTO;
 import com.nvgroupitech.truelove.dto.ErrorDTO;
 import com.nvgroupitech.truelove.dto.UserDTO;
+import com.nvgroupitech.truelove.enums.ResultState;
 import com.nvgroupitech.truelove.models.jpa.entities.UserEntity;
 import com.nvgroupitech.truelove.service.FileService;
 import com.nvgroupitech.truelove.service.KeycloakService;
@@ -117,7 +118,9 @@ public class UserController {
     	Map<String,String> result= fileService.fileUploadToOpenKM(uploadUrl, "avatar"+"."+imageExtension, new FileInputStream(new File(path)));
     	user.setAvatar(result.get("path"));
     	user = userService.signupNewUser(user);
-    	return new ResponseEntity<>(userMapper.toDto(user), HttpStatus.OK);
+    	UserDTO response = userMapper.toDto(user);
+    	response.setResult(ResultState.SUCCESSS);
+    	return new ResponseEntity<>(response, HttpStatus.OK);
     }
     
 }
