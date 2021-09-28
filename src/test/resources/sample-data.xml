@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  <dataset>
+  <dataset>
+  <!--
   <table name='person'>
     <column>id</column>
     <column>first_name</column>
@@ -14,7 +15,6 @@
       <value>Rick</value>
       <value>Hamnett</value>
     </row>
-  </table>
+  </table>-->
 </dataset>
 
--->
