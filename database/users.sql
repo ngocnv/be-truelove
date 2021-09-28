@@ -11,7 +11,7 @@ CREATE TABLE trueloveapp.Users (
 	dating_type VARCHAR(10) NOT NULL,
 	last_session TIMESTAMP,
 	language_code VARCHAR(10),
-	birthday VARCHAR(10),
+	birthdate VARCHAR(10),
 	gender VARCHAR(10),
 	avatar VARCHAR(100),
 	keycloak_id VARCHAR(100),
@@ -19,5 +19,5 @@ CREATE TABLE trueloveapp.Users (
     modified_date TIMESTAMP
 )
 
-INSERT INTO "trueloveapp"."users" ("user_id", "username", "fullname", "email_address", "mobile", "password", "dating_type", "last_session", "language_code", "birthday", "gender", "avatar", "created_date", "modified_date") VALUES
+INSERT INTO "trueloveapp"."users" ("user_id", "username", "fullname", "email_address", "mobile", "password", "dating_type", "last_session", "language_code", "birthdate", "gender", "avatar", "created_date", "modified_date") VALUES
 ('0deacb4a-a8d9-11eb-bcbc-0242ac130002', 'ngocnguyen', 'Nguyễn Văn Ngọc', 'ngocnvtech@gmail.com', '0832648667', '7ff3dce7d43cfc96dd7e21b5a9a91688', 'provider', NULL, 'vn', '1991/01/31', 'male', NULL, '2021-04-29 11:02:18.880674', NULL);

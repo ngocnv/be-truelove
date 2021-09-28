@@ -60,8 +60,8 @@ public class UserEntity extends CommonAudit implements Serializable {
     @Enumerated(EnumType.STRING)
     private LanguageCode languageCode;
 
-    @Column(name = "birthday")
-    private String birthday;
+    @Column(name = "birthdate")
+    private String birthdate;
 
     @Column(name = "gender")
     @Enumerated(EnumType.STRING)
@@ -104,12 +104,12 @@ public class UserEntity extends CommonAudit implements Serializable {
 		this.languageCode = languageCode;
 	}
 
-	public String getBirthday() {
-		return birthday;
+	public String getBirthdate() {
+		return birthdate;
 	}
 
-	public void setBirthday(String birthday) {
-		this.birthday = birthday;
+	public void setBirthdate(String birthdate) {
+		this.birthdate = birthdate;
 	}
 
 	public Gender getGender() {

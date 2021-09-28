@@ -49,7 +49,7 @@ public class UserDTO extends BaseDTO implements Serializable {
 
 	@NotBlank(message="{birthday.notblank}")	
 	@Size(min = 8,max=8,message="{birthday.size}")
-	private String birthday;
+	private String birthdate;
 
 	@EnumNamePattern(regexp = "MALE|FEMALE",message="{gender.notblank}")
 	private Gender gender;
