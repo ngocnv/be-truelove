@@ -89,13 +89,13 @@ public class UserController {
     		return new ResponseEntity<>(
 					ApiUtil.getErrorMessage(UserDTO.class, errors),HttpStatus.OK);
     	}
-    	
+    	userDTO.setUsername(SeqUtil.genSeq("USERCODE"));
      	
     	UserEntity user = keycloakService.createUser(userMapper.toEntity(userDTO));
     	
     	
     	
-    	user.setUsername(SeqUtil.genSeq("USERCODE"));
+    
     	ApiUtil.putLocalContext(CommonConstant.KEYCLOAK_ID, user.getKeycloakId());
     	
     	
