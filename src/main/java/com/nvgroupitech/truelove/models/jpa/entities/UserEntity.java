@@ -15,9 +15,9 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import com.nvgroupitech.truelove.dto.LanguageCode;
 import com.nvgroupitech.truelove.enums.DatingType;
 import com.nvgroupitech.truelove.enums.Gender;
+import com.nvgroupitech.truelove.enums.LanguageCode;
 
 @Entity
 @Table(name = "users")

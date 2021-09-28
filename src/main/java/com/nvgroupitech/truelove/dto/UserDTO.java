@@ -13,6 +13,7 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.nvgroupitech.truelove.annotation.EnumNamePattern;
 import com.nvgroupitech.truelove.enums.DatingType;
 import com.nvgroupitech.truelove.enums.Gender;
+import com.nvgroupitech.truelove.enums.LanguageCode;
 
 
 
@@ -22,8 +23,6 @@ public class UserDTO extends BaseDTO implements Serializable {
 
 	private UUID userId;
 	
-	@NotBlank(message="{username.notblank}")	
-	@Size(min = 3,max = 255,message = "{username.size}" )
 	private String username;
 
 	@NotBlank(message="{fullname.notblank}")	

@@ -40,5 +40,10 @@ public class UserServiceImpl implements UserService {
 		UserEntity u = userRepository.saveAndFlush(user);
 		return u;
 	}
+
+	@Override
+	public void findByUsernameAtBegin(String username, boolean b) {
+		
+	}
 	
 }

@@ -1,4 +1,4 @@
-package com.nvgroupitech.truelove.dto;
+package com.nvgroupitech.truelove.enums;
 
 public enum LanguageCode {
 	EN("en"), VN("vn");

@@ -44,6 +44,7 @@ import com.nvgroupitech.truelove.service.KeycloakService;
 import com.nvgroupitech.truelove.service.UserService;
 import com.nvgroupitech.truelove.service.mapper.UserMapper;
 import com.nvgroupitech.truelove.utils.ApiUtil;
+import com.nvgroupitech.truelove.utils.SeqUtil;
 import com.nvgroupitech.truelove.validator.UserValidator;
 
 
@@ -90,7 +91,11 @@ public class UserController {
     	}
     	
      	
-    	UserEntity user = keycloakService.createUser(userMapper.toEntity(userDTO)); 
+    	UserEntity user = keycloakService.createUser(userMapper.toEntity(userDTO));
+    	
+    	
+    	
+    	user.setUsername(SeqUtil.genSeq("USERCODE"));
     	ApiUtil.putLocalContext(CommonConstant.KEYCLOAK_ID, user.getKeycloakId());
     	
     	

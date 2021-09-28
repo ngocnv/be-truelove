@@ -12,4 +12,6 @@ public interface UserService {
 	Page<UserDTO> getUsers(UserCriteria criteria, Pageable pageable);
 	
 	UserEntity signupNewUser(UserEntity user);
+
+	void findByUsernameAtBegin(String username, boolean b);
 }
