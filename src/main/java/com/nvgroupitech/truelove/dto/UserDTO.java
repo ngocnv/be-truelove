@@ -47,8 +47,8 @@ public class UserDTO extends BaseDTO implements Serializable {
 	@EnumNamePattern(regexp = "EN|VN",message="{datingtype.notblank}")
 	private LanguageCode languageCode;
 
-	@NotBlank(message="{birthday.notblank}")	
-	@Size(min = 8,max=8,message="{birthday.size}")
+	@NotBlank(message="{birthdate.notblank}")	
+	@Size(min = 8,max=8,message="{birthdate.size}")
 	private String birthdate;
 
 	@EnumNamePattern(regexp = "MALE|FEMALE",message="{gender.notblank}")
@@ -86,12 +86,12 @@ public class UserDTO extends BaseDTO implements Serializable {
 		this.languageCode = languageCode;
 	}
 
-	public String getBirthday() {
-		return birthday;
+	public String getBirthdate() {
+		return birthdate;
 	}
 
-	public void setBirthday(String birthday) {
-		this.birthday = birthday;
+	public void setBirthdate(String birthdate) {
+		this.birthdate = birthdate;
 	}
 
 	public Gender getGender() {
