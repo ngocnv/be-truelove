@@ -58,7 +58,7 @@ admin:
     username: admin
     password: abcmvxsdkK108j23Shark!
 openkm:
-  url: http://10.148.0.15/OpenKM
+  url: http://10.148.0.19/OpenKM
   user: okmAdmin
   pass: 4AvoKoF37OIrDf/SCmR8CA==
 management:
