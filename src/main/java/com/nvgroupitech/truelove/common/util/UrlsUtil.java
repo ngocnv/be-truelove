@@ -94,14 +94,12 @@ public class UrlsUtil {
 	}
 
 	public static String makePath(String filename, String savePath) {
-		int hashcode = filename.hashCode();
-		int dir1 = hashcode & 15;
-		int dir2 = (hashcode & 240) >> 4;
+		
 		if (!savePath.endsWith("/")) {
 			savePath = savePath + "/";
 		}
 
-		String fullPath = savePath + dir1 + "/" + dir2 + "/" + filename;
+		String fullPath = savePath +  filename;
 		return fullPath;
 	}
 
