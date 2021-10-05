@@ -2,8 +2,9 @@ package com.nvgroupitech.truelove.enums;
 
 public enum ErrorMessages {
 
-	E0001("E0001", "common.e.E0001"),
-	E0002("E0002","common.e.E0002");
+	E0001("E0001","common.e.E0001"),
+	E0002("E0002","common.e.E0002"),
+	E0003("E0003","common.e.E0003");
 
 	private String errorCode;
 

@@ -1,4 +1,4 @@
-package truelove;
+package com.nvgroupitech.truelove.utils;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

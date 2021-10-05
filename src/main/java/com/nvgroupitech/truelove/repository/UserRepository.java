@@ -2,6 +2,7 @@
 package com.nvgroupitech.truelove.repository;
 
 
+import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.data.domain.Page;
@@ -21,6 +22,6 @@ public interface UserRepository extends JpaRepository<UserEntity, UUID>, JpaSpec
     @Query("select distinct u from UserEntity u where (:#{#criteria.name.contains} is null or upper(u.fullname)  like %:#{T(org.apache.commons.lang3.StringUtils).upperCase(#criteria.name.contains)}% )")
 	Page<UserEntity> findAllByCriteria(UserCriteria criteria, Pageable pageable);
 
-    
+    Optional <UserEntity> findOneByEmailAddress(String email);
 }
 

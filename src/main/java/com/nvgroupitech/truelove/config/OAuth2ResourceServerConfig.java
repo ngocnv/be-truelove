@@ -18,6 +18,7 @@ public class OAuth2ResourceServerConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable();
         http.authorizeRequests()
                 .antMatchers(HttpMethod.POST,"/v1.0/users").anonymous()
+                .antMatchers(HttpMethod.GET,"/v1.0/users:auth").anonymous()
                 .antMatchers("/actuator/info", "/actuator/health").permitAll()
                 .antMatchers("/v2/api-docs", "/v3/api-docs").permitAll()
                 .anyRequest().authenticated()

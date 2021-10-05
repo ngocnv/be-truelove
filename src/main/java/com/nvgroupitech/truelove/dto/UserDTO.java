@@ -23,6 +23,8 @@ public class UserDTO extends BaseDTO implements Serializable {
 
 	private UUID userId;
 	
+	private String accessToken;
+	
 	private String username;
 
 	@NotBlank(message="{fullname.notblank}")	
@@ -165,4 +167,13 @@ public class UserDTO extends BaseDTO implements Serializable {
 	public void setModifiedDate(Instant modifiedDate) {
 		this.modifiedDate = modifiedDate;
 	}
+
+	public String getAccessToken() {
+		return accessToken;
+	}
+
+	public void setAccessToken(String accessToken) {
+		this.accessToken = accessToken;
+	}
+    
 }

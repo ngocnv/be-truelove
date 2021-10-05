@@ -83,7 +83,7 @@ public class KeycloakServiceImpl implements KeycloakService {
          
             userRep.setEmail(user.getEmailAddress());
             //Allow user login or not
-            userRep.setEnabled(false);
+            userRep.setEnabled(true);
             // set customize attribute
             Map<String, List<String>> attribute = new LinkedHashMap<String, List<String>>();
            userRep.setAttributes(attribute);

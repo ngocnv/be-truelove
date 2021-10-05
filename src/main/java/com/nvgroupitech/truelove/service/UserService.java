@@ -1,5 +1,7 @@
 package com.nvgroupitech.truelove.service;
 
+import java.util.Optional;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -13,5 +15,6 @@ public interface UserService {
 	
 	UserEntity signupNewUser(UserEntity user);
 
-	void findByUsernameAtBegin(String username, boolean b);
+    Optional<UserEntity> findUserByEmail(String email);
+	
 }

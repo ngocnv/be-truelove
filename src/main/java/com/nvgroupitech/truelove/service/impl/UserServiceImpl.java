@@ -1,6 +1,7 @@
 package com.nvgroupitech.truelove.service.impl;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -34,16 +35,16 @@ public class UserServiceImpl implements UserService {
 	                });
 	    return page == null ? new PageImpl<>(new ArrayList<>(), pageable, 0) : page;
 	}
+	
+	public Optional<UserEntity> findUserByEmail(String email) {
+		return userRepository.findOneByEmailAddress(email);
+		
+	}
 
 	@Override
 	public UserEntity signupNewUser(UserEntity user) {
 		UserEntity u = userRepository.saveAndFlush(user);
 		return u;
-	}
-
-	@Override
-	public void findByUsernameAtBegin(String username, boolean b) {
-		
 	}
 	
 }
