@@ -176,6 +176,7 @@ public class UserController {
     	UserDTO userDTO= userMapper.toDto(user.get());
     	userDTO.setAccessToken(token);
     	userDTO.setPassword(null);
+    	userDTO.setResult(ResultState.S);
     	return new ResponseEntity<>(userDTO, HttpStatus.OK);
     }
 }
