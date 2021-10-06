@@ -1,18 +1,24 @@
 package com.nvgroupitech.truelove.enums;
 
+import org.springframework.http.HttpStatus;
+
 public enum ErrorMessages {
 
-	E0001("E0001","common.e.E0001"),
-	E0002("E0002","common.e.E0002"),
-	E0003("E0003","common.e.E0003");
+	E0001("E0001","common.e.E0001",HttpStatus.INTERNAL_SERVER_ERROR),
+	E0002("E0002","common.e.E0002",HttpStatus.CONFLICT),
+	E0003("E0003","common.e.E0003",HttpStatus.UNAUTHORIZED),
+	E0004("E0004","common.e.E0004",HttpStatus.BAD_REQUEST);
 
 	private String errorCode;
 
 	private String errorDefaultMsgCd;
+	
+	private HttpStatus httpStatusCode;
 
-	private ErrorMessages(String newErrorCode, String newErrorDefault) {
+	private ErrorMessages(String newErrorCode, String newErrorDefault,HttpStatus httpStatusCode) {
 		this.errorCode = newErrorCode;
 		this.errorDefaultMsgCd = newErrorDefault;
+		this.httpStatusCode=httpStatusCode;
 	}
 
 	public String getErrorCode() {
@@ -31,6 +37,14 @@ public enum ErrorMessages {
 	
 	public void setErrorDefaultMsgCd(String newErrorDefault) {
 		this.errorDefaultMsgCd = newErrorDefault;
+	}
+	
+	public HttpStatus getHttpStatusCode() {
+		return httpStatusCode;
+	}
+
+	public void setHttpStatusCode(HttpStatus httpStatusCode) {
+		this.httpStatusCode = httpStatusCode;
 	}
 
 	public static ErrorMessages getErrorMessages(String code) {

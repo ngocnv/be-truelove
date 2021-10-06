@@ -11,8 +11,6 @@ public abstract class BaseDTO {
 	@JsonProperty(value = "errorCode")
 	protected String errorCode;
 
-	protected ResultState result;
-
 	public String getErrorMessage() {
 		return this.errorMessage;
 	}
@@ -27,14 +25,6 @@ public abstract class BaseDTO {
 
 	public void setErrorCode(String newErrorCode) {
 		this.errorCode = newErrorCode;
-	}
-
-	public ResultState getResult() {
-		return result;
-	}
-
-	public void setResult(ResultState result) {
-		this.result = result;
 	}
 	
 }

@@ -105,7 +105,7 @@ public class UserController {
     public ResponseEntity<UserDTO> createUser(HttpServletRequest request,@Valid @RequestBody UserDTO userDTO, Errors errors ) throws Exception{
     	if(errors.hasErrors()) {
     		return new ResponseEntity<>(
-					ApiUtil.getErrorMessage(UserDTO.class, errors),HttpStatus.OK);
+					ApiUtil.getErrorMessage(UserDTO.class, errors),HttpStatus.BAD_REQUEST);
     	}
     	userDTO.setUsername(SeqUtil.genSeq("USERCODE"));
      	
@@ -140,7 +140,7 @@ public class UserController {
     	user.setAvatar(result.get("path"));
     	user = userService.signupNewUser(user);
     	UserDTO response = userMapper.toDto(user);
-    	response.setResult(ResultState.S);
+    	
     	return new ResponseEntity<>(response, HttpStatus.OK);
     }
     
@@ -165,6 +165,8 @@ public class UserController {
 		
     	Map<String,String> response=HttpUtil.request(tokenUri, "POST",headers,formParams);
     	if(!response.get("statusCode").equals("200")) {
+    		logger.info(response.get("body"));
+    		logger.info(response.get("statusCode"));
     		throw new ApiRuntimeException(ErrorMessages.E0003.getErrorDefaultMsgCd(),ErrorMessages.E0003,LocaleContextHolder.getLocale());
     	}
     	
@@ -176,7 +178,7 @@ public class UserController {
     	UserDTO userDTO= userMapper.toDto(user.get());
     	userDTO.setAccessToken(token);
     	userDTO.setPassword(null);
-    	userDTO.setResult(ResultState.S);
+    	
     	return new ResponseEntity<>(userDTO, HttpStatus.OK);
     }
 }

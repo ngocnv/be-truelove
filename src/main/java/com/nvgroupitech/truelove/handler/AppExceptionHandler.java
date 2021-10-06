@@ -48,7 +48,7 @@ public class AppExceptionHandler {
 				ApiUtil.getLocale());
 
 		return new ResponseEntity<>(ApiUtil.getErrorMessage(ErrorMessages.E0001.getErrorCode(),
-				errorMessage), HttpStatus.OK);
+				errorMessage), HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 	
 	@ExceptionHandler(value = { ApiRuntimeException.class })
@@ -56,6 +56,6 @@ public class AppExceptionHandler {
 		logger.error("Error : {}", ExceptionUtils.getStackTrace(e));
 		logger.error("[API_ERROR] An error occurred in the validation check（{}）", ApiUtil.getJsonRequestString());
 	
-		return new ResponseEntity<>(ApiUtil.getErrorMessage(e.getError().getErrorCode(),e.getMessage()), HttpStatus.OK);
+		return new ResponseEntity<>(ApiUtil.getErrorMessage(e.getError().getErrorCode(),e.getMessage()), e.getError().getHttpStatusCode());
 	}
 }
