@@ -151,7 +151,7 @@ public class UserController {
     	// Get user info;
     	Optional<UserEntity> user = userService.findUserByEmail(userAuth.getEmail());
     	if(!user.isPresent()) {
-    		throw new RuntimeException();
+    		throw new ApiRuntimeException(ErrorMessages.E0003.getErrorDefaultMsgCd(),ErrorMessages.E0003,LocaleContextHolder.getLocale());
     	}
     	
 		String originalString=clientId+":"+clientSecret;
