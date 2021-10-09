@@ -179,7 +179,7 @@ public class UserController {
     	UserDTO userDTO= userMapper.toDto(user.get());
     	userDTO.setAccessToken(token);
     	userDTO.setPassword(null);
-    	
+    	userService.updateOnboardStatus(true, user.get().getUsername());
     	return new ResponseEntity<>(userDTO, HttpStatus.OK);
     }
 }

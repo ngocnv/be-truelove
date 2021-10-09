@@ -9,7 +9,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import com.nvgroupitech.truelove.criteria.UserCriteria;
@@ -23,5 +25,9 @@ public interface UserRepository extends JpaRepository<UserEntity, UUID>, JpaSpec
 	Page<UserEntity> findAllByCriteria(UserCriteria criteria, Pageable pageable);
 
     Optional <UserEntity> findOneByEmailAddress(String email);
+    
+    @Modifying
+    @Query("update UserEntity u set u.isOnboard = :onboard where u.username=:username")
+    UserEntity updateOnboardStatus(@Param("onboard") boolean onboard, @Param("username") String username);
 }
 

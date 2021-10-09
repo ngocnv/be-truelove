@@ -46,5 +46,10 @@ public class UserServiceImpl implements UserService {
 		UserEntity u = userRepository.saveAndFlush(user);
 		return u;
 	}
+
+	@Override
+	public void updateOnboardStatus(boolean onboard,String username) {
+		userRepository.updateOnboardStatus(onboard, username);
+	}
 	
 }

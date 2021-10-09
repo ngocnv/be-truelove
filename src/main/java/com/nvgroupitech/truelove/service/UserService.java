@@ -16,5 +16,6 @@ public interface UserService {
 	UserEntity signupNewUser(UserEntity user);
 
     Optional<UserEntity> findUserByEmail(String email);
-	
+    
+    void updateOnboardStatus(boolean onboard,String username);
 }
