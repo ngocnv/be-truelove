@@ -28,6 +28,6 @@ public interface UserRepository extends JpaRepository<UserEntity, UUID>, JpaSpec
     
     @Modifying
     @Query("update UserEntity u set u.isOnboard = :onboard where u.username=:username")
-    UserEntity updateOnboardStatus(@Param("onboard") boolean onboard, @Param("username") String username);
+    void updateOnboardStatus(@Param("onboard") boolean onboard, @Param("username") String username);
 }
 
