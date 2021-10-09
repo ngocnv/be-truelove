@@ -138,6 +138,7 @@ public class UserController {
     	String uploadUrl = "/okm:root/upload/truelove";
     	Map<String,String> result= fileService.fileUploadToOpenKM(uploadUrl, "avatar"+"."+imageExtension, new FileInputStream(new File(path)));
     	user.setAvatar(result.get("path"));
+    	user.setOnboard(false);
     	user = userService.signupNewUser(user);
     	UserDTO response = userMapper.toDto(user);
     	

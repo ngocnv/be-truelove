@@ -59,6 +59,8 @@ public class UserDTO extends BaseDTO implements Serializable {
 	@NotBlank(message="{avatar.notblank}")	
 	private String avatar;
 	
+	private boolean isOnboard;
+	
 	private Instant createdDate;
 
 	private Instant modifiedDate;
@@ -174,6 +176,14 @@ public class UserDTO extends BaseDTO implements Serializable {
 
 	public void setAccessToken(String accessToken) {
 		this.accessToken = accessToken;
+	}
+
+	public boolean isOnboard() {
+		return isOnboard;
+	}
+
+	public void setOnboard(boolean isOnboard) {
+		this.isOnboard = isOnboard;
 	}
     
 }

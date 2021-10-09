@@ -70,7 +70,8 @@ public class UserEntity extends CommonAudit implements Serializable {
     @Column(name="avatar")
     private String avatar;
     
-   
+    @Column(name="is_onboard")
+    private boolean isOnboard;
 
 	public UUID getUserId() {
 		return userId;
@@ -177,5 +178,12 @@ public class UserEntity extends CommonAudit implements Serializable {
 		this.keycloakId = keycloakId;
 	}
 
+	public boolean isOnboard() {
+		return isOnboard;
+	}
+
+	public void setOnboard(boolean isOnboard) {
+		this.isOnboard = isOnboard;
+	}
 
 }

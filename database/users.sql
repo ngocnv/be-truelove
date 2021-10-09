@@ -15,6 +15,7 @@ CREATE TABLE trueloveapp.Users (
 	gender VARCHAR(10),
 	avatar VARCHAR(100),
 	keycloak_id VARCHAR(100),
+	is_onboard  BOOLEAN DEFAULT FALSE,
 	created_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     modified_date TIMESTAMP
 )
