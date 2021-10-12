@@ -1,4 +1,4 @@
- create schema trueloveapp;
+
 SET search_path to trueloveapp;
 
 CREATE TABLE trueloveapp.Users (

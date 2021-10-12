@@ -61,9 +61,6 @@ public class UserDTO extends BaseDTO implements Serializable {
 	
 	private boolean isOnboard;
 	
-	private Instant createdDate;
-
-	private Instant modifiedDate;
 
 	public UUID getUserId() {
 		return userId;
@@ -152,22 +149,6 @@ public class UserDTO extends BaseDTO implements Serializable {
 
 	public void setAvatar(String avatar) {
 		this.avatar = avatar;
-	}
-
-	public Instant getCreatedDate() {
-		return createdDate;
-	}
-
-	public void setCreatedDate(Instant createdDate) {
-		this.createdDate = createdDate;
-	}
-
-	public Instant getModifiedDate() {
-		return modifiedDate;
-	}
-
-	public void setModifiedDate(Instant modifiedDate) {
-		this.modifiedDate = modifiedDate;
 	}
 
 	public String getAccessToken() {
