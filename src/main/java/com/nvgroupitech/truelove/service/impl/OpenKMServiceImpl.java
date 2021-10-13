@@ -26,7 +26,7 @@ public class OpenKMServiceImpl implements FileService{
 	@Value("${openkm.pass:4AvoKoF37OIrDf/SCmR8CA==}")
 	private String openkmPass;
 	
-	public HashMap fileUploadToOpenKM(String basePath,String filename,InputStream fileInputStream) throws Exception {
+	public Map fileUploadToOpenKM(String basePath,String filename,InputStream fileInputStream) throws Exception {
 		int maxSize=10485760;
 		String newfilename = UrlsUtil.makeFileName(filename);
 		String uploadUrl = UrlsUtil.makePath(newfilename, basePath);
@@ -45,5 +45,14 @@ public class OpenKMServiceImpl implements FileService{
 		}
 		resultMap.put("path", map.get("path"));
 		return resultMap;
+	}
+	
+	public Map downloadFile(String filePath) throws Exception {
+		Map<String, Object> map = (new OpenKMFile(
+				openkmUrl,
+				openkmUser,
+				AESUtil.decrypt(
+						openkmPass.getBytes()))).downloadFile(filePath);
+		return map;
 	}
 }

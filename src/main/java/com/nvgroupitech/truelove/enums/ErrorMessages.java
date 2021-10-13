@@ -7,7 +7,8 @@ public enum ErrorMessages {
 	E0001("E0001","common.e.E0001",HttpStatus.INTERNAL_SERVER_ERROR),
 	E0002("E0002","common.e.E0002",HttpStatus.CONFLICT),
 	E0003("E0003","common.e.E0003",HttpStatus.UNAUTHORIZED),
-	E0004("E0004","common.e.E0004",HttpStatus.BAD_REQUEST);
+	E0004("E0004","common.e.E0004",HttpStatus.BAD_REQUEST),
+	E0005("E0005","common.e.E0005",HttpStatus.NOT_FOUND);
 
 	private String errorCode;
 
