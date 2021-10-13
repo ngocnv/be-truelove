@@ -41,6 +41,5 @@ public class UserPhotoController {
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/users");
         return new ResponseEntity<>(new PageableObject<>(page), headers, HttpStatus.OK);
     }
-    
 
 }
