@@ -22,7 +22,7 @@ import com.nvgroupitech.truelove.service.FileService;
 
 @RestController
 @RequestMapping("/v1.0")
-public class FileDownloadController {
+public class FileController {
 
 	@Autowired
 	private FileService fileService;
@@ -62,4 +62,5 @@ public class FileDownloadController {
 			}
 		}
 	}
+	
 }

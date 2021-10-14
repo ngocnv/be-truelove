@@ -2,11 +2,16 @@ package com.nvgroupitech.truelove.dto;
 
 import java.util.UUID;
 
+import javax.validation.constraints.NotBlank;
+
 public class UserPhotoDTO {
 
 	private UUID photoId;
 
 	private String photoUri;
+	
+	@NotBlank(message="{avatar.notblank}")	
+	private String photoData;
 
 	private String descrition;
 
@@ -33,4 +38,13 @@ public class UserPhotoDTO {
 	public void setDescrition(String descrition) {
 		this.descrition = descrition;
 	}
+
+	public String getPhotoData() {
+		return photoData;
+	}
+
+	public void setPhotoData(String photoData) {
+		this.photoData = photoData;
+	}
+	
 }

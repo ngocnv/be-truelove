@@ -130,13 +130,9 @@ public class UserController {
     	ByteArrayInputStream bis = new ByteArrayInputStream(imageByte);
     	BufferedImage image = ImageIO.read(bis);
     	
-    	bis.close();
-    	
-    	File outputfile = File.createTempFile("avatar", "."+imageExtension);
-    	String path= outputfile.getAbsolutePath();
-    	ImageIO.write(image, imageExtension, outputfile);
     	String uploadUrl = "/okm:root/upload/truelove";
-    	Map<String,String> result= fileService.fileUploadToOpenKM(uploadUrl, "avatar"+"."+imageExtension, new FileInputStream(new File(path)));
+    	Map<String,String> result= fileService.fileUploadToOpenKM(uploadUrl, "avatar"+"."+imageExtension,bis);
+    	bis.close();
     	user.setAvatar(result.get("path"));
     	user.setOnboard(false);
     	user = userService.signupNewUser(user);
