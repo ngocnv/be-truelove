@@ -104,7 +104,7 @@ public class UserPhotoController {
     	}
   
     	// data:/image/png;base64,*
-    	String imageRegex="^data:\\/image\\/([A-Za-z]+);base64,(.*)$";
+    	String imageRegex="^data:image\\/([A-Za-z]+);base64,(.*)$";
     	
     	Pattern r = Pattern.compile(imageRegex);
     	String imageString=null;

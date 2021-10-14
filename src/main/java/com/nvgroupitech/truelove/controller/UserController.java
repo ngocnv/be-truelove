@@ -114,7 +114,7 @@ public class UserController {
     	ApiUtil.putLocalContext(CommonConstant.KEYCLOAK_ID, user.getKeycloakId());
     	
     	// data:/image/png;base64,*
-    	String avatarImageRegex="^data:\\/image\\/([A-Za-z]+);base64,(.*)$";
+    	String avatarImageRegex="^data:image\\/([A-Za-z]+);base64,(.*)$";
     	
     	Pattern r = Pattern.compile(avatarImageRegex);
     	String imageString=null;
