@@ -11,6 +11,7 @@ import java.util.regex.Pattern;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.commons.collections4.map.HashedMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +39,7 @@ import com.nvgroupitech.truelove.common.util.PaginationUtil;
 import com.nvgroupitech.truelove.criteria.UserPhotoCriteria;
 import com.nvgroupitech.truelove.dto.UserPhotoDTO;
 import com.nvgroupitech.truelove.enums.ErrorMessages;
+import com.nvgroupitech.truelove.enums.ResultState;
 import com.nvgroupitech.truelove.exceptions.ApiRuntimeException;
 import com.nvgroupitech.truelove.models.jpa.entities.UserEntity;
 import com.nvgroupitech.truelove.models.jpa.entities.UserPhotoEntity;
@@ -129,7 +131,7 @@ public class UserPhotoController {
     }
     
     @DeleteMapping(path = "/users/{userId}/photos/{photoId}")
-    public ResponseEntity<Boolean> deletePhoto(@PathVariable("userId") UUID userId,@PathVariable("photoId") UUID photoId) throws Exception{
+    public ResponseEntity<Map<String,String>> deletePhoto(@PathVariable("userId") UUID userId,@PathVariable("photoId") UUID photoId) throws Exception{
     	JwtAuthenticationToken  authentication = (JwtAuthenticationToken) SecurityContextHolder.getContext().getAuthentication();
         // Get ID Token Value
         String tokenValue = authentication.getToken().getTokenValue();
@@ -140,10 +142,13 @@ public class UserPhotoController {
     		throw new ApiRuntimeException(ErrorMessages.E0003.getErrorDefaultMsgCd(),ErrorMessages.E0003,LocaleContextHolder.getLocale());
     	}
     	
+    	Map<String,String> response = new HashedMap<>();
+    	response.put("result", ResultState.S.getResult());
+    	
     	Optional<UserPhotoEntity> photo = userPhotoService.findPhotoByIdAndUser(photoId,user.get());
     	if(!photo.isPresent()) {
     		logger.warn("photo id={} is not found",photoId);
-    		return  new ResponseEntity<>(Boolean.TRUE,HttpStatus.OK);
+    		return  new ResponseEntity<>(response,HttpStatus.OK);
     	}
     	try {
     		Map deleteFile = fileService.deleteFile(photo.get().getPhotoUri());
@@ -153,7 +158,7 @@ public class UserPhotoController {
     	
     	userPhotoService.deletePhoto(photo.get().getPhotoId());
     	
-    	return new ResponseEntity<>(Boolean.TRUE,HttpStatus.OK);
+    	return new ResponseEntity<>(response,HttpStatus.OK);
     }
 
     
