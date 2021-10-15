@@ -2,6 +2,7 @@
 package com.nvgroupitech.truelove.repository;
 
 
+import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.data.domain.Page;
@@ -12,6 +13,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import com.nvgroupitech.truelove.criteria.UserPhotoCriteria;
+import com.nvgroupitech.truelove.models.jpa.entities.UserEntity;
 import com.nvgroupitech.truelove.models.jpa.entities.UserPhotoEntity;
 
 @Repository
@@ -19,6 +21,7 @@ public interface UserPhotoRepository extends JpaRepository<UserPhotoEntity, UUID
 
 	@Query("select distinct p from UserPhotoEntity p where p.user.userId=:userId and (:#{#criteria.photoUri.contains} is null or p.photoUri like %:#{#criteria.photoUri.contains}%)")
 	Page<UserPhotoEntity> findByUserId(UUID userId, UserPhotoCriteria criteria, Pageable pageable);
-   
+
+	Optional<UserPhotoEntity> findByPhotoIdAndUser(UUID photoId, UserEntity userId);
 }
 

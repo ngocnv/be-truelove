@@ -1,6 +1,7 @@
 package com.nvgroupitech.truelove.service.impl;
 
 import java.util.ArrayList;
+import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.nvgroupitech.truelove.criteria.UserPhotoCriteria;
 import com.nvgroupitech.truelove.dto.UserPhotoDTO;
+import com.nvgroupitech.truelove.models.jpa.entities.UserEntity;
 import com.nvgroupitech.truelove.models.jpa.entities.UserPhotoEntity;
 import com.nvgroupitech.truelove.repository.UserPhotoRepository;
 import com.nvgroupitech.truelove.service.UserPhotoService;
@@ -40,6 +42,17 @@ public class UserPhotoServiceImpl implements UserPhotoService {
 	@Transactional
 	public UserPhotoEntity savePhoto(UserPhotoEntity userphoto) {
 		return userPhotoRepository.save(userphoto);
+	}
+
+	@Override
+	public Optional<UserPhotoEntity> findPhotoByIdAndUser(UUID photoId,UserEntity user) {
+		return userPhotoRepository.findByPhotoIdAndUser(photoId,user);
+	}
+
+	@Override
+	public void deletePhoto(UUID photoId) {
+		userPhotoRepository.deleteById(photoId);
+		return;
 	}
 
 }

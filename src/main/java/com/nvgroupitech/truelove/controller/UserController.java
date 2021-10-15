@@ -131,7 +131,7 @@ public class UserController {
     	BufferedImage image = ImageIO.read(bis);
     	
     	String uploadUrl = "/okm:root/upload/truelove";
-    	Map<String,String> result= fileService.fileUploadToOpenKM(uploadUrl, "avatar"+"."+imageExtension,bis);
+    	Map<String,String> result= fileService.uploadFileToOpenKM(uploadUrl, "avatar"+"."+imageExtension,bis);
     	bis.close();
     	user.setAvatar(result.get("path"));
     	user.setOnboard(false);
@@ -170,7 +170,6 @@ public class UserController {
     	// Parse token
     	Map<String,Object> json= JsonUtils.parse(response.get("body"));
     	String token=(String) json.get("access_token");
-    	
     	
     	UserDTO userDTO= userMapper.toDto(user.get());
     	userDTO.setAccessToken(token);

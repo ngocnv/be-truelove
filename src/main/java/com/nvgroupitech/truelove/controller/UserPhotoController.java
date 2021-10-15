@@ -2,7 +2,6 @@ package com.nvgroupitech.truelove.controller;
 
 
 import java.io.ByteArrayInputStream;
-
 import java.util.Base64;
 import java.util.Map;
 import java.util.Optional;
@@ -24,12 +23,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -117,7 +116,7 @@ public class UserPhotoController {
     	String uploadUrl = "/okm:root/upload/truelove";
     	byte[] imageByte = Base64.getDecoder().decode(imageString);
     	ByteArrayInputStream bis = new ByteArrayInputStream(imageByte);
-    	Map<String,String> result= fileService.fileUploadToOpenKM(uploadUrl, "user"+"."+imageExtension, bis);
+    	Map<String,String> result= fileService.uploadFileToOpenKM(uploadUrl, "user"+"."+imageExtension, bis);
 
     	bis.close();
     	
@@ -129,5 +128,33 @@ public class UserPhotoController {
     	return new ResponseEntity<>(photoMapper.toDto(userPhotoService.savePhoto(photoEntity)), HttpStatus.OK);
     }
     
+    @DeleteMapping(path = "/users/{userId}/photos/{photoId}")
+    public ResponseEntity<Boolean> deletePhoto(@PathVariable("userId") UUID userId,@PathVariable("photoId") UUID photoId) throws Exception{
+    	JwtAuthenticationToken  authentication = (JwtAuthenticationToken) SecurityContextHolder.getContext().getAuthentication();
+        // Get ID Token Value
+        String tokenValue = authentication.getToken().getTokenValue();
+    	Map<String,Object> tokenAttributeMap= JwtTokenUtils.extract(tokenValue);
+    	String email = (String) tokenAttributeMap.get("email");
+    	Optional<UserEntity> user= userService.findUserByEmail(email);
+    	if(!user.isPresent() || !user.get().getUserId().equals(userId)) {
+    		throw new ApiRuntimeException(ErrorMessages.E0003.getErrorDefaultMsgCd(),ErrorMessages.E0003,LocaleContextHolder.getLocale());
+    	}
+    	
+    	Optional<UserPhotoEntity> photo = userPhotoService.findPhotoByIdAndUser(photoId,user.get());
+    	if(!photo.isPresent()) {
+    		logger.warn("photo id={} is not found",photoId);
+    		return  new ResponseEntity<>(Boolean.TRUE,HttpStatus.OK);
+    	}
+    	try {
+    		Map deleteFile = fileService.deleteFile(photo.get().getPhotoUri());
+    	}catch(com.openkm.sdk4j.exception.PathNotFoundException e) {
+    		logger.warn("photo has been deleted");
+    	}
+    	
+    	userPhotoService.deletePhoto(photo.get().getPhotoId());
+    	
+    	return new ResponseEntity<>(Boolean.TRUE,HttpStatus.OK);
+    }
 
+    
 }
