@@ -117,7 +117,6 @@ public class UserController {
     
     	byte[] imageByte = Base64.getDecoder().decode(imageString);
     	ByteArrayInputStream bis = new ByteArrayInputStream(imageByte);
-    	BufferedImage image = ImageIO.read(bis);
     	
     	String uploadUrl = "/okm:root/upload/truelove";
     	Map<String,String> result= fileService.uploadFileToOpenKM(uploadUrl, "avatar"+"."+imageExtension,bis);
