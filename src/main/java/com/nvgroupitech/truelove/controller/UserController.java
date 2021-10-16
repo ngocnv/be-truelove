@@ -3,12 +3,11 @@ package com.nvgroupitech.truelove.controller;
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileInputStream;
 import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
+import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -21,29 +20,27 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.i18n.LocaleContextHolder;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nvgroupitech.truelove.common.PageableObject;
-import com.nvgroupitech.truelove.common.util.PaginationUtil;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.nvgroupitech.truelove.constant.CommonConstant;
-import com.nvgroupitech.truelove.criteria.UserCriteria;
 import com.nvgroupitech.truelove.dto.UserAuthDTO;
 import com.nvgroupitech.truelove.dto.UserDTO;
 import com.nvgroupitech.truelove.enums.ErrorMessages;
-import com.nvgroupitech.truelove.enums.ResultState;
 import com.nvgroupitech.truelove.exceptions.ApiRuntimeException;
 import com.nvgroupitech.truelove.models.jpa.entities.UserEntity;
 import com.nvgroupitech.truelove.service.FileService;
@@ -54,6 +51,7 @@ import com.nvgroupitech.truelove.utils.ApiUtil;
 import com.nvgroupitech.truelove.utils.HttpUtil;
 import com.nvgroupitech.truelove.utils.JsonUtils;
 import com.nvgroupitech.truelove.utils.SeqUtil;
+import com.nvgroupitech.truelove.utils.utils.JwtTokenUtils;
 import com.nvgroupitech.truelove.validator.UserValidator;
 
 
@@ -90,15 +88,6 @@ public class UserController {
 	protected void initUserBinder(WebDataBinder binder) {
 		binder.addValidators(validator);
 	}
-
-    @GetMapping(path = "/users")
-    public ResponseEntity<PageableObject<UserDTO>> getUsers(HttpServletRequest request, UserCriteria criteria, Pageable pageable) {
-        
-        Page<UserDTO> page = userService.getUsers(criteria, pageable);
-        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/users");
-        return new ResponseEntity<>(new PageableObject<>(page), headers, HttpStatus.OK);
-    }
-    
   
     @PostMapping(path="/users")
     @Transactional()
@@ -142,7 +131,7 @@ public class UserController {
     }
     
     @GetMapping(path="/users:auth")
-    public ResponseEntity<UserDTO> authUser(HttpServletRequest request,UserAuthDTO userAuth, Errors errors ) throws Exception{
+    public ResponseEntity<UserDTO> authUser(UserAuthDTO userAuth, Errors errors ) throws Exception{
     	// Call to Keycloak to verify username/password and get token
     	// Get user info;
     	Optional<UserEntity> user = userService.findUserByEmail(userAuth.getEmail());
@@ -176,5 +165,49 @@ public class UserController {
     	userDTO.setPassword(null);
     	userService.updateOnboardStatus(true, user.get().getUsername());
     	return new ResponseEntity<>(userDTO, HttpStatus.OK);
+    }
+    
+    @PostMapping(path="/users/{userId}:updateAvatar")
+    public ResponseEntity<UserDTO> updateAvatar(@PathVariable("userId")UUID userId,@RequestBody UserDTO userDTO, Errors errors) throws Exception{
+    	JwtAuthenticationToken  authentication = (JwtAuthenticationToken) SecurityContextHolder.getContext().getAuthentication();
+        // Get ID Token Value
+        String tokenValue = authentication.getToken().getTokenValue();
+    	Map<String,Object> tokenAttributeMap= JwtTokenUtils.extract(tokenValue);
+    	String email = (String) tokenAttributeMap.get("email");
+    	Optional<UserEntity> user= userService.findUserByEmail(email);
+    	if(!user.isPresent() || !user.get().getUserId().equals(userId)) {
+    		throw new ApiRuntimeException(ErrorMessages.E0003.getErrorDefaultMsgCd(),ErrorMessages.E0003,LocaleContextHolder.getLocale());
+    	}
+    	
+    	// data:/image/png;base64,*
+    	String imageRegex="^data:image\\/([A-Za-z]+);base64,(.*)$";
+    	
+    	Pattern r = Pattern.compile(imageRegex);
+    	String imageString=null;
+    	Matcher m = r.matcher(userDTO.getAvatar());
+    	String imageExtension=null;
+    	if(m.find()) {
+    		imageExtension=m.group(1);
+    		imageString=m.group(2);
+    	}
+    	String uploadUrl = "/okm:root/upload/truelove";
+    	byte[] imageByte = Base64.getDecoder().decode(imageString);
+    	ByteArrayInputStream bis = new ByteArrayInputStream(imageByte);
+    	Map<String,String> result= fileService.uploadFileToOpenKM(uploadUrl, "avatar"+"."+imageExtension, bis);
+    	bis.close();
+    	
+    	//Delete old avatar
+    	try {
+    		Map deleteFile = fileService.deleteFile(user.get().getAvatar());
+    	}catch(com.openkm.sdk4j.exception.PathNotFoundException e) {
+    		logger.warn("photo has been deleted");
+    	}
+    	user.get().setAvatar(result.get("path"));
+    	userService.updateAvatar(user.get());
+    	
+    	UserDTO response = new UserDTO();
+    	response.setAvatar(result.get("path"));
+    	
+    	return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }

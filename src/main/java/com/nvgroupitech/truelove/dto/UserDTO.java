@@ -59,7 +59,7 @@ public class UserDTO extends BaseDTO implements Serializable {
 	@NotBlank(message="{avatar.notblank}")	
 	private String avatar;
 	
-	private boolean isOnboard;
+	private Boolean isOnboard;
 	
 
 	public UUID getUserId() {
@@ -159,11 +159,11 @@ public class UserDTO extends BaseDTO implements Serializable {
 		this.accessToken = accessToken;
 	}
 
-	public boolean isOnboard() {
+	public Boolean isOnboard() {
 		return isOnboard;
 	}
 
-	public void setOnboard(boolean isOnboard) {
+	public void setOnboard(Boolean isOnboard) {
 		this.isOnboard = isOnboard;
 	}
     

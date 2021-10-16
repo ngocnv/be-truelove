@@ -18,4 +18,6 @@ public interface UserService {
     Optional<UserEntity> findUserByEmail(String email);
     
     void updateOnboardStatus(boolean onboard,String username);
+
+	void updateAvatar(UserEntity user);
 }

@@ -53,5 +53,10 @@ public class UserServiceImpl implements UserService {
 	public void updateOnboardStatus(boolean onboard,String username) {
 		userRepository.updateOnboardStatus(onboard, username);
 	}
+
+	@Override
+	public void updateAvatar(UserEntity user) {
+		userRepository.save(user);
+	}
 	
 }
