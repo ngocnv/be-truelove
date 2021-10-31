@@ -16,6 +16,6 @@ import com.nvgroupitech.truelove.models.jpa.entities.CategoryItemEntity;
 @Repository
 public interface CategoryItemRepository extends JpaRepository<CategoryItemEntity, UUID>, JpaSpecificationExecutor<CategoryItemEntity>{
 	
-	@Query("select distinct i from CategoryItemEntity i where (:#{#criteria.category.equals} IS NULL OR i.category = :#{T(com.nvgroupitech.truelove.enums.Category).valueOf(#criteria.category.equals)} AND (:#{#criteria.name.contains} IS NOT NULL AND (:#{#criteria.name.contains} <> '' AND i.name like %:#{#criteria.name.contains}%)))")
+	@Query("select distinct i from CategoryItemEntity i where (:#{#criteria.category.equals} IS NULL OR i.category = :#{T(com.nvgroupitech.truelove.enums.Category).valueOf(#criteria.category.equals)} AND (:#{#criteria.name.contains} IS NOT NULL AND (:#{#criteria.name.contains} <> '' AND i.name like %:#{T(org.apache.commons.lang3.StringUtils).lowerCase(#criteria.name.contains)}%)))")
 	Page<CategoryItemEntity> findByCategory(CategoryItemCriteria criteria, Pageable pageable);
 }
