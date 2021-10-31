@@ -1,3 +1,4 @@
+create schema trueloveapp;
 
 SET search_path to trueloveapp;
 

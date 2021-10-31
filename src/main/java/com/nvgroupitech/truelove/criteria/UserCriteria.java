@@ -6,6 +6,9 @@ public class UserCriteria {
     private StringFilter name;
 
 	public StringFilter getName() {
+		if(name == null) {
+			name = new StringFilter();
+		}
 		return name;
 	}
 

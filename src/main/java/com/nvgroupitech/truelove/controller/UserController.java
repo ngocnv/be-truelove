@@ -1,7 +1,6 @@
 package com.nvgroupitech.truelove.controller;
 
 
-import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.util.Base64;
 import java.util.HashMap;
@@ -11,7 +10,6 @@ import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
@@ -35,8 +33,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.nvgroupitech.truelove.constant.CommonConstant;
 import com.nvgroupitech.truelove.dto.UserAuthDTO;
 import com.nvgroupitech.truelove.dto.UserDTO;

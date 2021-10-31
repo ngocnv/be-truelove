@@ -88,8 +88,7 @@ public class UserPhotoController {
     	}
      
         Page<UserPhotoDTO> page = userPhotoService.getPhotoForUser(userId,criteria, pageable);
-        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/users");
-        return new ResponseEntity<>(new PageableObject<>(page), headers, HttpStatus.OK);
+        return new ResponseEntity<>(new PageableObject<>(page), HttpStatus.OK);
     }
     
     @PostMapping(path = "/users/{userId}/photos:upload")
@@ -157,7 +156,6 @@ public class UserPhotoController {
     	}
     	
     	userPhotoService.deletePhoto(photo.get().getPhotoId());
-    	
     	return new ResponseEntity<>(response,HttpStatus.OK);
     }
 
