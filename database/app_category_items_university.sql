@@ -1,579 +1,782 @@
+-- -------------------------------------------------------------
+-- TablePlus 4.5.0(396)
+--
+-- https://tableplus.com/
+--
+-- Database: truelove
+-- Generation Time: 2021-11-01 22:34:45.1660
+-- -------------------------------------------------------------
 
-SET search_path to trueloveapp;
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y tế Bình Phước', 'Trường Cao đẳng Y tế Bình Phước','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y tế Đồng Nai', 'Trường Cao đẳng Y tế Đồng Nai','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kinh tế - Công nghệ TP.HCM', 'Trường Cao đẳng Kinh tế - Công nghệ TP.HCM','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Bến Tre', 'Trường Cao đẳng Bến Tre','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Cần Thơ', 'Trường Cao đẳng Cần Thơ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Cơ điện và Nông nghiệp Nam Bộ', 'Trường Cao đẳng Cơ điện và Nông nghiệp Nam Bộ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Cộng đồng Cà Mau', 'Trường Cao đẳng Cộng đồng Cà Mau','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Cộng đồng Đồng Tháp', 'Trường Cao đẳng Cộng đồng Đồng Tháp','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Cộng đồng Hậu Giang', 'Trường Cao đẳng Cộng đồng Hậu Giang','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Cộng đồng Sóc Trăng', 'Trường Cao đẳng Cộng đồng Sóc Trăng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Cộng đồng Vĩnh Long', 'Trường Cao đẳng Cộng đồng Vĩnh Long','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kiên Giang', 'Trường Cao đẳng Kiên Giang','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kinh tế - Kỹ thuật Bạc Liêu', 'Trường Cao đẳng Kinh tế - Kỹ thuật Bạc Liêu','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kinh tế - Kỹ thuật Cần Thơ', 'Trường Cao đẳng Kinh tế - Kỹ thuật Cần Thơ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kinh tế - Tài chính Vĩnh Long', 'Trường Cao đẳng Kinh tế - Tài chính Vĩnh Long','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Nông nghiệp Nam Bộ', 'Trường Cao đẳng Nông nghiệp Nam Bộ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Sư phạm Cà Mau', 'Trường Cao đẳng Sư phạm Cà Mau','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Sư phạm Kiên Giang', 'Trường Cao đẳng Sư phạm Kiên Giang','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Sư phạm Long An', 'Trường Cao đẳng Sư phạm Long An','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Sư phạm Sóc Trăng', 'Trường Cao đẳng Sư phạm Sóc Trăng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Sư phạm Vĩnh Long', 'Trường Cao đẳng Sư phạm Vĩnh Long','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Cao đẳng Văn hoá Nghệ thuật Cần Thơ', 'Cao đẳng Văn hoá Nghệ thuật Cần Thơ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y tế Bạc Liêu', 'Trường Cao đẳng Y tế Bạc Liêu','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y tế Cà Mau', 'Trường Cao đẳng Y tế Cà Mau','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y tế Cần Thơ', 'Trường Cao đẳng Y tế Cần Thơ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y tế Đồng Tháp', 'Trường Cao đẳng Y tế Đồng Tháp','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y tế Kiên Giang', 'Trường Cao đẳng Y tế Kiên Giang','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y tế Tiền Giang', 'Trường Cao đẳng Y tế Tiền Giang','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y tế Trà Vinh', 'Trường Cao đẳng Y tế Trà Vinh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng ASEAN', 'Trường Cao đẳng ASEAN','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Âu Lạc Huế', 'Trường Cao đẳng Âu Lạc Huế','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Bách khoa Đà Nẵng', 'Trường Cao đẳng Bách khoa Đà Nẵng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Bách khoa Hưng Yên', 'Trường Cao đẳng Bách khoa Hưng Yên','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Bách Việt', 'Trường Cao đẳng Bách Việt','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Bán công Công nghệ và Quản trị doanh nghiệp', 'Trường Cao đẳng Bán công Công nghệ và Quản trị doanh nghiệp','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Công nghệ Bắc Hà', 'Trường Cao đẳng Công nghệ Bắc Hà','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Công nghệ Hà Nội', 'Trường Cao đẳng Công nghệ Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Công nghệ thông tin Tp.HCM', 'Trường Cao đẳng Công nghệ thông tin Tp.HCM','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Công nghệ và Thương mại Hà Nội', 'Trường Cao đẳng Công nghệ và Thương mại Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Đại Việt - Hà Nội', 'Trường Cao đẳng Đại Việt - Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Đại Việt Đà Nẵng', 'Trường Cao đẳng Đại Việt Đà Nẵng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Đại Việt Sài Gòn', 'Trường Cao đẳng Đại Việt Sài Gòn','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Dược Hà Nội', 'Trường Cao đẳng Dược Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Hoan Châu', 'Trường Cao đẳng Hoan Châu','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kinh tế Công nghệ Thành phố Hồ Chí Minh', 'Trường Cao đẳng Kinh tế Công nghệ Thành phố Hồ Chí Minh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kinh tế Kỹ thuật Đông Du - Đà Nẵng', 'Trường Cao đẳng Kinh tế Kỹ thuật Đông Du - Đà Nẵng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kinh tế Kỹ thuật Hà Nội', 'Trường Cao đẳng Kinh tế Kỹ thuật Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công nghệ Bách Khoa', 'Trường Cao đẳng Kỹ thuật Công nghệ Bách Khoa','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công nghệ Vạn Xuân', 'Trường Cao đẳng Kỹ thuật Công nghệ Vạn Xuân','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Lạc Việt - Đà Nẵng', 'Trường Cao đẳng Lạc Việt - Đà Nẵng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Miền Nam', 'Trường Cao đẳng Miền Nam','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Ngoại ngữ - Công nghệ Việt Nhật', 'Trường Cao đẳng Ngoại ngữ - Công nghệ Việt Nhật','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Phương Đông - Đà Nẵng', 'Trường Cao đẳng Phương Đông - Đà Nẵng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Phương Đông - Quảng Nam', 'Trường Cao đẳng Phương Đông - Quảng Nam','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Quảng Ngãi', 'Trường Cao đẳng Quảng Ngãi','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường cao đẳng Quốc tế BTEC FPT', 'Trường cao đẳng Quốc tế BTEC FPT','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Quốc tế Pegasus', 'Trường Cao đẳng Quốc tế Pegasus','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Tâm Trí', 'Trường Cao đẳng Tâm Trí','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Tư thục Đức Trí - Đà Nẵng', 'Trường Cao đẳng Tư thục Đức Trí - Đà Nẵng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Văn hoá Nghệ thuật và Du lịch Sài Gòn', 'Trường Cao đẳng Văn hoá Nghệ thuật và Du lịch Sài Gòn','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Viễn Đông', 'Trường Cao đẳng Viễn Đông','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Việt - Anh', 'Trường Cao đẳng Việt - Anh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Việt Mỹ', 'Trường Cao đẳng Việt Mỹ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y Dược Hồ Chí Minh', 'Trường Cao đẳng Y Dược Hồ Chí Minh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y Dược Hợp Lực - Thanh Hóa', 'Trường Cao đẳng Y Dược Hợp Lực - Thanh Hóa','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y Dược Pasteur Hà Nội', 'Trường Cao đẳng Y Dược Pasteur Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y Dược Pasteur Thành phố Hồ Chí Minh', 'Trường Cao đẳng Y Dược Pasteur Thành phố Hồ Chí Minh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y Dược Pasteur Yên Bái', 'Trường Cao đẳng Y Dược Pasteur Yên Bái','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y Dược Phú Thọ', 'Trường Cao đẳng Y Dược Phú Thọ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y Dược Sài Gòn', 'Trường Cao đẳng Y Dược Sài Gòn','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Y khoa Phạm Ngọc Thạch', 'Trường Cao đẳng Y khoa Phạm Ngọc Thạch','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Cơ Điện và Công nghệ thực phẩm Hà Nội', 'Trường Cao đẳng Cơ Điện và Công nghệ thực phẩm Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Điện lực miền Bắc', 'Trường Cao đẳng Điện lực miền Bắc','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Đường sắt', 'Trường Cao đẳng Đường sắt','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Giao thông vận tải Trung ương I', 'Trường Cao đẳng Giao thông vận tải Trung ương I','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kỹ thuật trang thiết bị Y tế', 'Trường Cao đẳng Kỹ thuật trang thiết bị Y tế','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề An ninh - Công nghệ', 'Trường Cao đẳng nghề An ninh - Công nghệ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Bách khoa Hà Nội', 'Trường Cao đẳng nghề Bách khoa Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Bách Khoa', 'Trường Cao đẳng nghề Bách Khoa','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Cơ điện Hà Nội', 'Trường Cao đẳng nghề Cơ điện Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ cao Hà Nội', 'Trường Cao đẳng nghề Công nghệ cao Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ và Kinh tế Hà Nội', 'Trường Cao đẳng nghề Công nghệ và Kinh tế Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghiệp Hà Nội', 'Trường Cao đẳng nghề Công nghiệp Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Hùng Vương', 'Trường Cao đẳng nghề Hùng Vương','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Kinh doanh và Công nghệ Hà Nội', 'Trường Cao đẳng nghề Kinh doanh và Công nghệ Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Kỹ thuật - Công nghệ - Kinh tế Simco Sông Đà', 'Trường Cao đẳng nghề Kỹ thuật - Công nghệ - Kinh tế Simco Sông Đà','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Kỹ thuật Công nghệ', 'Trường Cao đẳng nghề Kỹ thuật Công nghệ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Kỹ thuật Mỹ nghệ Việt Nam', 'Trường Cao đẳng nghề Kỹ thuật Mỹ nghệ Việt Nam','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Nghề Kỹ thuật và Nghiệp vụ Hà Nội', 'Trường Cao đẳng Nghề Kỹ thuật và Nghiệp vụ Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Long Biên', 'Trường Cao đẳng nghề Long Biên','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Nguyễn Trãi', 'Trường Cao đẳng nghề Nguyễn Trãi','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Quốc tế Hà Nội', 'Trường Cao đẳng nghề Quốc tế Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề số 17 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 17 - Bộ Quốc phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Thăng Long', 'Trường Cao đẳng nghề Thăng Long','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Trần Hưng Đạo', 'Trường Cao đẳng nghề Trần Hưng Đạo','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Văn Lang Hà Nội', 'Trường Cao đẳng nghề Văn Lang Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Việt Nam - Hàn Quốc Thành phố Hà Nội', 'Trường Cao đẳng nghề Việt Nam - Hàn Quốc Thành phố Hà Nội','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Phú Châu', 'Trường Cao đẳng Phú Châu','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Thực hành FPT', 'Trường Cao đẳng Thực hành FPT','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Giao thông vận tải Đường thủy II', 'Trường Cao đẳng Giao thông vận tải Đường thủy II','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Giao thông vận tải Trung ương III', 'Trường Cao đẳng Giao thông vận tải Trung ương III','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kinh tế - Kỹ thuật Thủ Đức', 'Trường Cao đẳng Kinh tế - Kỹ thuật Thủ Đức','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kỹ nghệ II', 'Trường Cao đẳng Kỹ nghệ II','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Nguyễn Trường Tộ', 'Trường Cao đẳng Kỹ thuật Nguyễn Trường Tộ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ thông tin iSPACE', 'Trường Cao đẳng nghề Công nghệ thông tin iSPACE','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Du lịch Sài Gòn', 'Trường Cao đẳng nghề Du lịch Sài Gòn','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Nghề Hàng hải Thành phố Hồ Chí Minh', 'Trường Cao đẳng Nghề Hàng hải Thành phố Hồ Chí Minh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Nghề Kinh tế kỹ thuật Thành phố Hồ Chí Minh', 'Trường Cao đẳng Nghề Kinh tế kỹ thuật Thành phố Hồ Chí Minh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Sài Gòn', 'Trường Cao đẳng nghề Sài Gòn','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề số 7 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 7 - Bộ Quốc phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Nghề Thành phố Hồ Chí Minh', 'Trường Cao đẳng Nghề Thành phố Hồ Chí Minh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Quốc tế Thành phố Hồ Chí Minh', 'Trường Cao đẳng Quốc tế Thành phố Hồ Chí Minh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Thủ Thiêm - TP. Hồ Chí Minh', 'Trường Cao đẳng Thủ Thiêm - TP. Hồ Chí Minh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Nông nghiệp và Phát triển nông thôn Thanh Hóa', 'Trường Cao đẳng nghề Nông nghiệp và Phát triển nông thôn Thanh Hóa','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Cơ điện Phú Thọ', 'Trường Cao đẳng Cơ điện Phú Thọ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Cơ điện và Xây dựng Bắc Ninh', 'Trường Cao đẳng Cơ điện và Xây dựng Bắc Ninh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Cơ giới Xây dựng', 'Trường Cao đẳng Cơ giới Xây dựng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Cơ khí Nông nghiệp', 'Trường Cao đẳng Cơ khí Nông nghiệp','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Công nghiệp Bắc Ninh', 'Trường Cao đẳng Công nghiệp Bắc Ninh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Công nghiệp Dệt - May Nam Định', 'Trường Cao đẳng Công nghiệp Dệt - May Nam Định','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Công Thương Thái Nguyên', 'Trường Cao đẳng Công Thương Thái Nguyên','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Du lịch – Thương mại Nghệ An', 'Trường Cao đẳng Du lịch – Thương mại Nghệ An','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công nghệ Hòa Bình', 'Trường Cao đẳng Kỹ thuật Công nghệ Hòa Bình','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công nghệ Nam Định', 'Trường Cao đẳng Kỹ thuật Công nghệ Nam Định','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kỹ thuật công nghệ Sơn La', 'Trường Cao đẳng Kỹ thuật công nghệ Sơn La','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kỹ thuật và Công nghệ tỉnh Hà Giang', 'Trường Cao đẳng Kỹ thuật và Công nghệ tỉnh Hà Giang','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Lào Cai', 'Trường Cao đẳng Lào Cai','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề An Nhất Vinh', 'Trường Cao đẳng nghề An Nhất Vinh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Bắc Giang', 'Trường Cao đẳng nghề Bắc Giang','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Bắc Nam', 'Trường Cao đẳng nghề Bắc Nam','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Bách nghệ Hải Phòng', 'Trường Cao đẳng nghề Bách nghệ Hải Phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Cơ điện Tây Bắc', 'Trường Cao đẳng nghề Cơ điện Tây Bắc','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Cơ điện và Thủy lợi', 'Trường Cao đẳng nghề Cơ điện và Thủy lợi','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Cơ điện xây dựng Tam Điệp', 'Trường Cao đẳng nghề Cơ điện xây dựng Tam Điệp','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Cơ giới Ninh Bình', 'Trường Cao đẳng nghề Cơ giới Ninh Bình','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ Giấy và Cơ điện', 'Trường Cao đẳng nghề Công nghệ Giấy và Cơ điện','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ Hà Tĩnh', 'Trường Cao đẳng nghề Công nghệ Hà Tĩnh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ LICOGI Thanh Hóa', 'Trường Cao đẳng nghề Công nghệ LICOGI Thanh Hóa','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ và Nông lâm Đông Bắc', 'Trường Cao đẳng nghề Công nghệ và Nông lâm Đông Bắc','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ và Nông lâm Phú Thọ', 'Trường Cao đẳng nghề Công nghệ và Nông lâm Phú Thọ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ Việt- Hàn Bắc Giang', 'Trường Cao đẳng nghề Công nghệ Việt- Hàn Bắc Giang','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ, Kinh tế và Chế biến lâm sản', 'Trường Cao đẳng nghề Công nghệ, Kinh tế và Chế biến lâm sản','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ, Kinh tế và Thủy sản', 'Trường Cao đẳng nghề Công nghệ, Kinh tế và Thủy sản','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghiệp Hải Phòng', 'Trường Cao đẳng nghề Công nghiệp Hải Phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghiệp Thanh Hóa', 'Trường Cao đẳng nghề Công nghiệp Thanh Hóa','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghiệp Việt Bắc - Vinacomin', 'Trường Cao đẳng nghề Công nghiệp Việt Bắc - Vinacomin','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công thương Việt Nam', 'Trường Cao đẳng nghề Công thương Việt Nam','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Đại An', 'Trường Cao đẳng nghề Đại An','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề dân tộc nội trú Bắc Kạn', 'Trường Cao đẳng nghề dân tộc nội trú Bắc Kạn','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Dịch vụ Hàng không AIRSERCO', 'Trường Cao đẳng nghề Dịch vụ Hàng không AIRSERCO','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Điện Biên', 'Trường Cao đẳng nghề Điện Biên','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Du lịch và dịch vụ Hải Phòng', 'Trường Cao đẳng nghề Du lịch và dịch vụ Hải Phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Duyên Hải', 'Trường Cao đẳng nghề Duyên Hải','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Nghề Giao thông Cơ điện Quảng Ninh', 'Trường Cao đẳng Nghề Giao thông Cơ điện Quảng Ninh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Giao thông Vận tải Đường thủy I', 'Trường Cao đẳng nghề Giao thông Vận tải Đường thủy I','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Giao thông vận tải trung ương II', 'Trường Cao đẳng nghề Giao thông vận tải trung ương II','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Hà Nam', 'Trường Cao đẳng nghề Hà Nam','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Hải Dương', 'Trường Cao đẳng nghề Hải Dương','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Kinh tế - Công nghệ VICET', 'Trường Cao đẳng nghề Kinh tế - Công nghệ VICET','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Kinh tế - Kỹ thuật Bắc Bộ', 'Trường Cao đẳng nghề Kinh tế - Kỹ thuật Bắc Bộ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Kinh tế - Kỹ thuật số 1 Nghệ An', 'Trường Cao đẳng nghề Kinh tế - Kỹ thuật số 1 Nghệ An','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Kinh tế - Kỹ thuật Tô Hiệu', 'Trường Cao đẳng nghề Kinh tế - Kỹ thuật Tô Hiệu','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Kỹ thuật - Công nghệ LOD', 'Trường Cao đẳng nghề Kỹ thuật - Công nghệ LOD','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Kỹ thuật Công nghiệp Việt Nam - Hàn Quốc Nghệ An', 'Trường Cao đẳng nghề Kỹ thuật Công nghiệp Việt Nam - Hàn Quốc Nghệ An','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Nghề Kỹ thuật y tế Thăng Long', 'Trường Cao đẳng Nghề Kỹ thuật y tế Thăng Long','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Nghề Kỹ thuật-Công nghệ Tuyên Quang', 'Trường Cao đẳng Nghề Kỹ thuật-Công nghệ Tuyên Quang','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Lam Kinh', 'Trường Cao đẳng nghề Lam Kinh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Lạng Sơn', 'Trường Cao đẳng nghề Lạng Sơn','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Lao động - Xã hội Hải Phòng', 'Trường Cao đẳng nghề Lao động - Xã hội Hải Phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề LILAMA-1', 'Trường Cao đẳng nghề LILAMA-1','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Phú Thọ', 'Trường Cao đẳng nghề Phú Thọ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Quản lý và Công nghệ', 'Trường Cao đẳng nghề Quản lý và Công nghệ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề số 1 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 1 - Bộ Quốc phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề số 13 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 13 - Bộ Quốc phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề số 19 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 19 - Bộ Quốc phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề số 2 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 2 - Bộ Quốc phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề số 20 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 20 - Bộ Quốc phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề số 3 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 3 - Bộ Quốc phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề số 4 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 4 - Bộ Quốc phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Sông Đà', 'Trường Cao đẳng nghề Sông Đà','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Thái Bình', 'Trường Cao đẳng nghề Thái Bình','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Thương mại và Công nghiệp', 'Trường Cao đẳng nghề Thương mại và Công nghiệp','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Việt - Hàn Quảng Ninh', 'Trường Cao đẳng nghề Việt - Hàn Quảng Ninh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Việt Xô số 1', 'Trường Cao đẳng nghề Việt Xô số 1','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Việt-Đức Hà Tĩnh', 'Trường Cao đẳng nghề Việt-Đức Hà Tĩnh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Viglacera', 'Trường Cao đẳng nghề Viglacera','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Vĩnh Phúc', 'Trường Cao đẳng nghề Vĩnh Phúc','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Yên Bái', 'Trường Cao đẳng nghề Yên Bái','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Than - Khoáng sản Việt Nam', 'Trường Cao đẳng Than - Khoáng sản Việt Nam','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Việt Đức Nghệ An', 'Trường Cao đẳng Việt Đức Nghệ An','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng VMU', 'Trường Cao đẳng VMU','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Cơ điện – Xây dựng và Nông lâm Trung Bộ', 'Trường Cao đẳng Cơ điện – Xây dựng và Nông lâm Trung Bộ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Công nghệ Quốc tế LILAMA-2', 'Trường Cao đẳng Công nghệ Quốc tế LILAMA-2','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Công nghệ Tây Nguyên', 'Trường Cao đẳng Công nghệ Tây Nguyên','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Công nghệ và Nông lâm Nam Bộ', 'Trường Cao đẳng Công nghệ và Nông lâm Nam Bộ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Dầu khí', 'Trường Cao đẳng Dầu khí','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Đồng Khởi', 'Trường Cao đẳng Đồng Khởi','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Du lịch Cần Thơ', 'Trường Cao đẳng Du lịch Cần Thơ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Du lịch Đà Lạt', 'Trường Cao đẳng Du lịch Đà Lạt','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Du lịch Đà Nẵng', 'Trường Cao đẳng Du lịch Đà Nẵng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Du lịch Huế', 'Trường Cao đẳng Du lịch Huế','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Du lịch Nha Trang', 'Trường Cao đẳng Du lịch Nha Trang','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Du lịch Vũng Tàu', 'Trường Cao đẳng Du lịch Vũng Tàu','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Hòa Bình Xuân Lộc', 'Trường Cao đẳng Hòa Bình Xuân Lộc','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kỹ nghệ Dung Quất', 'Trường Cao đẳng Kỹ nghệ Dung Quất','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công nghệ Bà Rịa - Vũng Tàu', 'Trường Cao đẳng Kỹ thuật Công nghệ Bà Rịa - Vũng Tàu','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công nghệ Nha Trang', 'Trường Cao đẳng Kỹ thuật Công nghệ Nha Trang','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công nghệ Quy Nhơn', 'Trường Cao đẳng Kỹ thuật Công nghệ Quy Nhơn','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Đắk Lắk', 'Trường Cao đẳng Kỹ thuật Đắk Lắk','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Đồng Nai', 'Trường Cao đẳng Kỹ thuật Đồng Nai','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề An Giang', 'Trường Cao đẳng nghề An Giang','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Bạc Liêu', 'Trường Cao đẳng nghề Bạc Liêu','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Bình Phước', 'Trường Cao đẳng nghề Bình Phước','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Bình Thuận', 'Trường Cao đẳng nghề Bình Thuận','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Cần Thơ', 'Trường Cao đẳng nghề Cần Thơ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Cơ giới Quảng Ngãi', 'Trường Cao đẳng nghề Cơ giới Quảng Ngãi','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Cơ giới và Thủy lợi', 'Trường Cao đẳng nghề Cơ giới và Thủy lợi','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ cao Đồng An', 'Trường Cao đẳng nghề Công nghệ cao Đồng An','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ cao Đồng Nai', 'Trường Cao đẳng nghề Công nghệ cao Đồng Nai','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ Sài Gòn', 'Trường Cao đẳng nghề Công nghệ Sài Gòn','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Đà Lạt', 'Trường Cao đẳng nghề Đà Lạt','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Đà Nẵng', 'Trường Cao đẳng nghề Đà Nẵng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Đồng Tháp', 'Trường Cao đẳng nghề Đồng Tháp','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Hoa Sen', 'Trường Cao đẳng nghề Hoa Sen','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Nghề Khách sạn Du lịch Quốc tế IMPERIAL', 'Trường Cao đẳng Nghề Khách sạn Du lịch Quốc tế IMPERIAL','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Kiên Giang', 'Trường Cao đẳng nghề Kiên Giang','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Kỹ thuật Công nghệ LADEC', 'Trường Cao đẳng nghề Kỹ thuật Công nghệ LADEC','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Kỹ thuật thiết bị Y tế Bình Dương', 'Trường Cao đẳng nghề Kỹ thuật thiết bị Y tế Bình Dương','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Long An', 'Trường Cao đẳng nghề Long An','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Nguyễn Tri Phương', 'Trường Cao đẳng nghề Nguyễn Tri Phương','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Nguyễn Văn Trỗi', 'Trường Cao đẳng nghề Nguyễn Văn Trỗi','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Ninh Thuận', 'Trường Cao đẳng nghề Ninh Thuận','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Phú Yên', 'Trường Cao đẳng nghề Phú Yên','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Quảng Bình', 'Trường Cao đẳng nghề Quảng Bình','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Quảng Nam', 'Trường Cao đẳng nghề Quảng Nam','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Quốc tế Nam Việt', 'Trường Cao đẳng nghề Quốc tế Nam Việt','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề số 21 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 21 - Bộ Quốc phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề số 22 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 22 - Bộ Quốc phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề số 23 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 23 - Bộ Quốc phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề số 5 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 5 - Bộ Quốc phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề số 8 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 8 - Bộ Quốc phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề số 9 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 9 - Bộ Quốc phòng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Sóc Trăng', 'Trường Cao đẳng nghề Sóc Trăng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Tây Ninh', 'Trường Cao đẳng nghề Tây Ninh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Tây Sài Gòn', 'Trường Cao đẳng nghề Tây Sài Gòn','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Nghề Thừa Thiên Huế', 'Trường Cao đẳng Nghề Thừa Thiên Huế','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Tiền Giang', 'Trường Cao đẳng nghề Tiền Giang','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Trà Vinh', 'Trường Cao đẳng nghề Trà Vinh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Trần Đại Nghĩa', 'Trường Cao đẳng nghề Trần Đại Nghĩa','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Việt Nam - Hàn Quốc Cà Mau', 'Trường Cao đẳng nghề Việt Nam - Hàn Quốc Cà Mau','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Việt Nam - Singapore', 'Trường Cao đẳng nghề Việt Nam - Singapore','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Việt Nam-Hàn Quốc Quảng Ngãi', 'Trường Cao đẳng nghề Việt Nam-Hàn Quốc Quảng Ngãi','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Việt-Úc Đà Nẵng', 'Trường Cao đẳng nghề Việt-Úc Đà Nẵng','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng nghề Vĩnh Long', 'Trường Cao đẳng nghề Vĩnh Long','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Quốc tế Vabis', 'Trường Cao đẳng Quốc tế Vabis','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Thaco', 'Trường Cao đẳng Thaco','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Cao đẳng Việt Nam-Hàn Quốc Bình Dương', 'Trường Cao đẳng Việt Nam-Hàn Quốc Bình Dương','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Lâm nghiệp Việt Nam tại Đồng Nai', 'Phân hiệu Đại học Lâm nghiệp Việt Nam tại Đồng Nai','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Bách Khoa tại Bến Tre', 'Phân hiệu Đại học Bách Khoa tại Bến Tre','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Bình Dương tại Cà Mau', 'Phân hiệu Đại học Bình Dương tại Cà Mau','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Công nghệ Giao thông Vận tải tại Thái Nguyên', 'Phân hiệu Đại học Công nghệ Giao thông Vận tải tại Thái Nguyên','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Công nghệ Giao thông Vận tải tại Vĩnh Phúc', 'Phân hiệu Đại học Công nghệ Giao thông Vận tải tại Vĩnh Phúc','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Công nghệ Thông tin tại Bến Tre', 'Phân hiệu Đại học Công nghệ Thông tin tại Bến Tre','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Công nghiệp Thành phố Hồ Chí Minh tại Quảng Ngãi', 'Phân hiệu Đại học Công nghiệp Thành phố Hồ Chí Minh tại Quảng Ngãi','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Khoa học Tự nhiên tại Bến Tre', 'Phân hiệu Đại học Khoa học Tự nhiên tại Bến Tre','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Khoa học Xã hội và Nhân văn tại Bến Tre', 'Phân hiệu Đại học Khoa học Xã hội và Nhân văn tại Bến Tre','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Kinh tế - Luật tại Bến Tre', 'Phân hiệu Đại học Kinh tế - Luật tại Bến Tre','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Mỏ-Địa chất tại Quảng Ninh', 'Phân hiệu Đại học Mỏ-Địa chất tại Quảng Ninh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Mỏ-Địa chất tại Vũng Tàu', 'Phân hiệu Đại học Mỏ-Địa chất tại Vũng Tàu','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Nội vụ Hà Nội tại Quảng Nam', 'Phân hiệu Đại học Nội vụ Hà Nội tại Quảng Nam','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Nông Lâm Thành phố Hồ Chí Minh tại Gia Lai', 'Phân hiệu Đại học Nông Lâm Thành phố Hồ Chí Minh tại Gia Lai','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Nông Lâm Thành phố Hồ Chí Minh tại Ninh Thuận', 'Phân hiệu Đại học Nông Lâm Thành phố Hồ Chí Minh tại Ninh Thuận','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Tài chính - Kế toán tại Thừa Thiên Huế', 'Phân hiệu Đại học Tài chính - Kế toán tại Thừa Thiên Huế','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Y Hà Nội tại Thanh Hóa', 'Phân hiệu Đại học Y Hà Nội tại Thanh Hóa','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Học viện Phụ nữ Việt Nam tại Thành phố Hồ Chí Minh', 'Phân hiệu Học viện Phụ nữ Việt Nam tại Thành phố Hồ Chí Minh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Tài nguyên và Môi trường Hà Nội tại Thanh Hóa', 'Phân hiệu Đại học Tài nguyên và Môi trường Hà Nội tại Thanh Hóa','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Phân hiệu Đại học Cần Thơ tại Hậu Giang', 'Phân hiệu Đại học Cần Thơ tại Hậu Giang','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Đại học Giao thông Vận tải cơ sở 2', 'Trường Đại học Giao thông Vận tải cơ sở 2','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Đại học Kiến trúc Thành phố Hồ Chí Minh cơ sở Cần Thơ', 'Trường Đại học Kiến trúc Thành phố Hồ Chí Minh cơ sở Cần Thơ','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Đại học Kiến trúc Thành phố Hồ Chí Minh tại Đà Lạt', 'Trường Đại học Kiến trúc Thành phố Hồ Chí Minh tại Đà Lạt','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Đại học Lao động - Xã hội cơ sở 2, Thành phố Hồ Chí Minh', 'Trường Đại học Lao động - Xã hội cơ sở 2, Thành phố Hồ Chí Minh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Đại học Lao động - Xã hội, cơ sở Sơn Tây', 'Trường Đại học Lao động - Xã hội, cơ sở Sơn Tây','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Đại học Ngoại thương cơ sở 2, Thành phố Hồ Chí Minh', 'Trường Đại học Ngoại thương cơ sở 2, Thành phố Hồ Chí Minh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Đại học Ngoại thương, cơ sở Quảng Ninh', 'Trường Đại học Ngoại thương, cơ sở Quảng Ninh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Đại học Thủy lợi cơ sở 2, Thành phố Hồ Chí Minh', 'Đại học Thủy lợi cơ sở 2, Thành phố Hồ Chí Minh','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Đại học Tôn Đức Thắng, cơ sở Bảo Lộc', 'Trường Đại học Tôn Đức Thắng, cơ sở Bảo Lộc','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Đại học Tôn Đức Thắng, cơ sở Cà Mau', 'Trường Đại học Tôn Đức Thắng, cơ sở Cà Mau','VN', '2021-04-29 11:02:18.880674', NULL);
-INSERT INTO "trueloveapp"."app_category_items" ( "category", "name", "description", "language","created_date", "modified_date") VALUES
-('UNIVERSITY', 'Trường Đại học Tôn Đức Thắng, cơ sở Nha Trang', 'Trường Đại học Tôn Đức Thắng, cơ sở Nha Trang','VN', '2021-04-29 11:02:18.880674', NULL);
 
+INSERT INTO "trueloveapp"."app_category_items" ("item_id", "category", "name", "description", "language", "created_date", "modified_date") VALUES
+('00a1dcc0-8e23-4865-87b3-018d7505ad60', 'UNIVERSITY', 'Trường Đại học Buôn Ma Thuột', 'Trường Đại học Buôn Ma Thuột', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('011c0c46-23f2-41ca-8456-502bdb30a10b', 'UNIVERSITY', 'Trường Cao đẳng nghề Vĩnh Long', 'Trường Cao đẳng nghề Vĩnh Long', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('012417fb-12db-4c81-9c1e-8e4fe7a708cd', 'UNIVERSITY', 'Trường Cao đẳng Giao thông vận tải Trung ương III', 'Trường Cao đẳng Giao thông vận tải Trung ương III', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('016df04c-330f-4d41-9110-7f5fe4f25572', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công nghệ Bà Rịa - Vũng Tàu', 'Trường Cao đẳng Kỹ thuật Công nghệ Bà Rịa - Vũng Tàu', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('019e7e7c-cf9b-4c63-a5ed-a9889dbf5ce4', 'UNIVERSITY', 'Trường Cao đẳng Dầu khí', 'Trường Cao đẳng Dầu khí', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('02583f8c-9d93-45ab-bc2c-8fbcf8aaf32e', 'UNIVERSITY', 'Trường Đại học Bạc Liêu', 'Trường Đại học Bạc Liêu', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('02f3eaad-3d00-4184-8031-ebf0012ce0e5', 'UNIVERSITY', 'Trường Cao đẳng Y tế Hà Nam', 'Trường Cao đẳng Y tế Hà Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('03918497-dd58-40c7-97bb-6f8b160ff6c8', 'UNIVERSITY', 'Trường Cao đẳng Công nghiệp Quốc phòng', 'Trường Cao đẳng Công nghiệp Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('03a80655-61ea-4142-a7e4-b9d0e44634b2', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật trang thiết bị Y tế', 'Trường Cao đẳng Kỹ thuật trang thiết bị Y tế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0428661d-b15a-453f-8213-21b5ceff841b', 'UNIVERSITY', 'Trường Cao đẳng nghề Kinh doanh và Công nghệ Hà Nội', 'Trường Cao đẳng nghề Kinh doanh và Công nghệ Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0446b096-4746-4d34-a937-264d97c5c68f', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công nghệ Hòa Bình', 'Trường Cao đẳng Kỹ thuật Công nghệ Hòa Bình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0461bf33-d291-4500-a16b-9ba2fdedae30', 'UNIVERSITY', 'Trường Cao đẳng Giao thông vận tải Trung ương I', 'Trường Cao đẳng Giao thông vận tải Trung ương I', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0499eea1-b432-445b-8446-ff64ddb597a9', 'UNIVERSITY', 'Trường Cao đẳng nghề Lam Kinh', 'Trường Cao đẳng nghề Lam Kinh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('04b16913-10c5-481e-9b1b-c849a0b3b8f9', 'UNIVERSITY', 'Trường Đại học Thủy lợi', 'Trường Đại học Thủy lợi', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('04bb38eb-b302-4e53-be10-ce8813f0ef27', 'UNIVERSITY', 'Trường Đại học Giao thông Vận tải', 'Trường Đại học Giao thông Vận tải', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('04bce077-7d80-47b6-9a91-b14079bd96d8', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Lào Cai', 'Trường Cao đẳng Cộng đồng Lào Cai', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('050be86d-818d-41aa-90fb-aa535557bc4b', 'UNIVERSITY', 'Trường Cao đẳng nghề Cơ điện và Thủy lợi', 'Trường Cao đẳng nghề Cơ điện và Thủy lợi', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('05589bec-1a16-4b6e-a70c-37a0e3dac4f4', 'UNIVERSITY', 'Trường Đại học Luật Thành phố Hồ Chí Minh', 'Trường Đại học Luật Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('05890987-a47e-48d6-b87c-43ab7a127809', 'UNIVERSITY', 'Trường Đại học Swinburne Việt Nam', 'Trường Đại học Swinburne Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('06000239-defb-4655-9012-647a13d628df', 'UNIVERSITY', 'Trường Đại học Thái Bình Dương', 'Trường Đại học Thái Bình Dương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('06416ded-525d-4a29-933c-253f0b3df93e', 'UNIVERSITY', 'Trường Cao đẳng nghề số 20 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 20 - Bộ Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('064baeea-bc57-4141-8636-7569080024e9', 'UNIVERSITY', 'Trường Cao đẳng Hòa Bình Xuân Lộc', 'Trường Cao đẳng Hòa Bình Xuân Lộc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('06be3383-6d3b-4347-bdad-1ff8ba5cc6f6', 'UNIVERSITY', 'Trường Cao đẳng Giao thông Huế', 'Trường Cao đẳng Giao thông Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('06de1cdc-6915-457c-8244-99e0df710f10', 'UNIVERSITY', 'Trường Đại học Kinh tế Công nghiệp Long An', 'Trường Đại học Kinh tế Công nghiệp Long An', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('070b43dd-a863-4d33-9985-74eb75dd5cee', 'UNIVERSITY', 'Phân viện Phú Yên - Học viện Ngân hàng', 'Phân viện Phú Yên - Học viện Ngân hàng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0731f30c-e15f-4fcc-a2da-f4aadf1cadbd', 'UNIVERSITY', 'Trường Đại học Công nghiệp Việt-Hung', 'Trường Đại học Công nghiệp Việt-Hung', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('07525ff9-491a-47f2-bb4d-254df79c4034', 'UNIVERSITY', 'Trường Cao đẳng Du lịch Huế', 'Trường Cao đẳng Du lịch Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('07694662-13f0-4b7b-85f1-22fac719f301', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ và Kinh tế Hà Nội', 'Trường Cao đẳng nghề Công nghệ và Kinh tế Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('07c82904-a17c-4082-a56c-e6c10c7f2dd9', 'UNIVERSITY', 'Trường Cao đẳng nghề Giao thông Vận tải Đường thủy I', 'Trường Cao đẳng nghề Giao thông Vận tải Đường thủy I', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('08724223-a46f-44b5-81c6-7e5c74081976', 'UNIVERSITY', 'Trường Đại học Kiến trúc Thành phố Hồ Chí Minh cơ sở Cần Thơ', 'Trường Đại học Kiến trúc Thành phố Hồ Chí Minh cơ sở Cần Thơ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('08b5307f-b7ae-4a9c-8bbf-3ad06da7127a', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công nghệ Nha Trang', 'Trường Cao đẳng Kỹ thuật Công nghệ Nha Trang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('08cff1c1-7315-436e-95e6-17e5e9e2d2d4', 'UNIVERSITY', 'Học viện Phòng không - Không quân', 'Học viện Phòng không - Không quân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('08f97f78-35e0-48aa-aaa9-347595db6a34', 'UNIVERSITY', 'Trường Cao đẳng nghề Cơ điện xây dựng Tam Điệp', 'Trường Cao đẳng nghề Cơ điện xây dựng Tam Điệp', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('091a57aa-edce-4e74-9b64-44a11369ffba', 'UNIVERSITY', 'Trường Sĩ quan Đặc công', 'Trường Sĩ quan Đặc công', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('09597036-8133-493e-9ed8-3cc03c050076', 'UNIVERSITY', 'Trường Cao đẳng Y tế Lạng Sơn', 'Trường Cao đẳng Y tế Lạng Sơn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('099250bd-0287-47dc-863d-8b819073c4cf', 'UNIVERSITY', 'Trường Đại học Sao Đỏ', 'Trường Đại học Sao Đỏ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('09ec3efc-c500-43c5-8771-8bc3194bffa5', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Yên Bái', 'Trường Cao đẳng Sư phạm Yên Bái', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0a764e3d-333b-45a8-9f5d-bd6641945eb9', 'UNIVERSITY', 'Trường Đại học Sư phạm Thành phố Hồ Chí Minh', 'Trường Đại học Sư phạm Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0ac54bf3-c66c-4987-83f9-bfa5df95b701', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ Việt- Hàn Bắc Giang', 'Trường Cao đẳng nghề Công nghệ Việt- Hàn Bắc Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0ad8e3f6-a6ca-44f9-9f12-3c3b81750c05', 'UNIVERSITY', 'Trường Đại học Thành Đô', 'Trường Đại học Thành Đô', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0b387a5e-291a-4c4f-a5e4-c08ec8cc53b0', 'UNIVERSITY', 'Trường Đại học Bách khoa, Đại học Đà Nẵng', 'Trường Đại học Bách khoa, Đại học Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0b50e595-0daf-4382-831c-a908948b2d66', 'UNIVERSITY', 'Trường Đại học Y tế Công cộng', 'Trường Đại học Y tế Công cộng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0b6fdcb4-0a17-4e61-a3a3-4e6ef7b8354a', 'UNIVERSITY', 'Trường Cao đẳng Y tế Kiên Giang', 'Trường Cao đẳng Y tế Kiên Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0bb9ebb1-f0b3-435d-9dce-f6e8d386af4d', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Lào Cai', 'Trường Cao đẳng Sư phạm Lào Cai', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0bbc2b1d-22ab-492f-821b-b8f229663be6', 'UNIVERSITY', 'Trường Cao đẳng nghề số 9 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 9 - Bộ Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0c221c31-7a9a-4499-a22e-f8a89eee1fc4', 'UNIVERSITY', 'Phân hiệu Đại học Quốc gia Thành phố Hồ Chí Minh tại Bến Tre', 'Phân hiệu Đại học Quốc gia Thành phố Hồ Chí Minh tại Bến Tre', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0c652e39-c4c9-477d-a98d-d7552dad440f', 'UNIVERSITY', 'Trường Cao đẳng nghề Cơ điện Tây Bắc', 'Trường Cao đẳng nghề Cơ điện Tây Bắc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0c963e65-1c09-48bc-90d8-eeec4d71340f', 'UNIVERSITY', 'Trường Đại học Quốc tế Miền Đông', 'Trường Đại học Quốc tế Miền Đông', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0cc548d2-cab7-4abb-82c3-4c632edd5398', 'UNIVERSITY', 'Trường Cao đẳng Công nghiệp Huế', 'Trường Cao đẳng Công nghiệp Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0d531641-cf3c-46bf-affa-d38cffc5a279', 'UNIVERSITY', 'Trường Cao đẳng An ninh Nhân dân I', 'Trường Cao đẳng An ninh Nhân dân I', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0e54f144-abf2-48dc-9340-d5c451697682', 'UNIVERSITY', 'Trường Cao đẳng Y tế Trà Vinh', 'Trường Cao đẳng Y tế Trà Vinh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0e66414f-52ec-4786-ac0d-aa3acea97003', 'UNIVERSITY', 'Trường Cao đẳng Phương Đông - Đà Nẵng', 'Trường Cao đẳng Phương Đông - Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0ec07b8f-2a4c-4eda-aa3a-91183085190b', 'UNIVERSITY', 'Trường Đại học Mỹ thuật Công nghiệp', 'Trường Đại học Mỹ thuật Công nghiệp', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0fdcfa09-48f0-4935-a657-93ea6a7c4037', 'UNIVERSITY', 'Trường Cao đẳng Phú Châu', 'Trường Cao đẳng Phú Châu', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('0fe40f0f-5035-4229-85e6-ade833919a5d', 'UNIVERSITY', 'Trường Đại học Hùng Vương', 'Trường Đại học Hùng Vương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1014f8fb-e07c-41e9-85ac-f3153a89c879', 'UNIVERSITY', 'Trường Cao đẳng Y tế Phú Thọ', 'Trường Cao đẳng Y tế Phú Thọ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1069c6d4-fd40-4675-b594-1539efcf13fe', 'UNIVERSITY', 'Trường Đại học Công nghiệp Hà Nội', 'Trường Đại học Công nghiệp Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('106f90f0-8382-4cb7-b959-f38efd6301dd', 'UNIVERSITY', 'Trường Cao đẳng Kỹ nghệ Dung Quất', 'Trường Cao đẳng Kỹ nghệ Dung Quất', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('107e1bca-bceb-4373-a738-c041de6887f2', 'UNIVERSITY', 'Trường Đại học Đà Lạt', 'Trường Đại học Đà Lạt', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('10e62000-f366-43f6-93c3-85d09e2f2a15', 'UNIVERSITY', 'Trường Cao đẳng Cơ khí Nông nghiệp', 'Trường Cao đẳng Cơ khí Nông nghiệp', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('11963540-b14a-4f06-a3a1-db3dc79f5eda', 'UNIVERSITY', 'Trường Đại học Trần Đại Nghĩa', 'Trường Đại học Trần Đại Nghĩa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('11dbce2e-8ca7-4c3e-b50e-369eaa6b8693', 'UNIVERSITY', 'Khoa Y, Đại học Quốc gia Thành phố Hồ Chí Minh', 'Khoa Y, Đại học Quốc gia Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('126992fd-e24c-45de-a7b9-0215df1fbaaa', 'UNIVERSITY', 'Trường Cao đẳng Công nghiệp Bắc Ninh', 'Trường Cao đẳng Công nghiệp Bắc Ninh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('12bb068b-7927-42b8-9ed0-6100acc99400', 'UNIVERSITY', 'Trường Cao đẳng nghề Thăng Long', 'Trường Cao đẳng nghề Thăng Long', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('12c2cc11-fa4f-4629-8063-2d6d2c755a3c', 'UNIVERSITY', 'Trường Cao đẳng nghề Duyên Hải', 'Trường Cao đẳng nghề Duyên Hải', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('12da8f75-1612-4c56-a62c-a4d1309531df', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ - Kinh tế và Thủy lợi miền Trung', 'Trường Cao đẳng Công nghệ - Kinh tế và Thủy lợi miền Trung', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('12ddb8c0-c15f-4db7-842b-dae36eb26467', 'UNIVERSITY', 'Trường Đại học Phú Yên', 'Trường Đại học Phú Yên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('12fc00a6-68bc-415c-a7be-62f324d54eda', 'UNIVERSITY', 'Học viện Khoa học Quân sự', 'Học viện Khoa học Quân sự', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('135fadf9-a8c8-4898-9526-0a7057452185', 'UNIVERSITY', 'Trường Đại học Nguyễn Tất Thành', 'Trường Đại học Nguyễn Tất Thành', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('13974497-5dc2-4047-80ee-bda2b83a3f0c', 'UNIVERSITY', 'Trường Cao đẳng nghề Cơ giới Ninh Bình', 'Trường Cao đẳng nghề Cơ giới Ninh Bình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('13ea590f-cfcf-4675-a0bb-d2803dfc8380', 'UNIVERSITY', 'Trường Cao đẳng Nông nghiệp và Phát triển nông thôn Bắc Bộ', 'Trường Cao đẳng Nông nghiệp và Phát triển nông thôn Bắc Bộ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('14121a93-b29f-4f4f-92cf-262d7c222013', 'UNIVERSITY', 'Học viện Khoa học xã hội', 'Học viện Khoa học xã hội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('14587afc-1f89-4c2e-b203-5f77a7e72c5d', 'UNIVERSITY', 'Trường Đại học Y khoa Phạm Ngọc Thạch', 'Trường Đại học Y khoa Phạm Ngọc Thạch', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('148b38c1-184b-426c-acb4-61ff0b2171eb', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Gia Lai', 'Trường Cao đẳng Sư phạm Gia Lai', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('149e74f0-e53a-4953-ae77-0441f0a7acf7', 'UNIVERSITY', 'Trường Đại học Công nghiệp Thành phố Hồ Chí Minh', 'Trường Đại học Công nghiệp Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1556381d-bca0-4eed-a439-9fb33f5b96da', 'UNIVERSITY', 'Trường Đại học Thể dục Thể thao Bắc Ninh', 'Trường Đại học Thể dục Thể thao Bắc Ninh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('15c028f6-d49f-44e6-9fa7-8c933394db4e', 'UNIVERSITY', 'Trường Cao đẳng nghề Văn Lang Hà Nội', 'Trường Cao đẳng nghề Văn Lang Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('15edf76b-a3f0-4c9e-a8db-3087d824f645', 'UNIVERSITY', 'Trường Cao đẳng Y - Dược Hợp Lực, Thanh Hóa', 'Trường Cao đẳng Y - Dược Hợp Lực, Thanh Hóa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('176a6513-8a3e-4435-ad94-a251f32a3798', 'UNIVERSITY', 'Phân hiệu Đại học Công nghiệp Thành phố Hồ Chí Minh tại Quảng Ngãi', 'Phân hiệu Đại học Công nghiệp Thành phố Hồ Chí Minh tại Quảng Ngãi', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('180642f8-3250-49f8-8c45-032ab4154d4d', 'UNIVERSITY', 'Trường Cao đẳng Cơ giới Xây dựng', 'Trường Cao đẳng Cơ giới Xây dựng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('180cf9de-fc04-4de7-bdb3-6657b5bcbc20', 'UNIVERSITY', 'Trường Cao đẳng Y tế Đắk Lắk', 'Trường Cao đẳng Y tế Đắk Lắk', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1845e7df-1647-41d3-98b0-a87e46b4c5e2', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Cà Mau', 'Trường Cao đẳng Cộng đồng Cà Mau', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('18b193fd-33ee-462e-9932-595dd54b1282', 'UNIVERSITY', 'Trường Cao đẳng nghề Việt Nam-Hàn Quốc Quảng Ngãi', 'Trường Cao đẳng nghề Việt Nam-Hàn Quốc Quảng Ngãi', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('18c0a617-8e6b-4a19-82e2-5bc96de6d9ad', 'UNIVERSITY', 'Trường Đại học Tây Nguyên', 'Trường Đại học Tây Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('18df6471-c083-475c-b8c6-71c89406b629', 'UNIVERSITY', 'Trường Cao đẳng nghề Kỹ thuật thiết bị Y tế Bình Dương', 'Trường Cao đẳng nghề Kỹ thuật thiết bị Y tế Bình Dương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('192af5d3-6acc-4591-97e7-b8174db178a6', 'UNIVERSITY', 'Trường Cao đẳng Y tế Đặng Văn Ngữ', 'Trường Cao đẳng Y tế Đặng Văn Ngữ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('194d08a3-ae4a-477c-be4f-8574ec50a197', 'UNIVERSITY', 'Trường Đại học Thông tin liên lạc', 'Trường Đại học Thông tin liên lạc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('19b6647e-9d20-456d-8095-0966e023b04f', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ - Kinh tế và Thủy lợi miền Trung', 'Trường Cao đẳng Công nghệ - Kinh tế và Thủy lợi miền Trung', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('19d6e961-7c04-40f6-b471-a3131a3a8106', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Long An', 'Trường Cao đẳng Sư phạm Long An', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1b09a4b2-e5b9-42f1-88d0-f4905fd449fd', 'UNIVERSITY', 'Trường Đại học Sư phạm Kỹ thuật, Đại học Đà Nẵng', 'Trường Đại học Sư phạm Kỹ thuật, Đại học Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1b401531-9904-4fe0-95d1-7ec6f1416276', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ và Kinh tế Hà Nội', 'Trường Cao đẳng Công nghệ và Kinh tế Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1bd3cf96-5d9e-4107-89f3-7988a4d6a30a', 'UNIVERSITY', 'Học viện Âm nhạc Huế', 'Học viện Âm nhạc Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1c4d02bc-53b2-43ab-921a-1cd0490f37b9', 'UNIVERSITY', 'Trường Đại học Phạm Văn Đồng', 'Trường Đại học Phạm Văn Đồng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1df7ed18-a178-450c-a17f-3cd4519e7406', 'UNIVERSITY', 'Trường Cao đẳng Hoan Châu', 'Trường Cao đẳng Hoan Châu', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1e379e96-a358-4144-b891-cbb6ad5d9f67', 'UNIVERSITY', 'Trường Cao đẳng nghề Kinh tế - Kỹ thuật Tô Hiệu', 'Trường Cao đẳng nghề Kinh tế - Kỹ thuật Tô Hiệu', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1e8df754-0e64-4a10-a564-7d11adfe3fc5', 'UNIVERSITY', 'Trường Đại học Khoa học Xã hội và Nhân văn, Đại học Quốc gia Hà Nội', 'Trường Đại học Khoa học Xã hội và Nhân văn, Đại học Quốc gia Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1eeda82f-c1ea-402f-9eeb-21b21365f8fe', 'UNIVERSITY', 'Trường Đại học Nguyễn Huệ', 'Trường Đại học Nguyễn Huệ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1f12db55-9203-4fc2-bdbf-a21dad4441c6', 'UNIVERSITY', 'Phân hiệu Đại học Mỏ-Địa chất tại Quảng Ninh', 'Phân hiệu Đại học Mỏ-Địa chất tại Quảng Ninh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1f26faed-6fe4-45aa-81c0-b0762d5dfc11', 'UNIVERSITY', 'Trường Cao đẳng Viễn Đông', 'Trường Cao đẳng Viễn Đông', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1f6ab4d4-d001-4155-ae50-c6fe9f9576ae', 'UNIVERSITY', 'Trường Đại học Nha Trang [5]', 'Trường Đại học Nha Trang [5]', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1fa0593d-e723-427f-974d-a5b8dc89a6f2', 'UNIVERSITY', 'Trường Cao đẳng nghề Trần Hưng Đạo', 'Trường Cao đẳng nghề Trần Hưng Đạo', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1fab78ab-c66c-4eb7-858f-64e1e8f13cf9', 'UNIVERSITY', 'Trường Đại học Y khoa Tokyo Việt Nam', 'Trường Đại học Y khoa Tokyo Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1fbab5af-219a-45bc-9914-54bc10c676b6', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Thừa Thiên - Huế', 'Trường Cao đẳng Sư phạm Thừa Thiên - Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('1fc6d7e4-7b98-4902-928f-63f00fcdb51f', 'UNIVERSITY', 'Trường Đại học Mỹ tại Việt Nam', 'Trường Đại học Mỹ tại Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('20518887-b4e6-44fe-917f-03a333dbe8f1', 'UNIVERSITY', 'Trường Cao đẳng nghề Yên Bái', 'Trường Cao đẳng nghề Yên Bái', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('20c15c2c-7759-4d41-af64-ef2b55f6a820', 'UNIVERSITY', 'Trường Cao đẳng nghề Việt Nam - Hàn Quốc Cà Mau', 'Trường Cao đẳng nghề Việt Nam - Hàn Quốc Cà Mau', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('210ff2e4-49fa-4e31-ac4f-67a0b9e9f2af', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế - Kỹ thuật Quảng Nam', 'Trường Cao đẳng Kinh tế - Kỹ thuật Quảng Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('211bc215-188a-484d-8bd4-3a35a95a004b', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Lạng Sơn', 'Trường Cao đẳng Sư phạm Lạng Sơn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('21587a32-9552-4eef-b110-5b498ec5ac9f', 'UNIVERSITY', 'Trường Cao đẳng Bình Định', 'Trường Cao đẳng Bình Định', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2264985b-9bc7-41c8-9bf3-f7425d4b2e8a', 'UNIVERSITY', 'Trường Đại học Võ Trường Toản', 'Trường Đại học Võ Trường Toản', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('226834bc-d185-4920-b071-2759435dcad1', 'UNIVERSITY', 'Trường Cao đẳng nghề số 22 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 22 - Bộ Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('226ec77f-96b0-4325-9af1-be19cc7dee07', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ và Kinh tế Bảo Lộc', 'Trường Cao đẳng Công nghệ và Kinh tế Bảo Lộc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('22953037-bb87-4c3f-9e5c-0d9c7586c9b8', 'UNIVERSITY', 'Trường Cao đẳng nghề Kinh tế - Kỹ thuật Bắc Bộ', 'Trường Cao đẳng nghề Kinh tế - Kỹ thuật Bắc Bộ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('22c9dbdf-7e71-4a31-960a-8e6e71818b6f', 'UNIVERSITY', 'Trường Sĩ quan Không quân', 'Trường Sĩ quan Không quân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('22e9dd89-50ea-4415-93d0-21bbefc663a3', 'UNIVERSITY', 'Trường Cao đẳng Bách khoa Hưng Yên', 'Trường Cao đẳng Bách khoa Hưng Yên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('23326d96-a508-40e7-8db6-accff1da56e4', 'UNIVERSITY', 'Trường Cao đẳng Phát thanh - Truyền hình I', 'Trường Cao đẳng Phát thanh - Truyền hình I', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('235cdd4b-3c50-4930-b641-dace218757ea', 'UNIVERSITY', 'Trường Đại học An Giang', 'Trường Đại học An Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('23942999-c40c-4b07-8c78-735d12086a64', 'UNIVERSITY', 'Trường Đại học Lao động - Xã hội, cơ sở Sơn Tây', 'Trường Đại học Lao động - Xã hội, cơ sở Sơn Tây', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('23b97fe3-4627-4519-b41d-e8305d73f576', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Hà Giang', 'Trường Cao đẳng Sư phạm Hà Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('240e3e7d-4fcc-4e42-8fe5-943f28340d95', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công nghệ Vạn Xuân', 'Trường Cao đẳng Kỹ thuật Công nghệ Vạn Xuân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('243593c1-546d-4db0-88a2-4d7e7ac4a16c', 'UNIVERSITY', 'Trường Đại học Tôn Đức Thắng, cơ sở Nha Trang', 'Trường Đại học Tôn Đức Thắng, cơ sở Nha Trang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('24490866-3ecf-47a8-985b-8af1a91cc77b', 'UNIVERSITY', 'Trường Cao đẳng nghề Tiền Giang', 'Trường Cao đẳng nghề Tiền Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('248e4638-e393-4ff8-9ec8-17614bf4b20e', 'UNIVERSITY', 'Trường Cao đẳng Nghề Thành phố Hồ Chí Minh', 'Trường Cao đẳng Nghề Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('24adceda-2c2a-48d6-b4b8-91eb6d7fd7f1', 'UNIVERSITY', 'Trường Cao đẳng Điện tử - Điện lạnh Hà Nội', 'Trường Cao đẳng Điện tử - Điện lạnh Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('24add9e8-576f-415b-b082-35d7fd80ef36', 'UNIVERSITY', 'Trường Cao đẳng Múa Việt Nam', 'Trường Cao đẳng Múa Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('254eef0b-2e8b-47ac-b595-48977bc61ca3', 'UNIVERSITY', 'Trường Cao đẳng Văn hóa Nghệ thuật Việt Bắc', 'Trường Cao đẳng Văn hóa Nghệ thuật Việt Bắc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('25b0d2a0-2e33-4f26-88df-e012ddcc3006', 'UNIVERSITY', 'Khoa Chính trị - Hành chính, Đại học Quốc gia Thành phố Hồ Chí Minh', 'Khoa Chính trị - Hành chính, Đại học Quốc gia Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('25fa6b31-3647-47d5-89b6-49e8e950e8a2', 'UNIVERSITY', 'Trường Cao đẳng Du lịch Hà Nội', 'Trường Cao đẳng Du lịch Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('264a03f8-b396-4e84-8e53-c9eceb37034b', 'UNIVERSITY', 'Học viện Cảnh sát Nhân dân', 'Học viện Cảnh sát Nhân dân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('264d198e-b0f8-48e7-983a-58ea84f3646f', 'UNIVERSITY', 'Trường Cao đẳng nghề Kiên Giang', 'Trường Cao đẳng nghề Kiên Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('264d3725-8659-49b6-abb4-1f3f5ea151e4', 'UNIVERSITY', 'Trường cao đẳng Quốc tế BTEC FPT', 'Trường cao đẳng Quốc tế BTEC FPT', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2665417f-1ecb-41cf-b70c-2d2cc953c87b', 'UNIVERSITY', 'Trường Cao đẳng Y tế Bạc Liêu', 'Trường Cao đẳng Y tế Bạc Liêu', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('268d1217-7377-4dbf-a568-c58eb6737005', 'UNIVERSITY', 'Trường Đại học Giao thông Vận tải cơ sở 2', 'Trường Đại học Giao thông Vận tải cơ sở 2', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('27a2b9c5-fcc5-4879-a601-57f3e1c7bad7', 'UNIVERSITY', 'Phân hiệu Đại học Tài nguyên và Môi trường Hà Nội tại Thanh Hóa', 'Phân hiệu Đại học Tài nguyên và Môi trường Hà Nội tại Thanh Hóa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('27d08d1a-329a-44c3-9dda-1aa71f0cb5a7', 'UNIVERSITY', 'Trường Cao đẳng Quốc tế Pegasus', 'Trường Cao đẳng Quốc tế Pegasus', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('280fd64d-8adf-40e3-b5fb-38313881f341', 'UNIVERSITY', 'Trường Đại học Công nghệ Đồng Nai', 'Trường Đại học Công nghệ Đồng Nai', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('282e9457-526f-4880-9bcc-88d5fe4ab475', 'UNIVERSITY', 'Trường Cao đẳng Cơ khí Luyện kim', 'Trường Cao đẳng Cơ khí Luyện kim', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('286bb1c7-84a5-4bc0-a678-3e072a1b977c', 'UNIVERSITY', 'Trường Cao đẳng Y tế Phú Yên', 'Trường Cao đẳng Y tế Phú Yên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('28816c5e-ad68-4b68-bd33-8f07c29239a6', 'UNIVERSITY', 'Trường Cao đẳng Thực hành FPT', 'Trường Cao đẳng Thực hành FPT', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('288cc656-ec92-4b82-9412-838c2c134e2a', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Quảng Trị', 'Trường Cao đẳng Sư phạm Quảng Trị', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('28a72ce1-37d2-43b6-9240-ae2c3b12672b', 'UNIVERSITY', 'Trường Cao đẳng Y tế Hà Nội', 'Trường Cao đẳng Y tế Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('293f9ea0-cf91-4421-a770-34ed57c8f698', 'UNIVERSITY', 'Trường Cao đẳng Giao thông vận tải Trung ương IV', 'Trường Cao đẳng Giao thông vận tải Trung ương IV', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('29473327-a256-442a-9b41-ab598e985d84', 'UNIVERSITY', 'Trường Đại học Hạ Long', 'Trường Đại học Hạ Long', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('29cd284d-6adc-4e27-940b-fb5472ebc433', 'UNIVERSITY', 'Trường Đại học Anh Quốc Việt Nam (BUV)', 'Trường Đại học Anh Quốc Việt Nam (BUV)', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2a2470d6-92b1-4a5d-a802-2ee6706bc449', 'UNIVERSITY', 'Trường Đại học Kinh tế Thành phố Hồ Chí Minh', 'Trường Đại học Kinh tế Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2a295ac4-5f86-4007-978f-32c1796ff14e', 'UNIVERSITY', 'Trường Cao đẳng Y tế Huế', 'Trường Cao đẳng Y tế Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2aec06a7-3ee8-4914-b56c-64079eda98cf', 'UNIVERSITY', 'Trường Đại học Phenikaa', 'Trường Đại học Phenikaa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2b4edf75-119b-4038-8287-be4bc82a0511', 'UNIVERSITY', 'Trường Cao đẳng nghề Nguyễn Tri Phương', 'Trường Cao đẳng nghề Nguyễn Tri Phương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2b5bba92-4fc0-4172-8527-309011ceb5db', 'UNIVERSITY', 'Trường Đại học Kinh doanh và Công nghệ Hà Nội', 'Trường Đại học Kinh doanh và Công nghệ Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2c260c54-165a-4a1b-9323-98011f3ad7e8', 'UNIVERSITY', 'Học viện Lục quân', 'Học viện Lục quân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2c9be421-62e6-41d1-872f-a4191bb360f7', 'UNIVERSITY', 'Trường Đại học Trần Quốc Tuấn', 'Trường Đại học Trần Quốc Tuấn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2ca3e473-c3be-4a5c-9bbc-a56d6004a2b6', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế - Kỹ thuật Vĩnh Phúc', 'Trường Cao đẳng Kinh tế - Kỹ thuật Vĩnh Phúc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2d9908f3-100b-4b9f-929f-314db100453d', 'UNIVERSITY', 'Trường Cao đẳng nghề số 13 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 13 - Bộ Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2df2da71-6e7b-4c1f-8f09-b7ad110574ce', 'UNIVERSITY', 'Trường Đại học Sư phạm Nghệ thuật Trung ương', 'Trường Đại học Sư phạm Nghệ thuật Trung ương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2e922173-649d-4963-8be8-8e03d52476cf', 'UNIVERSITY', 'Trường Đại học Bà Rịa - Vũng Tàu', 'Trường Đại học Bà Rịa - Vũng Tàu', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2e9e2319-609b-4c87-9455-5a645e5f2402', 'UNIVERSITY', 'Học viện Hành chính Quốc gia', 'Học viện Hành chính Quốc gia', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2eb4c032-7c3d-486b-9fa5-1cbb68094efa', 'UNIVERSITY', 'Khoa Quốc tế, Đại học Huế', 'Khoa Quốc tế, Đại học Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2efef017-5dbe-4495-bc82-7a4fb3004cba', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ và Nông lâm Phú Thọ', 'Trường Cao đẳng nghề Công nghệ và Nông lâm Phú Thọ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2f199016-8f2f-4a05-b625-2b81b9c5d332', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Nam Định', 'Trường Cao đẳng Sư phạm Nam Định', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2f4529b0-c231-456f-a7a3-93aae3822621', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Sóc Trăng', 'Trường Cao đẳng Cộng đồng Sóc Trăng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2f53009f-50bc-482a-9c75-b927f93ade0d', 'UNIVERSITY', 'Trường Đại học Dược Hà Nội', 'Trường Đại học Dược Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2f626ca5-0fee-4014-9f04-28d5ebce0768', 'UNIVERSITY', 'Trường Cao đẳng nghề Kỹ thuật Công nghệ', 'Trường Cao đẳng nghề Kỹ thuật Công nghệ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2f741868-f96f-4746-97a8-2c6fa1294130', 'UNIVERSITY', 'Trường Cao đẳng nghề Hà Nam', 'Trường Cao đẳng nghề Hà Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('2fd81e2d-fb0d-4e2d-a6c5-9e0cf70dfbec', 'UNIVERSITY', 'Trường Đại học Y khoa Vinh', 'Trường Đại học Y khoa Vinh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('300e5074-4004-470e-8957-66244b4d1f25', 'UNIVERSITY', 'Trường Cao đẳng nghề Vĩnh Phúc', 'Trường Cao đẳng nghề Vĩnh Phúc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('302e27f4-b481-4543-970f-ac8e62cc5a53', 'UNIVERSITY', 'Trường Đại học Nam Cần Thơ', 'Trường Đại học Nam Cần Thơ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('30533ee5-c932-46f8-a00c-b2c8744a55a0', 'UNIVERSITY', 'Trường Đại học Y Dược, Đại học Quốc gia Hà Nội', 'Trường Đại học Y Dược, Đại học Quốc gia Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('305dec02-3b5c-465b-ade3-dce70ffee0f5', 'UNIVERSITY', 'Trường Cao đẳng Quảng Ngãi', 'Trường Cao đẳng Quảng Ngãi', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3122455e-dc11-4cb4-acc8-6a0a5047a5bd', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Trung ương TP.HCM', 'Trường Cao đẳng Sư phạm Trung ương TP.HCM', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('314812aa-94ae-4464-a693-c96de3908fe3', 'UNIVERSITY', 'Trường Cao đẳng Văn hóa Nghệ thuật Thái Bình', 'Trường Cao đẳng Văn hóa Nghệ thuật Thái Bình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3160f9fe-bedf-4491-87a4-c2071c8f0b89', 'UNIVERSITY', 'Trường Đại học Sư phạm Kỹ thuật Thành phố Hồ Chí Minh', 'Trường Đại học Sư phạm Kỹ thuật Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3193fcd3-e421-47ed-9a12-b55373639978', 'UNIVERSITY', 'Trường Cao đẳng Y tế Quảng Ninh', 'Trường Cao đẳng Y tế Quảng Ninh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('31eddbb8-1042-4cb4-9636-3ae7b56561bb', 'UNIVERSITY', 'Trường Cao đẳng nghề số 23 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 23 - Bộ Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('31f4153f-a94f-4403-b7e1-2f27b71403a1', 'UNIVERSITY', 'Trường Đại học Kiểm sát Hà Nội', 'Trường Đại học Kiểm sát Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('31f5f147-4ad7-4e41-a365-2ffc88223fa4', 'UNIVERSITY', 'Trường Cao đẳng nghề Điện Biên', 'Trường Cao đẳng nghề Điện Biên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3254d461-2321-488c-a15b-31c168c998a3', 'UNIVERSITY', 'Trường Cao đẳng Bình Định', 'Trường Cao đẳng Bình Định', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('33340635-4d72-499b-80c4-a413a48fce42', 'UNIVERSITY', 'Trường Đại học Quản lý và Công nghệ Hải Phòng', 'Trường Đại học Quản lý và Công nghệ Hải Phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('33719af2-0e7f-416f-91c6-6c0aa39afd66', 'UNIVERSITY', 'Trường Cao đẳng nghề Việt Nam - Hàn Quốc Thành phố Hà Nội', 'Trường Cao đẳng nghề Việt Nam - Hàn Quốc Thành phố Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('34b71a19-0753-49cc-bb5f-0e9e92ec3934', 'UNIVERSITY', 'Trường Đại học Hồng Đức', 'Trường Đại học Hồng Đức', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('34e01540-6080-40f6-9cf2-08a4b1416aad', 'UNIVERSITY', 'Trường Cao đẳng Công Thương TP.HCM', 'Trường Cao đẳng Công Thương TP.HCM', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('34eea773-dfdd-4897-b7fb-08e06dcac800', 'UNIVERSITY', 'Trường Sĩ quan Tăng-Thiết giáp', 'Trường Sĩ quan Tăng-Thiết giáp', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3539700a-78f5-446a-9e79-ef29f30c3e38', 'UNIVERSITY', 'Trường Đại học Đồng Tháp', 'Trường Đại học Đồng Tháp', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('357854d7-c0f4-4cfe-825d-70fc371dd71e', 'UNIVERSITY', 'Trường Đại học Hải Dương', 'Trường Đại học Hải Dương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('35fe1be7-5b9d-4fa0-814d-1c866ca00ef2', 'UNIVERSITY', 'Trường Cao đẳng Lý Tự Trọng Thành phố Hồ Chí Minh', 'Trường Cao đẳng Lý Tự Trọng Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('36286506-4c3a-4649-a0d9-581700dc02c9', 'UNIVERSITY', 'Trường Cao đẳng Mỹ thuật trang trí Đồng Nai', 'Trường Cao đẳng Mỹ thuật trang trí Đồng Nai', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('365716f9-1bb5-4677-ac5e-70cf5c920c4b', 'UNIVERSITY', 'Trường Đại học Phan Thiết', 'Trường Đại học Phan Thiết', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3698748e-0a24-4b1f-9467-c2211e67f026', 'UNIVERSITY', 'Trường Cao đẳng nghề An Giang', 'Trường Cao đẳng nghề An Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('36bb2fbf-1b5b-4fd1-a2f9-6c4be9bbb592', 'UNIVERSITY', 'Trường Đại học Tây Sydney tại Việt Nam (Western Sydney University - Vietnam Campus)', 'Trường Đại học Tây Sydney tại Việt Nam (Western Sydney University - Vietnam Campus)', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('36fa666d-d094-4338-8310-baf60982ac19', 'UNIVERSITY', 'Trường Đại học Quảng Nam', 'Trường Đại học Quảng Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3708c00c-fa88-4994-a5f8-8c13690b5464', 'UNIVERSITY', 'Trường Cao đẳng Sơn La', 'Trường Cao đẳng Sơn La', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('37a66c60-7a30-423c-8bb1-b5d37719f86d', 'UNIVERSITY', 'Trường Đại học Mỹ thuật Công nghiệp Á Châu', 'Trường Đại học Mỹ thuật Công nghiệp Á Châu', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('37b66e1d-8af1-4ea0-9dd1-3a8b9b1b9c29', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Đắk Nông', 'Trường Cao đẳng Cộng đồng Đắk Nông', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('37c8af66-844e-4d48-9fe7-f9153189b49d', 'UNIVERSITY', 'Trường Cao đẳng VMU', 'Trường Cao đẳng VMU', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('384ca0e8-dbe4-4d1b-a817-acb0a550becd', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ cao Đồng An', 'Trường Cao đẳng nghề Công nghệ cao Đồng An', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3870dee7-7c36-48bb-847e-3b5347a64083', 'UNIVERSITY', 'Trường Đại học Văn hóa Hà Nội', 'Trường Đại học Văn hóa Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('388ad834-c326-4d9c-bf8f-a855f6a1e139', 'UNIVERSITY', 'Trường Cao đẳng Nghề Khách sạn Du lịch Quốc tế IMPERIAL', 'Trường Cao đẳng Nghề Khách sạn Du lịch Quốc tế IMPERIAL', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('38a09a12-65ed-4017-8d86-1f4e3053ecc7', 'UNIVERSITY', 'Phân hiệu Đại học Nội vụ Hà Nội tại Quảng Nam', 'Phân hiệu Đại học Nội vụ Hà Nội tại Quảng Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3993c24f-6e6d-4f73-8d7a-0d0f472d4e49', 'UNIVERSITY', 'Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Thành phố Hồ Chí Minh', 'Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('39fe7732-3f28-447b-bc97-2e05088701dc', 'UNIVERSITY', 'Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội', 'Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3a0fff29-749a-445f-8156-1d25ef547204', 'UNIVERSITY', 'Trường Cao đẳng nghề Cần Thơ', 'Trường Cao đẳng nghề Cần Thơ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3a85ee94-a875-4b35-b120-c431e19bcac1', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ Quốc tế LILAMA-2', 'Trường Cao đẳng Công nghệ Quốc tế LILAMA-2', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3a9989d6-c314-485a-903c-2ba02c84dc4f', 'UNIVERSITY', 'Trường Cao đẳng Công nghiệp và Xây dựng', 'Trường Cao đẳng Công nghiệp và Xây dựng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3af7f6fe-e0e9-4f87-8693-04743f298f56', 'UNIVERSITY', 'Trường Cao đẳng Văn hóa Nghệ thuật Du lịch Yên Bái', 'Trường Cao đẳng Văn hóa Nghệ thuật Du lịch Yên Bái', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3b0b1f64-f215-4f0e-b2c1-e4a1eab241d4', 'UNIVERSITY', 'Trường Cao đẳng Du lịch Cần Thơ', 'Trường Cao đẳng Du lịch Cần Thơ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3b21b262-cc3b-4493-a805-51cd3350ddc4', 'UNIVERSITY', 'Trường Cao đẳng Cảnh sát Nhân dân I', 'Trường Cao đẳng Cảnh sát Nhân dân I', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3b361ccb-f205-440c-ab2f-dca0af6d7189', 'UNIVERSITY', 'Trường Cao đẳng nghề dân tộc nội trú Bắc Kạn', 'Trường Cao đẳng nghề dân tộc nội trú Bắc Kạn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3c2a4db5-4a4e-430c-8336-7c82764cb210', 'UNIVERSITY', 'Phân hiệu Đại học Kinh tế - Luật tại Bến Tre', 'Phân hiệu Đại học Kinh tế - Luật tại Bến Tre', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3c63eebd-97e5-4558-8a7b-9e3efd3f8d1a', 'UNIVERSITY', 'Trường Cao đẳng nghề Bình Phước', 'Trường Cao đẳng nghề Bình Phước', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3c7c4ef5-c222-4647-bc50-3bba3ebea46b', 'UNIVERSITY', 'Trường Cao đẳng Nguyễn Tri Phương Huế', 'Trường Cao đẳng Nguyễn Tri Phương Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3c820dd5-4cc0-47f0-9916-792b4db82085', 'UNIVERSITY', 'Trường Đại học Cần Thơ', 'Trường Đại học Cần Thơ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3caa5a31-8828-434e-9524-d257fed3b66a', 'UNIVERSITY', 'Trường Đại học Thủ Dầu Một', 'Trường Đại học Thủ Dầu Một', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3d1d55f7-276d-4fb6-9740-99aca2e07b8d', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Cao Bằng', 'Trường Cao đẳng Sư phạm Cao Bằng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3d9b302b-c1b7-4431-abe5-62de6537b2db', 'UNIVERSITY', 'Trường Cao đẳng Thaco', 'Trường Cao đẳng Thaco', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3e4a73b9-cc1d-4044-b539-52da7c748bae', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ Sài Gòn', 'Trường Cao đẳng nghề Công nghệ Sài Gòn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3fc34b0e-60a7-42b3-aef2-0df3f8baeec7', 'UNIVERSITY', 'Trường Đại học Công nghệ và Quản lý Hữu nghị', 'Trường Đại học Công nghệ và Quản lý Hữu nghị', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('3fe315eb-c619-4816-9856-14a0af56ab38', 'UNIVERSITY', 'Phân hiệu Đại học Khoa học Xã hội và Nhân văn tại Bến Tre', 'Phân hiệu Đại học Khoa học Xã hội và Nhân văn tại Bến Tre', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('402d9f40-b5e9-43ef-b6ed-3f81ac3e6667', 'UNIVERSITY', 'Trường Đại học Công nghệ Đông Á', 'Trường Đại học Công nghệ Đông Á', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('409d8b3f-31b0-4056-be84-b581a4f14e32', 'UNIVERSITY', 'Trường Đại học Xây dựng', 'Trường Đại học Xây dựng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('40b121cc-1636-4dd2-bcb1-6e09f7512fce', 'UNIVERSITY', 'Trường Đại học Kinh tế - Kỹ thuật Bình Dương', 'Trường Đại học Kinh tế - Kỹ thuật Bình Dương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('40cce1af-48ce-4237-9f70-f7cd8d224a65', 'UNIVERSITY', 'Học viện Phụ nữ Việt Nam', 'Học viện Phụ nữ Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('41184135-44df-4791-af2c-3689c4410d09', 'UNIVERSITY', 'Trường Cao đẳng Y tế Quảng Bình', 'Trường Cao đẳng Y tế Quảng Bình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4123a747-2e14-4a56-8e5c-91a9b8110e62', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ Hà Nội', 'Trường Cao đẳng Công nghệ Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('41d1481b-ad6b-48f9-9bf2-68ffd8b0e3ce', 'UNIVERSITY', 'Trường Đại học Công nghệ Thành phố Hồ Chí Minh', 'Trường Đại học Công nghệ Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4299f329-e779-43fc-b76a-598a466948fc', 'UNIVERSITY', 'Trường Cao đẳng Văn hóa Nghệ thuật Tây Bắc', 'Trường Cao đẳng Văn hóa Nghệ thuật Tây Bắc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('42d297a5-7fe9-477f-8eda-bf5ae2f9f1a7', 'UNIVERSITY', 'Trường Cao đẳng Thống kê', 'Trường Cao đẳng Thống kê', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4355b6c8-6e7d-49f9-94be-56693080e3be', 'UNIVERSITY', 'Trường Cao đẳng Dược Hà Nội', 'Trường Cao đẳng Dược Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('43edbffa-41a1-4943-93a1-6c7a12ab8fa2', 'UNIVERSITY', 'Trường Cao đẳng nghề Kỹ thuật - Công nghệ - Kinh tế Simco Sông Đà', 'Trường Cao đẳng nghề Kỹ thuật - Công nghệ - Kinh tế Simco Sông Đà', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4406149f-00c0-4470-a84e-ef65825bdeeb', 'UNIVERSITY', 'Trường Cao đẳng Thể dục Thể thao Thanh Hóa', 'Trường Cao đẳng Thể dục Thể thao Thanh Hóa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4445b40f-bcc3-48eb-8420-916b90a3c1d3', 'UNIVERSITY', 'Trường Cao đẳng nghề Cơ giới Quảng Ngãi', 'Trường Cao đẳng nghề Cơ giới Quảng Ngãi', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('452aa47d-dabc-4aa3-86a7-2bd163ae518c', 'UNIVERSITY', 'Học viện Khoa học và Công nghệ', 'Học viện Khoa học và Công nghệ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('45779d62-52be-4927-8d94-6dc097382496', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Vĩnh Long', 'Trường Cao đẳng Cộng đồng Vĩnh Long', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('45c638d5-faae-45c5-9111-e9cd2eacb264', 'UNIVERSITY', 'Trường Cao đẳng nghề Bách nghệ Hải Phòng', 'Trường Cao đẳng nghề Bách nghệ Hải Phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('45cbed7a-fded-44e8-8e7e-cd5bee9c2dbe', 'UNIVERSITY', 'Trường Cao đẳng nghề Kỹ thuật Công nghệ LADEC', 'Trường Cao đẳng nghề Kỹ thuật Công nghệ LADEC', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('460834e4-43c1-4198-a50b-0a473d099551', 'UNIVERSITY', 'Trường Đại học Dân lập Yersin Đà Lạt', 'Trường Đại học Dân lập Yersin Đà Lạt', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('46331985-22f2-485b-be48-d911cc8d0975', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ cao Hà Nội', 'Trường Cao đẳng nghề Công nghệ cao Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('470c102e-1e70-49ba-8669-c922679c5c25', 'UNIVERSITY', 'Trường Cao đẳng Ngô Gia Tự Bắc Giang', 'Trường Cao đẳng Ngô Gia Tự Bắc Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('474e40b5-c4be-4dd7-bcf2-60f3282fc27a', 'UNIVERSITY', 'Trường Cao đẳng Công Thương Thái Nguyên', 'Trường Cao đẳng Công Thương Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4785b9c2-f5d5-4f15-ba61-61dd46b70d1a', 'UNIVERSITY', 'Trường Cao đẳng nghề Long Biên', 'Trường Cao đẳng nghề Long Biên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('47f6a216-563e-42d6-86e0-ced53cbe46e2', 'UNIVERSITY', 'Trường Cao đẳng Thủ Thiêm - TP. Hồ Chí Minh', 'Trường Cao đẳng Thủ Thiêm - TP. Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('47fae7e2-cb1d-4820-acd2-fb5353ab1227', 'UNIVERSITY', 'Trường Cao đẳng nghề Giao thông vận tải trung ương II', 'Trường Cao đẳng nghề Giao thông vận tải trung ương II', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('48828925-9fa6-4ae2-ad6c-07986aff9a9c', 'UNIVERSITY', 'Đại học Sân khấu - Điện ảnh Hà Nội', 'Đại học Sân khấu - Điện ảnh Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('48c812b4-e50d-4f15-aa77-9da99b2f8b19', 'UNIVERSITY', 'Trường Cao đẳng Thủy lợi Bắc Bộ', 'Trường Cao đẳng Thủy lợi Bắc Bộ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4988909a-5c93-4331-90f0-c68fbb03fbba', 'UNIVERSITY', 'Trường Cao đẳng Cơ điện và Nông nghiệp Nam Bộ', 'Trường Cao đẳng Cơ điện và Nông nghiệp Nam Bộ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4999cef8-8b72-4539-9d49-9931b2cf54fe', 'UNIVERSITY', 'Trường Cao đẳng nghề số 1 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 1 - Bộ Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('49adf32b-472d-4b73-b32a-98777a8175b0', 'UNIVERSITY', 'Trường Cao đẳng Thống kê II', 'Trường Cao đẳng Thống kê II', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('49b6fc04-eec8-41af-b6cb-a63ddd503d26', 'UNIVERSITY', 'Trường Cao đẳng nghề LILAMA-1', 'Trường Cao đẳng nghề LILAMA-1', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('49bb1628-f88d-4a34-b420-af9c7feabb50', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ LICOGI Thanh Hóa', 'Trường Cao đẳng nghề Công nghệ LICOGI Thanh Hóa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4a1771b8-44ef-4c05-a2fe-c08253c0f4be', 'UNIVERSITY', 'Trường Đại học Trưng Vương', 'Trường Đại học Trưng Vương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4a18b98e-70b6-4319-9aa9-466b2ff7bf7b', 'UNIVERSITY', 'Trường Đại học Đồng Nai', 'Trường Đại học Đồng Nai', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4a6e8997-b1e3-40b9-99f8-ad13d58ad8d8', 'UNIVERSITY', 'Phân hiệu Đại học Công nghệ Thông tin tại Bến Tre', 'Phân hiệu Đại học Công nghệ Thông tin tại Bến Tre', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4a810bee-6dd4-4a97-9f72-593aafc8b178', 'UNIVERSITY', 'Trường Đại học Văn hóa Thành phố Hồ Chí Minh', 'Trường Đại học Văn hóa Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4ac4df3f-6bf1-45f3-b9cb-2dda00fa6ac5', 'UNIVERSITY', 'Trường Đại học Kinh Bắc', 'Trường Đại học Kinh Bắc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4b785ec4-d902-4047-a496-7d5f2c8194c3', 'UNIVERSITY', 'Trường Đại học Gia Định', 'Trường Đại học Gia Định', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4b796e6d-8991-4e7a-a199-22bbce02cc78', 'UNIVERSITY', 'Trường Cao đẳng Văn hóa Nghệ thuật Nghệ An', 'Trường Cao đẳng Văn hóa Nghệ thuật Nghệ An', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4b9d6f9c-51c0-4c2a-9c52-ae6307d01468', 'UNIVERSITY', 'Trường Cao đẳng Giao thông vận tải Trung ương VI', 'Trường Cao đẳng Giao thông vận tải Trung ương VI', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4ba55cc7-0f2d-411d-a8e9-5e043e9e8c0c', 'UNIVERSITY', 'Trường Đại học Công nghiệp Vinh', 'Trường Đại học Công nghiệp Vinh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4bb9ac92-50ac-431c-8057-ef8931812b4c', 'UNIVERSITY', 'Trường Cao đẳng Y tế Hải Phòng', 'Trường Cao đẳng Y tế Hải Phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4c8a4637-2f98-48b8-9bf9-286d445171fd', 'UNIVERSITY', 'Trường Đại học Việt Bắc', 'Trường Đại học Việt Bắc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4d38566a-9ed6-4eb5-82c8-f0489a3acbeb', 'UNIVERSITY', 'Trường Cao đẳng Y tế Thái Bình', 'Trường Cao đẳng Y tế Thái Bình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4d4a9880-006d-4816-9ba9-96ee3553e36a', 'UNIVERSITY', 'Trường Cao đẳng Quân y 2', 'Trường Cao đẳng Quân y 2', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4e35f8bd-8529-4bc0-ab9f-36e7c0dc613e', 'UNIVERSITY', 'Trường Đại học Kiến trúc Thành phố Hồ Chí Minh', 'Trường Đại học Kiến trúc Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4f222119-a972-42b1-9993-2c92b736c667', 'UNIVERSITY', 'Trường Cao đẳng Nghề Thừa Thiên Huế', 'Trường Cao đẳng Nghề Thừa Thiên Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4f4cdc65-2c62-490b-b4f1-e2f31865202c', 'UNIVERSITY', 'Trường Đại học Ngô Quyền', 'Trường Đại học Ngô Quyền', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4f8bc0bc-bc87-474b-a952-839e22155ef3', 'UNIVERSITY', 'Học viện Ngoại giao Việt Nam', 'Học viện Ngoại giao Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4f93060f-fcc2-4d5e-b451-3ac86ab5c6fe', 'UNIVERSITY', 'Trường Cao đẳng Công nghiệp Thái Nguyên', 'Trường Cao đẳng Công nghiệp Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('4f95af65-aae4-4398-89ad-68b06bdbebdb', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Trung ương', 'Trường Cao đẳng Sư phạm Trung ương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('500e74bc-9cfa-45cd-9a10-c15711768f99', 'UNIVERSITY', 'Trường Cao đẳng Y tế Khánh Hòa', 'Trường Cao đẳng Y tế Khánh Hòa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5013f23b-e5f3-4eae-b827-f3ee5482105e', 'UNIVERSITY', 'Trường Đại học Luật Huế', 'Trường Đại học Luật Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('501a80a5-dad9-43e0-9415-0647c97c9ac1', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế - Kỹ thuật Thủ Đức', 'Trường Cao đẳng Kinh tế - Kỹ thuật Thủ Đức', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('502c8c77-a4d7-4317-8411-676754af7e75', 'UNIVERSITY', 'Trường Đại học Ngoại ngữ - Tin học Thành phố Hồ Chí Minh', 'Trường Đại học Ngoại ngữ - Tin học Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('506d0da7-0080-4cfe-82a0-9a926d7920d2', 'UNIVERSITY', 'Trường Cao đẳng Thủy sản', 'Trường Cao đẳng Thủy sản', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('50c5e762-50a2-4444-bc40-de79d4a8d991', 'UNIVERSITY', 'Trường Cao đẳng Kỹ nghệ II', 'Trường Cao đẳng Kỹ nghệ II', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('512ace6c-42a1-48d1-bf6c-4617e73727d4', 'UNIVERSITY', 'Trường Cao đẳng Nghề Hàng hải Thành phố Hồ Chí Minh', 'Trường Cao đẳng Nghề Hàng hải Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('51aa514b-699f-40e2-bc44-4a3e853ac8bf', 'UNIVERSITY', 'Trường Cao đẳng nghề Kinh tế - Công nghệ VICET', 'Trường Cao đẳng nghề Kinh tế - Công nghệ VICET', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('51eaccb0-774f-4708-aa70-2ec4b3712380', 'UNIVERSITY', 'Trường Cao đẳng nghề Kỹ thuật Mỹ nghệ Việt Nam', 'Trường Cao đẳng nghề Kỹ thuật Mỹ nghệ Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('525dda91-54b3-4f21-b875-dac67dac5c7b', 'UNIVERSITY', 'Trường Cao đẳng Hàng hải I', 'Trường Cao đẳng Hàng hải I', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('52b59a15-f71e-4766-861b-74d51afdbb4f', 'UNIVERSITY', 'Trường Cao đẳng Văn hóa Nghệ thuật Du lịch Hạ Long', 'Trường Cao đẳng Văn hóa Nghệ thuật Du lịch Hạ Long', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('52e06a14-bb79-435c-acda-8dc347d61883', 'UNIVERSITY', 'Trường Đại học Mỹ thuật Thành phố Hồ Chí Minh', 'Trường Đại học Mỹ thuật Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('52e1bdaa-7bc0-41ac-97bb-ae825aa36410', 'UNIVERSITY', 'Trường Đại học RMIT Việt Nam', 'Trường Đại học RMIT Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5304b1c4-6b09-4e1e-9263-d4c0709f36ff', 'UNIVERSITY', 'Học viện Nông nghiệp Việt Nam', 'Học viện Nông nghiệp Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('53a11b94-deab-4da5-bc0e-92d87ae59c54', 'UNIVERSITY', 'Học viện Hàng không Việt Nam', 'Học viện Hàng không Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('545b5c96-ea97-4ed7-b2de-60fbfe858d99', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế Kỹ thuật Điện Biên', 'Trường Cao đẳng Kinh tế Kỹ thuật Điện Biên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('54b17013-b0a5-45b4-a66f-61f384786874', 'UNIVERSITY', 'Trường Đại học Nghệ thuật Huế', 'Trường Đại học Nghệ thuật Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5508d75d-9b49-4ff0-9021-e866de5dcfc9', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Kon Tum', 'Trường Cao đẳng Cộng đồng Kon Tum', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('550b860d-a363-49a5-bf8b-3cff0a3d0bca', 'UNIVERSITY', 'Trường Cao đẳng Y tế Sơn La', 'Trường Cao đẳng Y tế Sơn La', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('55105f26-9bee-47e6-8df9-d0f82c1a82cd', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế Kỹ thuật Đông Du - Đà Nẵng', 'Trường Cao đẳng Kinh tế Kỹ thuật Đông Du - Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('55796a7d-173a-4864-99a2-a48eca1c16f0', 'UNIVERSITY', 'Trường Cao đẳng nghề Du lịch và dịch vụ Hải Phòng', 'Trường Cao đẳng nghề Du lịch và dịch vụ Hải Phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('56ac1fd7-551e-42c5-b27d-960fe6666928', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ và Kỹ thuật Ô tô', 'Trường Cao đẳng Công nghệ và Kỹ thuật Ô tô', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('56ec0fc2-ea93-4846-b060-b2039017ab81', 'UNIVERSITY', 'Trường Đại học Bách khoa Hà Nội', 'Trường Đại học Bách khoa Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('57af1a97-d9be-461a-a754-a2f2d8de298a', 'UNIVERSITY', 'Trường Cao đẳng Bán công Công nghệ và Quản trị doanh nghiệp', 'Trường Cao đẳng Bán công Công nghệ và Quản trị doanh nghiệp', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('580a4f27-c9da-4bab-a20d-a28f0eb540ab', 'UNIVERSITY', 'Trường Đại học Hoa Sen', 'Trường Đại học Hoa Sen', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('58631dd3-b877-431f-9ffd-0f017190531a', 'UNIVERSITY', 'Trường Cao đẳng Cảnh sát Nhân dân III', 'Trường Cao đẳng Cảnh sát Nhân dân III', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('589580dc-8c5e-449c-8f32-e704bcb2e543', 'UNIVERSITY', 'Trường Đại học Kinh tế, Đại học Đà Nẵng', 'Trường Đại học Kinh tế, Đại học Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('58bd8fd6-fcb7-40ae-9713-f62da8238a98', 'UNIVERSITY', 'Phân viện miền Nam - Học viện Thanh thiếu niên Việt Nam', 'Phân viện miền Nam - Học viện Thanh thiếu niên Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('59b8e968-774a-4a1f-bf50-ce86e41c91d4', 'UNIVERSITY', 'Trường Đại học Sân khấu - Điện ảnh Thành phố Hồ Chí Minh', 'Trường Đại học Sân khấu - Điện ảnh Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5a2e8a93-69a4-4ea1-bff1-f0a6dd83e64a', 'UNIVERSITY', 'Học viện Chính trị Công an Nhân dân', 'Học viện Chính trị Công an Nhân dân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5a936432-d559-45b6-94a7-ad03387daeae', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế - Tài chính Thái Nguyên', 'Trường Cao đẳng Kinh tế - Tài chính Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5b69d70d-ac90-4566-95dc-36e11211ec0b', 'UNIVERSITY', 'Trường Cao đẳng nghề Kỹ thuật Công nghiệp Việt Nam - Hàn Quốc Nghệ An', 'Trường Cao đẳng nghề Kỹ thuật Công nghiệp Việt Nam - Hàn Quốc Nghệ An', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5b700dcb-9cf2-44b0-94d9-50a76da4a8d8', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ thông tin Tp.HCM', 'Trường Cao đẳng Công nghệ thông tin Tp.HCM', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5b97706b-4d85-444b-b574-13f29db95f8a', 'UNIVERSITY', 'Trường Cao đẳng Y tế Đồng Nai', 'Trường Cao đẳng Y tế Đồng Nai', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5be7c5a8-4a97-4b94-b9de-125299fae859', 'UNIVERSITY', 'Trường Đại học Quảng Bình', 'Trường Đại học Quảng Bình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5c018436-6c9a-470c-b1c5-c93bed071780', 'UNIVERSITY', 'Trường Cao đẳng Tư thục Đức Trí - Đà Nẵng', 'Trường Cao đẳng Tư thục Đức Trí - Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5c45671c-a811-4025-b892-aa87616c38a7', 'UNIVERSITY', 'Trường Cao đẳng Đại Việt - Hà Nội', 'Trường Cao đẳng Đại Việt - Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5d53bf3d-dc39-4f81-8d23-98b780ae5f6c', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghiệp Thanh Hóa', 'Trường Cao đẳng nghề Công nghiệp Thanh Hóa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5deeb28e-ae79-4398-8e57-5becce47f7cf', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Cà Mau', 'Trường Cao đẳng Sư phạm Cà Mau', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5dfbf3c8-201c-4307-9680-57227787cbc8', 'UNIVERSITY', 'Trường Cao đẳng nghề Đồng Tháp', 'Trường Cao đẳng nghề Đồng Tháp', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5e237ed0-19d6-4573-a486-24c7cc1c47c9', 'UNIVERSITY', 'Trường Đại học Luật Hà Nội', 'Trường Đại học Luật Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5e8e4364-1902-4c16-ae50-27f244bf21c0', 'UNIVERSITY', 'Trường Đại học Tài chính - Kế toán', 'Trường Đại học Tài chính - Kế toán', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5ed3fc41-d9cf-4bec-a3d9-5dfea1714e48', 'UNIVERSITY', 'Trường Cao đẳng nghề Lạng Sơn', 'Trường Cao đẳng nghề Lạng Sơn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5f679aa9-9bee-412d-9b2a-d1c6c5c9295e', 'UNIVERSITY', 'Trường Sĩ quan Pháo binh', 'Trường Sĩ quan Pháo binh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5fa889e6-09a7-421a-9012-dcd515d451ff', 'UNIVERSITY', 'Trường Cao đẳng Y tế Cà Mau', 'Trường Cao đẳng Y tế Cà Mau', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('5fad2d31-9cc7-4e43-9a27-63a7b760626d', 'UNIVERSITY', 'Trường Cao đẳng nghề số 5 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 5 - Bộ Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('60b2802a-8d57-4570-9995-a25f01d393a0', 'UNIVERSITY', 'Trường Đại học Tài chính - Marketing', 'Trường Đại học Tài chính - Marketing', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('60d4320a-3f2b-422a-b775-82bad46aa016', 'UNIVERSITY', 'Trường Đại học Xây dựng Miền Tây', 'Trường Đại học Xây dựng Miền Tây', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6100d176-4673-4ce2-b083-5a8decc4a093', 'UNIVERSITY', 'Trường Đại học Công nghệ Thông tin, Đại học Quốc gia Thành phố Hồ Chí Minh', 'Trường Đại học Công nghệ Thông tin, Đại học Quốc gia Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('61245c50-8054-4339-bbfd-14bf84d4d9da', 'UNIVERSITY', 'Trường Đại học Thái Bình', 'Trường Đại học Thái Bình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6190a64c-4f89-4937-87df-b43620aa1c6a', 'UNIVERSITY', 'Học viện Kỹ thuật Mật mã', 'Học viện Kỹ thuật Mật mã', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('61dde049-61a2-4cc3-868f-d36adcc4153c', 'UNIVERSITY', 'Trường Đại học Công nghiệp Việt Trì', 'Trường Đại học Công nghiệp Việt Trì', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('62410cdc-14ba-4f1b-ab14-f425cba73310', 'UNIVERSITY', 'Trường Cao đẳng nghề Việt-Úc Đà Nẵng', 'Trường Cao đẳng nghề Việt-Úc Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('62a65ffa-0403-4249-951b-e019a803d7ae', 'UNIVERSITY', 'Trường Cao đẳng nghề số 4 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 4 - Bộ Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6350a885-5550-4d9d-a2bd-4b3a3448a4d5', 'UNIVERSITY', 'Trường Đại học Giáo dục, Đại học Quốc gia Hà Nội', 'Trường Đại học Giáo dục, Đại học Quốc gia Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('646b7ffb-675f-495d-8e3f-38e136b6fc23', 'UNIVERSITY', 'Trường Cao đẳng Y tế Hà Tĩnh', 'Trường Cao đẳng Y tế Hà Tĩnh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('64efc9ed-8257-46f0-b446-ebc40c97a5c5', 'UNIVERSITY', 'Trường Cao đẳng nghề Đà Nẵng', 'Trường Cao đẳng nghề Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('656662e3-7d6c-4dc8-a46e-6a01259b356c', 'UNIVERSITY', 'Trường Đại học Lao động - Xã hội cơ sở 2, Thành phố Hồ Chí Minh', 'Trường Đại học Lao động - Xã hội cơ sở 2, Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('658cec22-391b-4118-92f5-eec28f5c1b61', 'UNIVERSITY', 'Trường Cao đẳng nghề Tây Ninh', 'Trường Cao đẳng nghề Tây Ninh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('65e6d2b0-5f5e-4e62-bf63-ed85a71f0150', 'UNIVERSITY', 'Trường Cao đẳng Nghệ thuật Hà Nội', 'Trường Cao đẳng Nghệ thuật Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('66138b9a-6624-4494-9c52-6d7352c77e48', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ Bắc Hà', 'Trường Cao đẳng Công nghệ Bắc Hà', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6654b48c-e104-42a5-8cc6-cb39c805c63b', 'UNIVERSITY', 'Trường Đại học Mỏ - Địa chất', 'Trường Đại học Mỏ - Địa chất', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6718c198-d53f-4cdd-b6db-30451106522c', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế - Kỹ thuật Thương mại', 'Trường Cao đẳng Kinh tế - Kỹ thuật Thương mại', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('678e442a-1c12-4abf-a8d1-188cadc254d2', 'UNIVERSITY', 'Trường Đại học Giao thông vận tải Thành phố Hồ Chí Minh', 'Trường Đại học Giao thông vận tải Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('67b19cc1-e354-4cb6-93d0-6ca7393413ce', 'UNIVERSITY', 'Trường Đại học Việt - Đức', 'Trường Đại học Việt - Đức', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6813d953-4ed2-4cbf-affd-0f47fbbc3ae4', 'UNIVERSITY', 'Trường Cao đẳng Thương mại và Du lịch Thái Nguyên', 'Trường Cao đẳng Thương mại và Du lịch Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6845a097-4607-4dce-8386-9b8e39c0dd05', 'UNIVERSITY', 'Trường Cao đẳng Vĩnh Phúc', 'Trường Cao đẳng Vĩnh Phúc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('684aa6f5-76e6-4eca-9153-ee550d25a6a5', 'UNIVERSITY', 'Trường Đại học Greenwich Việt Nam', 'Trường Đại học Greenwich Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6852aa5b-fadf-416a-8ece-44706eb32dca', 'UNIVERSITY', 'Trường Cao đẳng nghề số 17 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 17 - Bộ Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('687f18a6-7ecd-419e-9187-cee1b2416880', 'UNIVERSITY', 'Trường Đại học Duy Tân', 'Trường Đại học Duy Tân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('688c574b-5bf5-4fc9-9f6a-0eb0bbe504e4', 'UNIVERSITY', 'Trường Cao đẳng Cơ Điện và Công nghệ thực phẩm Hà Nội', 'Trường Cao đẳng Cơ Điện và Công nghệ thực phẩm Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6893984a-ad86-45e9-bfc5-21d2aa0a3850', 'UNIVERSITY', 'Trường Cao đẳng nghề Cơ điện Hà Nội', 'Trường Cao đẳng nghề Cơ điện Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('68faaf25-4d05-4cc0-8e65-45d5f5baec48', 'UNIVERSITY', 'Trường Cao đẳng Hải Dương', 'Trường Cao đẳng Hải Dương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('690733cd-e5c1-4a6c-8121-ef27b984759f', 'UNIVERSITY', 'Trường Cao đẳng Y Dược Phú Thọ', 'Trường Cao đẳng Y Dược Phú Thọ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('695a5b86-3630-4c38-9d5f-a46272ad2375', 'UNIVERSITY', 'Trường Cao đẳng nghề Việt - Hàn Quảng Ninh', 'Trường Cao đẳng nghề Việt - Hàn Quảng Ninh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('697ee11b-d4cf-4939-b171-55ca8d581c28', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ và Kinh tế công nghiệp', 'Trường Cao đẳng Công nghệ và Kinh tế công nghiệp', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('69875962-3ec0-4a80-9a5f-6e9eb99d31c9', 'UNIVERSITY', 'Trường Đại học Lâm nghiệp Việt Nam', 'Trường Đại học Lâm nghiệp Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('699e5027-b9a9-42af-8797-4aec3dd2caba', 'UNIVERSITY', 'Trường Cao đẳng nghề Hải Dương', 'Trường Cao đẳng nghề Hải Dương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6a2b863f-a43c-4f65-a52b-251646e1c42b', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Tây Ninh', 'Trường Cao đẳng Sư phạm Tây Ninh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6a4b41eb-3419-42d9-93b7-61b896d32a9e', 'UNIVERSITY', 'Trường Đại học Hà Tĩnh', 'Trường Đại học Hà Tĩnh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6a71633a-f1f6-4125-b16c-d678d2d208c4', 'UNIVERSITY', 'Trường Đại học Lạc Hồng', 'Trường Đại học Lạc Hồng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6a992301-abd2-4bcf-afcf-77a94325a5eb', 'UNIVERSITY', 'Trường Cao đẳng Luật miền Trung', 'Trường Cao đẳng Luật miền Trung', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6ac3cbe4-5b32-4789-a26d-3eb238c041cc', 'UNIVERSITY', 'Học viện Dân tộc', 'Học viện Dân tộc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6b27789b-0cd4-429e-b352-0276f2c404a8', 'UNIVERSITY', 'Trường Cao đẳng Nông nghiệp Nam Bộ', 'Trường Cao đẳng Nông nghiệp Nam Bộ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6b5de858-eabc-402d-bc93-899a2005ab7e', 'UNIVERSITY', 'Trường Đại học Kiến trúc Hà Nội', 'Trường Đại học Kiến trúc Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6baa2f50-5eae-4e9b-92bc-e81455aa239f', 'UNIVERSITY', 'Trường Cao đẳng nghề An Nhất Vinh', 'Trường Cao đẳng nghề An Nhất Vinh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6bce2989-a991-450b-9a60-247fd66b51f2', 'UNIVERSITY', 'Trường Cao đẳng nghề số 8 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 8 - Bộ Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6c4dd9a0-7f80-447d-9525-887aa2395c68', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế - Kỹ thuật Cần Thơ', 'Trường Cao đẳng Kinh tế - Kỹ thuật Cần Thơ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6c5ba18c-c4bf-455f-9d9b-038456407cb6', 'UNIVERSITY', 'Trường Cao đẳng Nội vụ Hà Nội', 'Trường Cao đẳng Nội vụ Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6d62a0cf-827c-4d51-a829-f174670a0391', 'UNIVERSITY', 'Trường Đại học Điện lực', 'Trường Đại học Điện lực', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6dffd326-e8ad-49f6-874a-8dd76dd6f1f2', 'UNIVERSITY', 'Trường Đại học Thăng Long', 'Trường Đại học Thăng Long', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6e946cd1-341a-42d1-922c-a064655b81ad', 'UNIVERSITY', 'Trường Đại học Hải Phòng', 'Trường Đại học Hải Phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6e997c76-03aa-420d-956c-f2f118f34c56', 'UNIVERSITY', 'Trường Đại học Dầu khí Việt Nam', 'Trường Đại học Dầu khí Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6f123566-1e28-4175-972c-214ea57d0243', 'UNIVERSITY', 'Trường Đại học Quốc tế Sài Gòn', 'Trường Đại học Quốc tế Sài Gòn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6f170330-18cb-4fca-bdc5-d61aa5b7f016', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ, Kinh tế và Chế biến lâm sản', 'Trường Cao đẳng nghề Công nghệ, Kinh tế và Chế biến lâm sản', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6f6b4099-ca23-4905-a0cd-66415c0a5e38', 'UNIVERSITY', 'Trường Đại học Hà Nội', 'Trường Đại học Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6fb1eca1-607b-4b6f-a648-c5998ec6ff97', 'UNIVERSITY', 'Trường Cao đẳng Lào Cai', 'Trường Cao đẳng Lào Cai', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('6ff8139a-ca28-4edc-a047-a983759eaf81', 'UNIVERSITY', 'Phân hiệu Học viện Phụ nữ Việt Nam tại Thành phố Hồ Chí Minh', 'Phân hiệu Học viện Phụ nữ Việt Nam tại Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7034426c-881f-4569-8dbc-62e78af01a88', 'UNIVERSITY', 'Trường Cao đẳng Xây dựng Thành phố Hồ Chí Minh', 'Trường Cao đẳng Xây dựng Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('70726f1f-97ec-419c-8e4d-9688768ee928', 'UNIVERSITY', 'Trường Cao đẳng Nông Lâm Sơn La', 'Trường Cao đẳng Nông Lâm Sơn La', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('70d24791-9e99-4d45-aae2-5f12391514fa', 'UNIVERSITY', 'Trường Cao đẳng Du lịch – Thương mại Nghệ An', 'Trường Cao đẳng Du lịch – Thương mại Nghệ An', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('70d26e1d-2dee-42bc-a0c6-7c111d695c33', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Sóc Trăng', 'Trường Cao đẳng Sư phạm Sóc Trăng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('71d965e8-b007-480e-b802-21ad56714ff8', 'UNIVERSITY', 'Trường Đại học Công nghệ Sài Gòn', 'Trường Đại học Công nghệ Sài Gòn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('721af163-af3d-4958-a5d9-ce47dcd1ac5a', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế Kỹ thuật Phú Thọ', 'Trường Cao đẳng Kinh tế Kỹ thuật Phú Thọ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('72775976-9f86-49a8-9e2d-01656125ece3', 'UNIVERSITY', 'Trường Đại học Mở Hà Nội', 'Trường Đại học Mở Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7278b4b7-d2fe-4013-8e59-9d46a6630bce', 'UNIVERSITY', 'Trường Cao đẳng Quốc tế Vabis', 'Trường Cao đẳng Quốc tế Vabis', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7280bb49-b9b3-4314-9a9c-9837617448d3', 'UNIVERSITY', 'Trường Cao đẳng Văn hóa Nghệ thuật Đắk Lắk', 'Trường Cao đẳng Văn hóa Nghệ thuật Đắk Lắk', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('72f01d49-e7a1-4bc0-818c-ffb9c7d692a8', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật công nghệ Sơn La', 'Trường Cao đẳng Kỹ thuật công nghệ Sơn La', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('735dfd8a-95d3-49c4-908a-6a717926927f', 'UNIVERSITY', 'Trường Cao đẳng Y tế Bình Thuận', 'Trường Cao đẳng Y tế Bình Thuận', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('736df627-5066-4c04-8751-d3e754d50dd2', 'UNIVERSITY', 'Trường Cao đẳng nghề Đà Lạt', 'Trường Cao đẳng nghề Đà Lạt', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('74083a65-803f-4395-89cc-5527868192f8', 'UNIVERSITY', 'Phân hiệu Đại học Huế tại Quảng Trị', 'Phân hiệu Đại học Huế tại Quảng Trị', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('74be5405-2161-4717-9727-ed924400a605', 'UNIVERSITY', 'Phân viện Học viện Hành chính Quốc gia tại Thành phố Hồ Chí Minh', 'Phân viện Học viện Hành chính Quốc gia tại Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('751e1e23-bd78-4116-9de3-97b641de889a', 'UNIVERSITY', 'Trường Đại học Điều dưỡng Nam Định', 'Trường Đại học Điều dưỡng Nam Định', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7539157b-48b3-4353-9698-7d59c338edae', 'UNIVERSITY', 'Học viện Y dược học cổ truyền Việt Nam', 'Học viện Y dược học cổ truyền Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('75516b10-0a95-401e-97a9-3586c729c0ba', 'UNIVERSITY', 'Trường Đại học Chu Văn An', 'Trường Đại học Chu Văn An', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('756f8c2b-4ef8-480e-85ca-b64027c2bbf5', 'UNIVERSITY', 'Phân hiệu Học viện Kỹ thuật Mật mã tại Thành phố Hồ Chí Minh', 'Phân hiệu Học viện Kỹ thuật Mật mã tại Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('75ce27af-a7ec-4998-a0b8-ddf513845c28', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ thông tin iSPACE', 'Trường Cao đẳng nghề Công nghệ thông tin iSPACE', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('76d61e21-72e0-48ae-91a2-6422d7bba17c', 'UNIVERSITY', 'Trường Đại học Ngoại ngữ, Đại học Quốc gia Hà Nội, Đại học Quốc gia Hà Nội', 'Trường Đại học Ngoại ngữ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7791c5cd-07a3-42e1-8857-31f4a52029f0', 'UNIVERSITY', 'Trường Đại học Văn hóa, Thể thao và Du lịch Thanh Hóa', 'Trường Đại học Văn hóa, Thể thao và Du lịch Thanh Hóa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7803f80b-393d-466b-9153-66078f83606a', 'UNIVERSITY', 'Trường Đại học Quy Nhơn', 'Trường Đại học Quy Nhơn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('789140b6-fd7b-417b-8beb-c4208a532d21', 'UNIVERSITY', 'Trường Cao đẳng Cần Thơ', 'Trường Cao đẳng Cần Thơ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('78bbb6c3-6400-4d32-83c0-469c5b0bd1b0', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ và Thương mại Hà Nội', 'Trường Cao đẳng Công nghệ và Thương mại Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('78c51a39-374b-40bc-bb5f-77c67819351f', 'UNIVERSITY', 'Trường Cao đẳng Thương mại và Du lịch Hà Nội', 'Trường Cao đẳng Thương mại và Du lịch Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('79452d3b-79bd-4306-8076-613268c7ded5', 'UNIVERSITY', 'Học viện Ngân hàng', 'Học viện Ngân hàng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('797bc0ed-9626-40c9-951c-a266e5e450bc', 'UNIVERSITY', 'Trường Cao đẳng Công nghiệp Cẩm Phả', 'Trường Cao đẳng Công nghiệp Cẩm Phả', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7994e500-940b-4cf3-a223-f2e3458af7b1', 'UNIVERSITY', 'Trường Cao đẳng nghề Quốc tế Hà Nội', 'Trường Cao đẳng nghề Quốc tế Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('79b83c52-a36c-4e86-828c-69efde70bcfd', 'UNIVERSITY', 'Trường Đại học Đông Á', 'Trường Đại học Đông Á', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('79d468d8-3f48-4ca0-86db-d138ff736e39', 'UNIVERSITY', 'Trường Cao đẳng Dược Trung ương', 'Trường Cao đẳng Dược Trung ương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('79da6b0e-ddb1-41c4-a2c9-7a4e9c8eeb23', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Bà Rịa-Vũng Tàu', 'Trường Cao đẳng Cộng đồng Bà Rịa-Vũng Tàu', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('79ff56fd-9243-4de2-a4a7-122fa1bbb177', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Bà Rịa-Vũng Tàu', 'Trường Cao đẳng Sư phạm Bà Rịa-Vũng Tàu', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7a1336d5-a971-4cbc-92c0-8e4628bf8330', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế - Kỹ thuật Bạc Liêu', 'Trường Cao đẳng Kinh tế - Kỹ thuật Bạc Liêu', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7a7955a4-f335-4e3c-8e99-bd1d37b66ada', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công nghệ Nam Định', 'Trường Cao đẳng Kỹ thuật Công nghệ Nam Định', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7a980877-6d2d-4c31-bd62-0b52e43c6af9', 'UNIVERSITY', 'Học viện Công nghệ Bưu chính Viễn thông cơ sở 2, Thành phố Hồ Chí Minh', 'Học viện Công nghệ Bưu chính Viễn thông cơ sở 2, Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7ad1f62e-f598-4f0c-a7dd-a4a9e09df88c', 'UNIVERSITY', 'Trường Cao đẳng nghề Bạc Liêu', 'Trường Cao đẳng nghề Bạc Liêu', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7ae9ff96-fbed-4ddc-acb7-2dc270a47045', 'UNIVERSITY', 'Trường Đại học Ngoại ngữ, Đại học Đà Nẵng', 'Trường Đại học Ngoại ngữ, Đại học Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7b64e7d1-1d5a-484a-9bfb-3b6a2918e473', 'UNIVERSITY', 'Trường Cao đẳng nghề Nguyễn Văn Trỗi', 'Trường Cao đẳng nghề Nguyễn Văn Trỗi', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7b6ab171-5d51-42fa-8337-d822e71b5e9a', 'UNIVERSITY', 'Trường Cao đẳng Xây dựng số 1', 'Trường Cao đẳng Xây dựng số 1', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7c430017-39ac-439a-9589-c0b7c57cf4fc', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế Kỹ thuật Hà Nội', 'Trường Cao đẳng Kinh tế Kỹ thuật Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7c894925-3ae9-4d48-ab01-44af71a6ca32', 'UNIVERSITY', 'Trường Cao đẳng nghề Sóc Trăng', 'Trường Cao đẳng nghề Sóc Trăng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7c8ddd07-bc0c-43a6-b459-4edd23ffc3f1', 'UNIVERSITY', 'Trường Cao đẳng nghề Bắc Nam', 'Trường Cao đẳng nghề Bắc Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7c94107c-2041-4b8b-9151-33b40d0cf1dd', 'UNIVERSITY', 'Trường Đại học Quang Trung', 'Trường Đại học Quang Trung', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7c9eaa57-d094-4ac1-be42-63deb9c2821e', 'UNIVERSITY', 'Trường Cao đẳng Việt - Anh', 'Trường Cao đẳng Việt - Anh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7cb00034-02e4-4306-bbfd-0f969b010119', 'UNIVERSITY', 'Trường Đại học Việt - Nhật, Đại học Quốc gia Hà Nội', 'Trường Đại học Việt - Nhật, Đại học Quốc gia Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7db63c35-bd3f-4853-8fb1-aa38b8ccef25', 'UNIVERSITY', 'Trường Cao đẳng Y Dược Pasteur Yên Bái', 'Trường Cao đẳng Y Dược Pasteur Yên Bái', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7de8f2b1-6a25-4567-8130-37ea432b12a4', 'UNIVERSITY', 'Trường Cao đẳng Phương Đông - Quảng Nam', 'Trường Cao đẳng Phương Đông - Quảng Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7dfeab3d-f4f0-4999-aa1d-414dfbd3a49d', 'UNIVERSITY', 'Trường Cao đẳng Y tế Bạch Mai', 'Trường Cao đẳng Y tế Bạch Mai', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7e4b7473-099a-4365-ab5d-f42b72a887db', 'UNIVERSITY', 'Trường Cao đẳng nghề Lao động - Xã hội Hải Phòng', 'Trường Cao đẳng nghề Lao động - Xã hội Hải Phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7e8248e4-6712-476f-afa7-281c201b52dc', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghiệp Việt Bắc - Vinacomin', 'Trường Cao đẳng nghề Công nghiệp Việt Bắc - Vinacomin', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7f2a22ae-b7a5-44f2-a10c-1fe309925933', 'UNIVERSITY', 'Trường Đại học Thủ đô Hà Nội', 'Trường Đại học Thủ đô Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('7f6c69e8-870b-41ed-96e1-ef038686aeeb', 'UNIVERSITY', 'Trường Đại học Y Dược Huế', 'Trường Đại học Y Dược Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8049f9da-965e-4951-bf2c-1bc6bf47448b', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công nghệ Bách Khoa', 'Trường Cao đẳng Kỹ thuật Công nghệ Bách Khoa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('80dfb86d-6ee8-47b0-9b55-736943806ea4', 'UNIVERSITY', 'Trường Cao đẳng Đồng Khởi', 'Trường Cao đẳng Đồng Khởi', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('812a095a-3e2a-4e7a-9985-a7a3109ccf48', 'UNIVERSITY', 'Trường Cao đẳng Y Dược Pasteur Hà Nội', 'Trường Cao đẳng Y Dược Pasteur Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('81348c8a-af51-42da-8f0c-0c97e77fe30e', 'UNIVERSITY', 'Nhạc viện Thành phố Hồ Chí Minh', 'Nhạc viện Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('815fb78b-4291-405c-971c-5ef2839fbcb4', 'UNIVERSITY', 'Trường Cao đẳng Du lịch Vũng Tàu', 'Trường Cao đẳng Du lịch Vũng Tàu', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('81debb1e-ae43-4a4b-add1-a18d7db1c937', 'UNIVERSITY', 'Trường cao đẳng Văn hóa Nghệ thuật TP.HCM', 'Trường cao đẳng Văn hóa Nghệ thuật TP.HCM', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8202fe5e-804f-4321-865d-439251069a61', 'UNIVERSITY', 'Trường Cao đẳng Ngoại ngữ - Công nghệ Việt Nhật', 'Trường Cao đẳng Ngoại ngữ - Công nghệ Việt Nhật', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('824b8c74-e147-4c81-97b5-4c81c48e70c6', 'UNIVERSITY', 'Khoa Quốc tế, Đại học Thái Nguyên', 'Khoa Quốc tế, Đại học Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8298c8ff-4cce-4080-97f6-09950077caf4', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ Thủ Đức', 'Trường Cao đẳng Công nghệ Thủ Đức', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('82ceeacd-8dfe-4fa6-a858-b7a5d5891e35', 'UNIVERSITY', 'Phân hiệu Đại học Thái Nguyên tại Lào Cai', 'Phân hiệu Đại học Thái Nguyên tại Lào Cai', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('82f5653d-7b85-4216-9303-eb172213cf8e', 'UNIVERSITY', 'Trường Cao đẳng nghề Kinh tế - Kỹ thuật số 1 Nghệ An', 'Trường Cao đẳng nghề Kinh tế - Kỹ thuật số 1 Nghệ An', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('83367b07-43ee-43ba-93d6-0c6e0ee7e9b3', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Kiên Giang', 'Trường Cao đẳng Sư phạm Kiên Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8371428b-f637-439b-9138-a65613279669', 'UNIVERSITY', 'Trường Đại học Tây Đô', 'Trường Đại học Tây Đô', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('83b0e885-dd98-4b8f-88e2-3de826ab484c', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Nguyễn Trường Tộ', 'Trường Cao đẳng Kỹ thuật Nguyễn Trường Tộ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('84280446-d6ab-477e-9a2d-68cbb02939e8', 'UNIVERSITY', 'Trường Cao đẳng Xây dựng công trình đô thị', 'Trường Cao đẳng Xây dựng công trình đô thị', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('84cadd94-ce4c-4118-b9a0-d728bcd30ad8', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế TP.HCM', 'Trường Cao đẳng Kinh tế TP.HCM', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('85322233-d7ac-4956-a0b0-d1e3d98ce99f', 'UNIVERSITY', 'Trường Cao đẳng Văn hóa Nghệ thuật và Du lịch Nam Định', 'Trường Cao đẳng Văn hóa Nghệ thuật và Du lịch Nam Định', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('85392efe-f423-49b8-b5c1-e5de9d64d84b', 'UNIVERSITY', 'Khoa Kỹ thuật và Công nghệ, Đại học Huế', 'Khoa Kỹ thuật và Công nghệ, Đại học Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8557bf15-0dfe-4d50-9060-213b39366daf', 'UNIVERSITY', 'Trường Cao đẳng Truyền hình', 'Trường Cao đẳng Truyền hình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('85781736-d03a-4a8f-9b64-ec0b9defbea9', 'UNIVERSITY', 'Trường Cao đẳng Kiên Giang', 'Trường Cao đẳng Kiên Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('85decd2b-f424-46ba-884c-5a26308211dc', 'UNIVERSITY', 'Khoa Ngoại ngữ, Đại học Thái Nguyên', 'Khoa Ngoại ngữ, Đại học Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('85eca25e-6598-445c-85a9-06b69a4b0e80', 'UNIVERSITY', 'Trường Đại học Sài Gòn', 'Trường Đại học Sài Gòn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('864597c8-ba52-48ba-a590-055e09d9372b', 'UNIVERSITY', 'Trường Đại học Tây Bắc', 'Trường Đại học Tây Bắc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('866214b1-3220-4483-b4e3-8e782955d7b8', 'UNIVERSITY', 'Học viện Tòa án', 'Học viện Tòa án', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('86ca9d36-ea4a-4c5f-ab5e-3809d8dda956', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Đắk Lắk', 'Trường Cao đẳng Kỹ thuật Đắk Lắk', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('86faabd2-3d9a-4f33-b0ac-20b9fd085c6f', 'UNIVERSITY', 'Trường Cao đẳng Văn hoá Nghệ thuật và Du lịch Sài Gòn', 'Trường Cao đẳng Văn hoá Nghệ thuật và Du lịch Sài Gòn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8727dbc8-d4b6-49af-b8c6-66beb005b321', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế - Kỹ thuật Thành phố Hồ Chí Minh', 'Trường Cao đẳng Kinh tế - Kỹ thuật Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8735c335-a531-4586-ba2b-7e58a3b9f1c8', 'UNIVERSITY', 'Trường Cao đẳng nghề Hùng Vương', 'Trường Cao đẳng nghề Hùng Vương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('877d3a9c-3ad2-405d-96dc-cb5aab2b3947', 'UNIVERSITY', 'Trường Đại học Kỹ thuật - Công nghệ Cần Thơ', 'Trường Đại học Kỹ thuật - Công nghệ Cần Thơ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8783b559-69ac-42d9-a1cf-fc4628ec99ca', 'UNIVERSITY', 'Trường Cao đẳng Cơ điện – Xây dựng và Nông lâm Trung Bộ', 'Trường Cao đẳng Cơ điện – Xây dựng và Nông lâm Trung Bộ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8819f43c-ec1d-4f51-b3b6-bd4d744372ba', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Bình Phước', 'Trường Cao đẳng Sư phạm Bình Phước', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('883ff4e7-09a9-4ec6-8c3d-2a162a12db5f', 'UNIVERSITY', 'Trường Đại học Sư phạm Huế', 'Trường Đại học Sư phạm Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('888b418c-1687-4ce1-b5a3-3b0a67f39ad1', 'UNIVERSITY', 'Học viện Cán bộ Quản lý xây dựng và đô thị', 'Học viện Cán bộ Quản lý xây dựng và đô thị', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('88b1390b-597b-45fa-a9f4-c049bd18bf46', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Bình Thuận', 'Trường Cao đẳng Cộng đồng Bình Thuận', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('895318fe-4080-44cf-ba93-b0350d29edad', 'UNIVERSITY', 'Trường Cao đẳng An ninh Nhân dân II', 'Trường Cao đẳng An ninh Nhân dân II', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8985bfd9-eb51-4217-89a0-f745ceac6782', 'UNIVERSITY', 'Trường Đại học Nguyễn Trãi', 'Trường Đại học Nguyễn Trãi', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8991cd05-1462-4052-a3dd-19bd4f5419b3', 'UNIVERSITY', 'Trường Dự bị Đại học dân tộc Trung ương Việt Trì - Phú Thọ', 'Trường Dự bị Đại học dân tộc Trung ương Việt Trì - Phú Thọ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('89d7e1b2-160c-4afa-acfc-462a3fab8824', 'UNIVERSITY', 'Trường Đại học Kinh tế – Luật, Đại học Quốc gia Thành phố Hồ Chí Minh', 'Trường Đại học Kinh tế – Luật, Đại học Quốc gia Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8a53d502-966e-4cb0-bbf7-b40fd933df03', 'UNIVERSITY', 'Trường Đại học Nông Lâm, Đại học Thái Nguyên', 'Trường Đại học Nông Lâm, Đại học Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8aded78b-8704-4409-8d71-40a5a123075c', 'UNIVERSITY', 'Trường Cao đẳng Y tế Yên Bái', 'Trường Cao đẳng Y tế Yên Bái', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8b0a08c7-dc66-4b26-be63-398a740592e0', 'UNIVERSITY', 'Trường Cao đẳng Y tế Cần Thơ', 'Trường Cao đẳng Y tế Cần Thơ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8b8183c3-2550-4e0c-ba14-0da4b7a375b1', 'UNIVERSITY', 'Trường Đại học Bình Dương', 'Trường Đại học Bình Dương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8b8f7442-9f35-40b0-bcdb-545b4d629ce7', 'UNIVERSITY', 'Học viện Tư Pháp - Cơ sở tại Thành phố Hồ Chí Minh', 'Học viện Tư Pháp - Cơ sở tại Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8c0c201a-8ecf-4a1e-a5a5-5a493adb04c3', 'UNIVERSITY', 'Trường Cao đẳng Cơ điện và Xây dựng Bắc Ninh', 'Trường Cao đẳng Cơ điện và Xây dựng Bắc Ninh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8c77f232-b425-4867-8088-ffd0ae76e514', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Bình Thuận', 'Trường Cao đẳng Cộng đồng Bình Thuận', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8da5d2cf-848e-47de-98fc-9c47637a4f2c', 'UNIVERSITY', 'Trường Đại học An ninh Nhân dân', 'Trường Đại học An ninh Nhân dân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8e5835ec-6386-4d85-a758-d4ac98e29ea1', 'UNIVERSITY', 'Trường Đại học Lương Thế Vinh', 'Trường Đại học Lương Thế Vinh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8ef44bc2-5b2e-42b7-9eb7-90dacd4ebafa', 'UNIVERSITY', 'Trường Cao đẳng Nông Lâm Đông Bắc', 'Trường Cao đẳng Nông Lâm Đông Bắc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8f2251c7-21f9-4caa-9843-3767330847a9', 'UNIVERSITY', 'Trường Đại học Trà Vinh', 'Trường Đại học Trà Vinh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8f69e489-ce16-4662-954b-8dab14ce0116', 'UNIVERSITY', 'Trường Cao đẳng nghề số 21 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 21 - Bộ Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8f760c8d-dbf1-4f21-875f-2710ef1bcf1a', 'UNIVERSITY', 'Trường Cao đẳng Y Dược Hợp Lực - Thanh Hóa', 'Trường Cao đẳng Y Dược Hợp Lực - Thanh Hóa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('8ff4dbf7-3a36-4c21-b665-e585577c4ab8', 'UNIVERSITY', 'Trường Đại học Sư phạm Hà Nội 2', 'Trường Đại học Sư phạm Hà Nội 2', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('900f77e6-eba0-4d3d-acdd-a72ec1320c05', 'UNIVERSITY', 'Trường Cao đẳng Y tế Bắc Ninh', 'Trường Cao đẳng Y tế Bắc Ninh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('909006d0-2f44-42e3-ba9f-2289ddd37e16', 'UNIVERSITY', 'Trường Đại học Ngoại thương cơ sở 2, Thành phố Hồ Chí Minh', 'Trường Đại học Ngoại thương cơ sở 2, Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('90b17c37-7b2d-4d4d-a596-c8873d15a4a7', 'UNIVERSITY', 'Trường Cao đẳng Y tế Đặng Thùy Trâm', 'Trường Cao đẳng Y tế Đặng Thùy Trâm', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('91578d02-b770-4fed-973f-3890c0696df5', 'UNIVERSITY', 'Học viện Chính trị Quốc gia Hồ Chí Minh', 'Học viện Chính trị Quốc gia Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('91a23974-c4fe-4868-b11f-2418f809299e', 'UNIVERSITY', 'Trường Cao đẳng nghề Cơ giới và Thủy lợi', 'Trường Cao đẳng nghề Cơ giới và Thủy lợi', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('91a98065-ee4f-4ed4-bcfe-75db243b141e', 'UNIVERSITY', 'Trường Cao đẳng Công nghiệp Nam Định', 'Trường Cao đẳng Công nghiệp Nam Định', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('923082b2-7a92-4254-916b-1f503206b6f7', 'UNIVERSITY', 'Trường Đại học Thể dục Thể thao Đà Nẵng', 'Trường Đại học Thể dục Thể thao Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('924703dc-759c-4f9c-8905-70bb09321e59', 'UNIVERSITY', 'Trường Đại học Khoa học Xã hội và Nhân văn, Đại học Quốc gia Thành phố Hồ Chí Minh', 'Trường Đại học Khoa học Xã hội và Nhân văn, Đại học Quốc gia Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('926b0980-90e9-49a5-b668-d373ff4b6b31', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế - Tài chính Vĩnh Long', 'Trường Cao đẳng Kinh tế - Tài chính Vĩnh Long', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('92e1508a-7d42-447b-8725-fdd499abba5d', 'UNIVERSITY', 'Trường Cao đẳng Công thương Miền Trung', 'Trường Cao đẳng Công thương Miền Trung', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('93602861-ae26-4904-9790-fc6725c6c695', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ Giấy và Cơ điện', 'Trường Cao đẳng nghề Công nghệ Giấy và Cơ điện', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('94014c9b-6635-4f63-bbce-7e76622aa06a', 'UNIVERSITY', 'Phân hiệu Đại học Tài chính - Kế toán tại Thừa Thiên Huế', 'Phân hiệu Đại học Tài chính - Kế toán tại Thừa Thiên Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('946ca29f-6664-4fb7-b26a-b6b922e725a9', 'UNIVERSITY', 'Trường Đại học Sư phạm Hà Nội', 'Trường Đại học Sư phạm Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('95916433-66da-419a-b857-5981036d6b4f', 'UNIVERSITY', 'Trường Đại học Y-Dược Cần Thơ', 'Trường Đại học Y-Dược Cần Thơ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('95d8083f-2ab9-45cf-8ca1-c3a34f257af9', 'UNIVERSITY', 'Học viện Hậu cần', 'Học viện Hậu cần', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('95ddee32-0038-4603-92ef-aa414734dcda', 'UNIVERSITY', 'Trường Đại học Công nghệ, Đại học Quốc gia Hà Nội', 'Trường Đại học Công nghệ, Đại học Quốc gia Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('965f54cd-9855-4ba7-bdf3-eb39e0b645e6', 'UNIVERSITY', 'Trường Cao đẳng Văn hóa - Nghệ thuật Đà Nẵng', 'Trường Cao đẳng Văn hóa - Nghệ thuật Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('96d5e6d8-f2b2-4246-b6ce-0df09cfe0f16', 'UNIVERSITY', 'Trường Đại học Kiến trúc Thành phố Hồ Chí Minh tại Đà Lạt', 'Trường Đại học Kiến trúc Thành phố Hồ Chí Minh tại Đà Lạt', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9732c48c-50dc-4073-b4d2-07997ca025ae', 'UNIVERSITY', 'Trường Cao đẳng Việt Mỹ', 'Trường Cao đẳng Việt Mỹ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('97b08d67-c9c0-4ec4-b1ed-cd2def668a74', 'UNIVERSITY', 'Phân hiệu Đại học Mỏ-Địa chất tại Vũng Tàu', 'Phân hiệu Đại học Mỏ-Địa chất tại Vũng Tàu', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('97b9ea20-f2d8-4bfa-8002-199c6a5a83dc', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công nghệ Quy Nhơn', 'Trường Cao đẳng Kỹ thuật Công nghệ Quy Nhơn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9815a4ee-74cf-4b8c-b45e-83e6d074b8c6', 'UNIVERSITY', 'Trường Đại học Sư phạm, Đại học Đà Nẵng', 'Trường Đại học Sư phạm, Đại học Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('98d85668-7068-4564-bb6e-d4da6e7eff4b', 'UNIVERSITY', 'Trường Đại học Cảnh sát Nhân dân', 'Trường Đại học Cảnh sát Nhân dân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('98fb3ebc-2d2d-423d-ad45-61e37de6d1de', 'UNIVERSITY', 'Phân viện Học viện Hành chính Quốc gia tại Thành phố Huế', 'Phân viện Học viện Hành chính Quốc gia tại Thành phố Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('99cdcfcb-21f7-45fe-bc4b-c162a8b9ba12', 'UNIVERSITY', 'Trường Cao đẳng nghề Quảng Nam', 'Trường Cao đẳng nghề Quảng Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('99d0c20a-2e6e-4b19-9cfe-2c30ddd0c2de', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế Kỹ thuật Công thương', 'Trường Cao đẳng Kinh tế Kỹ thuật Công thương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('99fe45d4-dd14-4b08-912e-aec92a2bd779', 'UNIVERSITY', 'Trường Đại học Ngoại thương', 'Trường Đại học Ngoại thương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9a2d4f45-58d5-49d1-a982-b525b6b7937d', 'UNIVERSITY', 'Trường Đại học Tôn Đức Thắng', 'Trường Đại học Tôn Đức Thắng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9a92c26c-82b4-4f46-9eec-24bb8c338dc6', 'UNIVERSITY', 'Trường Cao đẳng nghề Long An', 'Trường Cao đẳng nghề Long An', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9a9fc9c4-7987-430b-b1eb-d928703d1fa0', 'UNIVERSITY', 'Trường Cao đẳng Đường sắt', 'Trường Cao đẳng Đường sắt', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9ac0d50c-fe75-4742-938b-5e3326d78e44', 'UNIVERSITY', 'Phân hiệu Đại học Cần Thơ tại Hậu Giang', 'Phân hiệu Đại học Cần Thơ tại Hậu Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9b25dd79-15c3-4727-ab66-727be6b3bf63', 'UNIVERSITY', 'Trường Đại học Tân Trào', 'Trường Đại học Tân Trào', 'VN', '2021-04-29 11:02:18.880674', NULL);
+INSERT INTO "trueloveapp"."app_category_items" ("item_id", "category", "name", "description", "language", "created_date", "modified_date") VALUES
+('9b528db0-a289-41ef-b646-5f3fd967b31b', 'UNIVERSITY', 'Trường Cao đẳng Du lịch Đà Nẵng', 'Trường Cao đẳng Du lịch Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9b85c942-e5f0-4e2b-addd-fe6df845fa10', 'UNIVERSITY', 'Trường Đại học Sư phạm Thể dục Thể thao Hà Nội', 'Trường Đại học Sư phạm Thể dục Thể thao Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9c4faa62-28b9-4314-8096-21a1c6bf2dcb', 'UNIVERSITY', 'Học viện Kỹ thuật Quân sự', 'Học viện Kỹ thuật Quân sự', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9c87dfed-1860-4cd8-a89d-ec9e8f1f7a09', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế Công nghiệp Hà Nội', 'Trường Cao đẳng Kinh tế Công nghiệp Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9ce06fde-e01b-464c-8a3b-481bc7f767a7', 'UNIVERSITY', 'Trường Đại học Nông - Lâm Bắc Giang', 'Trường Đại học Nông - Lâm Bắc Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9d0acd15-6c1e-49d6-bd98-4a3451d4aded', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Hưng Yên', 'Trường Cao đẳng Sư phạm Hưng Yên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9d1551f7-9096-483b-9ecd-86649c2de19d', 'UNIVERSITY', 'Cao đẳng Văn hoá Nghệ thuật Cần Thơ', 'Cao đẳng Văn hoá Nghệ thuật Cần Thơ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9d16d419-5e67-4332-a490-3539465675ac', 'UNIVERSITY', 'Khoa Y Dược, Đại học Đà Nẵng', 'Khoa Y Dược, Đại học Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9d2c8702-85b1-43b0-b151-8a92fd1d790c', 'UNIVERSITY', 'Trường Đại học VinUni', 'Trường Đại học VinUni', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9d58d90b-6f05-46e9-94cb-feb945164ee6', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Cao Thắng', 'Trường Cao đẳng Kỹ thuật Cao Thắng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9de3c56a-b8cc-4840-9705-ac190a7a7523', 'UNIVERSITY', 'Trường Cao đẳng nghề Đại An', 'Trường Cao đẳng nghề Đại An', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9e200698-ffc1-4a51-adc4-87e7c4d35238', 'UNIVERSITY', 'Trường Cao đẳng nghề Trần Đại Nghĩa', 'Trường Cao đẳng nghề Trần Đại Nghĩa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('9f0851c9-8731-447d-b3fb-9612665d3a6a', 'UNIVERSITY', 'Trường Đại học Ngoại ngữ Huế', 'Trường Đại học Ngoại ngữ Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a00d08fe-3dbb-45db-b6e5-622ad558044c', 'UNIVERSITY', 'Trường Cao đẳng Quốc tế Thành phố Hồ Chí Minh', 'Trường Cao đẳng Quốc tế Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a03364fa-9e0f-4fa5-9d5a-98e74e438d13', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Đắk Lắk', 'Trường Cao đẳng Sư phạm Đắk Lắk', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a15ba2cb-a016-4fa4-a718-318d445651bb', 'UNIVERSITY', 'Trường Du lịch, Đại học Huế', 'Trường Du lịch, Đại học Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a1833a77-80d5-4a02-b96a-1e998fe91410', 'UNIVERSITY', 'Trường Cao đẳng nghề Kỹ thuật - Công nghệ LOD', 'Trường Cao đẳng nghề Kỹ thuật - Công nghệ LOD', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a18fad9c-10c2-4523-8f9d-f8ed35de5803', 'UNIVERSITY', 'Trường Cao đẳng Y tế Điện Biên', 'Trường Cao đẳng Y tế Điện Biên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a1b3bb86-ef98-4270-9200-562920faa785', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Trung ương Nha Trang', 'Trường Cao đẳng Sư phạm Trung ương Nha Trang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a1c93abb-79ce-4251-a5df-7b8534546dc5', 'UNIVERSITY', 'Trường Đại học Công nghệ Thông tin và Truyền thông, Đại học Thái Nguyên', 'Trường Đại học Công nghệ Thông tin và Truyền thông, Đại học Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a2cbfcaa-b46d-433e-8783-435cfcb7c08d', 'UNIVERSITY', 'Trường Đại học Công nghiệp Dệt may Hà Nội', 'Trường Đại học Công nghiệp Dệt may Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a3414ef0-052e-4a3d-b272-5083a91ddf36', 'UNIVERSITY', 'Trường Cao đẳng Điện lực miền Bắc', 'Trường Cao đẳng Điện lực miền Bắc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a36d9297-0fa7-4e38-ab02-3b6eda98c9b5', 'UNIVERSITY', 'Phân hiệu Đại học Công nghệ Giao thông Vận tải tại Thái Nguyên', 'Phân hiệu Đại học Công nghệ Giao thông Vận tải tại Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a3a86ec5-cbf8-4ab1-b553-3a59888e1288', 'UNIVERSITY', 'Trường Cao đẳng Bách Việt', 'Trường Cao đẳng Bách Việt', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a3d350ea-bda2-48a9-893b-f6e962bffbb7', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Hải quân', 'Trường Cao đẳng Kỹ thuật Hải quân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a4f7d5b9-ad70-47c5-a944-e50ee2560303', 'UNIVERSITY', 'Trường Cao đẳng Nông Lâm Thanh Hóa', 'Trường Cao đẳng Nông Lâm Thanh Hóa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a571e86c-db19-4e8d-b9ee-f3f64128199b', 'UNIVERSITY', 'Học viện Quản lý Giáo dục', 'Học viện Quản lý Giáo dục', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a5b5b03f-c23f-46c6-8559-d34ec92e7ddd', 'UNIVERSITY', 'Trường Đại học Y Dược Thái Bình', 'Trường Đại học Y Dược Thái Bình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a5ca19c9-c4d3-4b3c-86ea-4a4b0194384f', 'UNIVERSITY', 'Trường Cao đẳng nghề Hoa Sen', 'Trường Cao đẳng nghề Hoa Sen', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a67fb78c-3008-46ab-a8b3-4d5124723bb6', 'UNIVERSITY', 'Trường Cao đẳng Y Dược Pasteur Thành phố Hồ Chí Minh', 'Trường Cao đẳng Y Dược Pasteur Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a6bdda74-c5b5-4759-81c2-b752c85f0a42', 'UNIVERSITY', 'Trường Cao đẳng nghề Việt Xô số 1', 'Trường Cao đẳng nghề Việt Xô số 1', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a6c39ed7-4404-4dfa-a6bd-acb791560b6e', 'UNIVERSITY', 'Phân viện Bắc Ninh - Học viện Ngân hàng', 'Phân viện Bắc Ninh - Học viện Ngân hàng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a71d0061-f7ae-4099-bdd6-8ebfae6a638a', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công - Nông nghiệp Quảng Bình', 'Trường Cao đẳng Kỹ thuật Công - Nông nghiệp Quảng Bình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a7663c52-8f87-4fe9-8b9d-2d063b289b11', 'UNIVERSITY', 'Trường Đại học Tài nguyên và Môi trường Hà Nội', 'Trường Đại học Tài nguyên và Môi trường Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a7da4021-4b88-429b-a32b-86c6a5d5545b', 'UNIVERSITY', 'Trường Đại học Tiền Giang', 'Trường Đại học Tiền Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a86ec58e-3f95-4b9b-9a6e-6c4f558efd1c', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế và Công nghệ thực phẩm', 'Trường Cao đẳng Kinh tế và Công nghệ thực phẩm', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a9643e2a-64ca-4708-8572-705914981cc7', 'UNIVERSITY', 'Trường Cao đẳng Y tế Bình Phước', 'Trường Cao đẳng Y tế Bình Phước', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('a9cd061d-aaf6-46d1-8829-832d321b8c48', 'UNIVERSITY', 'Trường Đại học Công đoàn', 'Trường Đại học Công đoàn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('aa6a8db8-2687-4f82-af1c-981d75d775a7', 'UNIVERSITY', 'Trường Đại học Kinh tế Quốc dân', 'Trường Đại học Kinh tế Quốc dân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('aa98a9f2-3a25-42b5-8958-266b8bb695e5', 'UNIVERSITY', 'Trường Đại học Bách khoa, Đại học Quốc gia Thành phố Hồ Chí Minh', 'Trường Đại học Bách khoa, Đại học Quốc gia Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('aaa19b0e-35b4-49a0-86e9-79e20236b2af', 'UNIVERSITY', 'Trường Đại học Chính trị', 'Trường Đại học Chính trị', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ab202355-ebb4-4a5a-95d8-1c1acedc9cc0', 'UNIVERSITY', 'Phân hiệu Đại học Bình Dương tại Cà Mau', 'Phân hiệu Đại học Bình Dương tại Cà Mau', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ab2fab3b-9d88-44a2-a8d0-29d81c12008c', 'UNIVERSITY', 'Phân hiệu Đại học Bách Khoa tại Bến Tre', 'Phân hiệu Đại học Bách Khoa tại Bến Tre', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ab7066a4-3ff7-472f-b5a6-de01ad90dc0d', 'UNIVERSITY', 'Trường Cao đẳng Y tế Tiền Giang', 'Trường Cao đẳng Y tế Tiền Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('aba80e7c-2458-48f4-8a95-e2326219f4bf', 'UNIVERSITY', 'Trường Đại học Thể dục Thể thao Thành phố Hồ Chí Minh', 'Trường Đại học Thể dục Thể thao Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('abbe5c92-27ae-449f-8459-d3348230ef59', 'UNIVERSITY', 'Trường Đại học Hoa Lư', 'Trường Đại học Hoa Lư', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ac06cded-abf0-4ad1-8428-7941e8b60f47', 'UNIVERSITY', 'Trường Cao đẳng Y tế Thái Nguyên', 'Trường Cao đẳng Y tế Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ac940047-fb0f-4793-8e91-6ff931e0adde', 'UNIVERSITY', 'Trường Đại học Sư phạm Kỹ thuật Vinh', 'Trường Đại học Sư phạm Kỹ thuật Vinh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('acc54430-b87a-4ea3-899f-39b9f9313adc', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế - Kỹ thuật Trung ương', 'Trường Cao đẳng Kinh tế - Kỹ thuật Trung ương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ad4c581b-b691-4331-9932-7bb4199c8065', 'UNIVERSITY', 'Trường Đại học Kinh tế - Kỹ thuật Công nghiệp', 'Trường Đại học Kinh tế - Kỹ thuật Công nghiệp', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ad64ed83-2635-4857-af64-4427eb11f9a6', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Nghệ An', 'Trường Cao đẳng Sư phạm Nghệ An', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('adce7e77-dd22-4715-b829-516623fb61b3', 'UNIVERSITY', 'Trường Đại học Fulbright Việt Nam', 'Trường Đại học Fulbright Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ae28f10e-0bd7-40c4-bcc3-fa4da0a857a9', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Ninh Thuận', 'Trường Cao đẳng Sư phạm Ninh Thuận', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ae4dcc3f-2e97-4b77-8804-f65866753e69', 'UNIVERSITY', 'Trường Cao đẳng Y tế Hải Dương', 'Trường Cao đẳng Y tế Hải Dương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ae79bdd0-b934-434d-945b-3b35145f3e64', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Đồng Tháp', 'Trường Cao đẳng Cộng đồng Đồng Tháp', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('aebf4ed5-7330-4d67-8a49-e8468a165037', 'UNIVERSITY', 'Học viện Tài chính', 'Học viện Tài chính', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('af376801-7f9d-46a4-8957-da5fab911e57', 'UNIVERSITY', 'Trường Cao đẳng nghề Ninh Thuận', 'Trường Cao đẳng nghề Ninh Thuận', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('af3d4f29-1019-4c5f-92a2-c084628fad17', 'UNIVERSITY', 'Trường Cao đẳng Đại Việt Sài Gòn', 'Trường Cao đẳng Đại Việt Sài Gòn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b07bdf58-451b-4425-9ad3-e1d65a8ec2fa', 'UNIVERSITY', 'Trường Cao đẳng Văn hóa, Thể thao và Du lịch Nguyễn Du', 'Trường Cao đẳng Văn hóa, Thể thao và Du lịch Nguyễn Du', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b07d7933-0931-4b44-9764-1ee5119c1519', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Thái Nguyên', 'Trường Cao đẳng Sư phạm Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b0f7939f-c785-4c64-8d4f-2d4569d9fb34', 'UNIVERSITY', 'Trường Cao đẳng nghề Phú Thọ', 'Trường Cao đẳng nghề Phú Thọ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b13887f4-4b1b-4294-a710-aabcdf3c5d2f', 'UNIVERSITY', 'Trường Đại học Tài chính - Quản trị kinh doanh', 'Trường Đại học Tài chính - Quản trị kinh doanh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b14c002e-8fe8-4356-ad61-37f357fe6bb8', 'UNIVERSITY', 'Trường Cao đẳng nghề số 19 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 19 - Bộ Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b14e0b37-1deb-48ba-ba87-5cecb40e2e33', 'UNIVERSITY', 'Trường Đại học Nông Lâm Thành phố Hồ Chí Minh', 'Trường Đại học Nông Lâm Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b1ff4e5a-fbf6-4c3b-aef2-fbefd79cf509', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Bắc Kạn', 'Trường Cao đẳng Cộng đồng Bắc Kạn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b2886b2a-91d2-4372-91e2-4ea5a88a4de6', 'UNIVERSITY', 'Khoa Luật, Đại học Quốc gia Hà Nội', 'Khoa Luật, Đại học Quốc gia Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b318df4e-856d-4be4-8876-ef2dd082e670', 'UNIVERSITY', 'Trường Cao đẳng ASEAN', 'Trường Cao đẳng ASEAN', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b3289a0a-f800-4645-b01c-df4422de3830', 'UNIVERSITY', 'Học viện Múa Việt Nam', 'Học viện Múa Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b359cbe7-a6d9-4baa-9868-f5ffef074180', 'UNIVERSITY', 'Học viện Chính trị Quân sự', 'Học viện Chính trị Quân sự', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b36b435c-3c38-44cb-8eac-02a35df21587', 'UNIVERSITY', 'Trường Đại học Công nghệ thông tin và Truyền thông Việt - Hàn, Đại học Đà Nẵng', 'Trường Đại học Công nghệ thông tin và Truyền thông Việt - Hàn, Đại học Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b39ef22d-c998-4888-ac03-18e6e01df269', 'UNIVERSITY', 'Trường Đại học Hàng hải Việt Nam', 'Trường Đại học Hàng hải Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b41a14a6-a9be-4203-bf28-f82b16d1199a', 'UNIVERSITY', 'Trường Đại học Kỹ thuật Y Dược Đà Nẵng', 'Trường Đại học Kỹ thuật Y Dược Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b60799f2-2e4d-4095-93b7-303d40b8ce11', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Bắc Ninh', 'Trường Cao đẳng Sư phạm Bắc Ninh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b69b442f-b693-4e7f-8c5b-f247bc7907fd', 'UNIVERSITY', 'Trường Đại học Công nghệ Vạn Xuân', 'Trường Đại học Công nghệ Vạn Xuân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b6d7fef9-6c3d-49da-82de-3e81c7f25dbc', 'UNIVERSITY', 'Trường Cao đẳng nghề Viglacera', 'Trường Cao đẳng nghề Viglacera', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b7411c01-97bd-4e8a-bd84-80efb48425be', 'UNIVERSITY', 'Trường Đại học Quốc tế Hồng Bàng', 'Trường Đại học Quốc tế Hồng Bàng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b8030fd0-b60e-4e6b-924f-77d7e4c64950', 'UNIVERSITY', 'Phân hiệu Đại học Nông Lâm Thành phố Hồ Chí Minh tại Ninh Thuận', 'Phân hiệu Đại học Nông Lâm Thành phố Hồ Chí Minh tại Ninh Thuận', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b85bfba5-2593-4544-b9ef-45663d48bac1', 'UNIVERSITY', 'Trường Cao đẳng nghề số 7 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 7 - Bộ Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b87059b2-aa33-4f87-8cd3-b31750584908', 'UNIVERSITY', 'Trường Cao đẳng Y khoa Phạm Ngọc Thạch', 'Trường Cao đẳng Y khoa Phạm Ngọc Thạch', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b945aea1-62ed-4c0b-b3f4-5ba5fc6246d1', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghiệp Hà Nội', 'Trường Cao đẳng nghề Công nghiệp Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b94d0d27-0b30-4caf-8ded-211135061593', 'UNIVERSITY', 'Trường Cao đẳng Quân y 1', 'Trường Cao đẳng Quân y 1', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('b9ec969f-117a-4d3c-b533-130178497f3a', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ Viettronics', 'Trường Cao đẳng Công nghệ Viettronics', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ba10ec0e-7a3c-4f26-aae9-f2e6daa5affb', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ, Kinh tế và Thủy sản', 'Trường Cao đẳng nghề Công nghệ, Kinh tế và Thủy sản', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ba1c8d69-d35b-4c2b-816b-892bd6ce9014', 'UNIVERSITY', 'Trường Cao đẳng Công nghiệp Hưng Yên', 'Trường Cao đẳng Công nghiệp Hưng Yên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ba28c8db-ea2a-4bef-a7ca-6fcf3e61a2cf', 'UNIVERSITY', 'Trường Cao đẳng Âu Lạc Huế', 'Trường Cao đẳng Âu Lạc Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ba7bc063-756e-4acd-829d-223d4a6ae022', 'UNIVERSITY', 'Trường Đại học Công nghiệp Quảng Ninh', 'Trường Đại học Công nghiệp Quảng Ninh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('baf4d89a-d51f-4c0c-a20a-4ea341100c03', 'UNIVERSITY', 'Trường Cao đẳng Điện lực TP.HCM', 'Trường Cao đẳng Điện lực TP.HCM', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('bb0a6eb4-1aac-4885-b95e-a3194756ece6', 'UNIVERSITY', 'Trường Cao đẳng Công nghiệp Thực phẩm', 'Trường Cao đẳng Công nghiệp Thực phẩm', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('bb37e089-0b27-4529-950f-309c50be9cf1', 'UNIVERSITY', 'Trường Đại học Tôn Đức Thắng, cơ sở Bảo Lộc', 'Trường Đại học Tôn Đức Thắng, cơ sở Bảo Lộc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('bbab10b5-a2f8-4d7a-aacc-fd323451e3cb', 'UNIVERSITY', 'Trường Dự bị Đại học dân tộc Nha Trang', 'Trường Dự bị Đại học dân tộc Nha Trang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('bbc7b848-584a-455d-bb8d-819eeab3abf7', 'UNIVERSITY', 'Trường Cao đẳng Cảnh sát Nhân dân II', 'Trường Cao đẳng Cảnh sát Nhân dân II', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('bc756494-6d14-44d0-aecc-e89a7f8f74d9', 'UNIVERSITY', 'Trường Đại học Ngân hàng Thành phố Hồ Chí Minh', 'Trường Đại học Ngân hàng Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('bca51379-2fac-4b23-b9a6-1a79951d2bd7', 'UNIVERSITY', 'Trường Cao đẳng Y tế Bình Dương', 'Trường Cao đẳng Y tế Bình Dương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('bd9b48a6-f0a7-4a82-93f3-e64ff11be0ba', 'UNIVERSITY', 'Trường Đại học Quốc tế Bắc Hà', 'Trường Đại học Quốc tế Bắc Hà', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('bdfc856e-6e1c-4708-ae8c-5cace76e2afb', 'UNIVERSITY', 'Trường Sĩ quan Phòng hóa', 'Trường Sĩ quan Phòng hóa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('be1e3e00-266f-4c0b-b63a-201747ca3a6c', 'UNIVERSITY', 'Trường Cao đẳng nghề Sài Gòn', 'Trường Cao đẳng nghề Sài Gòn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('be93ea97-e1d4-4f71-b0ce-cb9956c90753', 'UNIVERSITY', 'Trường Cao đẳng nghề số 2 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 2 - Bộ Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('bee951fd-86fa-4847-bdc6-543441f63daa', 'UNIVERSITY', 'Trường Đại học Phương Đông', 'Trường Đại học Phương Đông', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('bf190799-4cc6-415d-8bbc-617c9609743c', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Đà Lạt', 'Trường Cao đẳng Sư phạm Đà Lạt', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('bf3dca5c-3501-4a2f-bd4a-d40c7f52bc20', 'UNIVERSITY', 'Trường Cao đẳng Y tế Quảng Nam', 'Trường Cao đẳng Y tế Quảng Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('bf7cf685-d3e7-4d40-af07-1f5edc787330', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Đồng Nai', 'Trường Cao đẳng Kỹ thuật Đồng Nai', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('bfd9a49f-ef1b-4def-b62d-e0219efd84f7', 'UNIVERSITY', 'Trường Cao đẳng nghề Quản lý và Công nghệ', 'Trường Cao đẳng nghề Quản lý và Công nghệ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c04e17e6-0f24-4e18-89af-62125230ab59', 'UNIVERSITY', 'Trường Cao đẳng Bách khoa Nam Sài Gòn', 'Trường Cao đẳng Bách khoa Nam Sài Gòn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c05a1f12-2927-444a-a4cf-ec0896f2a897', 'UNIVERSITY', 'Trường Cao đẳng Công nghiệp Dệt - May Nam Định', 'Trường Cao đẳng Công nghiệp Dệt - May Nam Định', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c109c46f-017d-4884-a4c6-c89afc007343', 'UNIVERSITY', 'Trường Đại học Phú Xuân', 'Trường Đại học Phú Xuân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c1153148-6c38-43a2-806c-782da79d6780', 'UNIVERSITY', 'Trường Cao đẳng Lương thực Thực phẩm', 'Trường Cao đẳng Lương thực Thực phẩm', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c2651fc2-068a-402b-ae38-2e51b8319a59', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Lai Châu', 'Trường Cao đẳng Cộng đồng Lai Châu', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c2ec4f86-87be-4d16-9681-9de31e6bc6ef', 'UNIVERSITY', 'Trường Cao đẳng Y tế Hà Đông', 'Trường Cao đẳng Y tế Hà Đông', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c38ec4d7-f63f-45cd-aec8-9c0eb0b38e0b', 'UNIVERSITY', 'Trường Cao đẳng nghề Nông nghiệp và Phát triển nông thôn Thanh Hóa', 'Trường Cao đẳng nghề Nông nghiệp và Phát triển nông thôn Thanh Hóa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c3a9a34b-9935-4280-8add-7501ff1bd779', 'UNIVERSITY', 'Học viện Báo chí và Tuyên truyền', 'Học viện Báo chí và Tuyên truyền', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c3b64c26-84a1-4403-87b0-e15c7d7fdb18', 'UNIVERSITY', 'Trường Cao đẳng Y tế Đồng Tháp', 'Trường Cao đẳng Y tế Đồng Tháp', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c48db5a9-71eb-4596-a31d-773d66e0ca77', 'UNIVERSITY', 'Trường Cao đẳng Nghề Kinh tế kỹ thuật Thành phố Hồ Chí Minh', 'Trường Cao đẳng Nghề Kinh tế kỹ thuật Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c4c26a2a-17d1-4674-a7ed-4bdab1fd8a30', 'UNIVERSITY', 'Trường Đại học Kỹ thuật - Hậu cần Công an Nhân dân', 'Trường Đại học Kỹ thuật - Hậu cần Công an Nhân dân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c4c51677-850c-4715-bf9c-d650bf22abf9', 'UNIVERSITY', 'Trường Đại học Tài chính - Ngân hàng Hà Nội', 'Trường Đại học Tài chính - Ngân hàng Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c4ecd3ab-42da-49bc-b108-ccac745d85d5', 'UNIVERSITY', 'Trường Cao đẳng Du lịch Đà Lạt', 'Trường Cao đẳng Du lịch Đà Lạt', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c55a14b7-8446-4c57-bbfc-d39c3da3c553', 'UNIVERSITY', 'Khoa Giáo dục thể chất, Đại học Huế', 'Khoa Giáo dục thể chất, Đại học Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c5c69113-f05a-4c8d-bcc5-e6c13f0459ec', 'UNIVERSITY', 'Trường Đại học Sư phạm kỹ thuật Vĩnh Long', 'Trường Đại học Sư phạm kỹ thuật Vĩnh Long', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c63c7d05-cb5f-4f57-9186-d52af2b82db9', 'UNIVERSITY', 'Trường Cao đẳng nghề An ninh - Công nghệ', 'Trường Cao đẳng nghề An ninh - Công nghệ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c688d6dc-7769-44e6-a41d-4fd42943ec1e', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Hà Tây', 'Trường Cao đẳng Sư phạm Hà Tây', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c6d4e628-cca5-474c-b4d6-f7273d47eabb', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Thái Bình', 'Trường Cao đẳng Sư phạm Thái Bình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c72405e9-566d-45a3-b9d7-5e23a178f20f', 'UNIVERSITY', 'Trường Cao đẳng Du lịch Nha Trang', 'Trường Cao đẳng Du lịch Nha Trang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c741edd9-6f50-46fa-acb0-554fdd575f34', 'UNIVERSITY', 'Trường Cao đẳng Nghề Giao thông Cơ điện Quảng Ninh', 'Trường Cao đẳng Nghề Giao thông Cơ điện Quảng Ninh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c76264e4-f609-41a2-a13a-7410eebb5a51', 'UNIVERSITY', 'Phân hiệu Đại học Y Hà Nội tại Thanh Hóa', 'Phân hiệu Đại học Y Hà Nội tại Thanh Hóa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c7c58959-08dc-4372-80bf-94ace94a403b', 'UNIVERSITY', 'Học viện Chính sách và phát triển', 'Học viện Chính sách và phát triển', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c84950e1-0261-4e06-a08f-2bfe6f80d1e9', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghiệp Hải Phòng', 'Trường Cao đẳng nghề Công nghiệp Hải Phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c97e0257-39e8-4831-a460-f5d30f7830ca', 'UNIVERSITY', 'Trường Đại học Kinh tế và Quản trị Kinh doanh, Đại học Thái Nguyên', 'Trường Đại học Kinh tế và Quản trị Kinh doanh, Đại học Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('c9b40011-b4d2-4fa2-96c7-142f42821979', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế - Kỹ thuật Lâm Đồng', 'Trường Cao đẳng Kinh tế - Kỹ thuật Lâm Đồng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ca2fee17-1406-4d8f-b47d-7b6b04089062', 'UNIVERSITY', 'Trường Cao đẳng Bến Tre', 'Trường Cao đẳng Bến Tre', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ca3f9f6b-b7ff-4fbe-991c-032c7aea7028', 'UNIVERSITY', 'Trường Đại học Sư phạm, Đại học Thái Nguyên', 'Trường Đại học Sư phạm, Đại học Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('caa2b516-ba68-410d-af6d-5dd40f255dce', 'UNIVERSITY', 'Trường Cao đẳng Bách khoa Đà Nẵng', 'Trường Cao đẳng Bách khoa Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('cadef643-9fcd-4631-a93e-84746f818cd5', 'UNIVERSITY', 'Học viện Cán bộ Thành phố Hồ Chí Minh', 'Học viện Cán bộ Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('cb77b500-fedf-43a7-88f8-85751a1170c3', 'UNIVERSITY', 'Trường Cao đẳng Y tế Hưng Yên', 'Trường Cao đẳng Y tế Hưng Yên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('cbc5b50c-a1be-44f7-8170-9c0ef3dc4bb8', 'UNIVERSITY', 'Trường Cao đẳng Y tế Ninh Bình', 'Trường Cao đẳng Y tế Ninh Bình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('cc0bd9cb-8220-4a72-bc95-7939d3886d6c', 'UNIVERSITY', 'Phân hiệu Đại học Nông Lâm Thành phố Hồ Chí Minh tại Gia Lai', 'Phân hiệu Đại học Nông Lâm Thành phố Hồ Chí Minh tại Gia Lai', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ccaf9c47-744f-4e3a-a3a8-ee2fb5a12e6f', 'UNIVERSITY', 'Trường Cao đẳng Việt Đức Nghệ An', 'Trường Cao đẳng Việt Đức Nghệ An', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ccef8fd8-f815-441e-94dd-8e0b1b2c6682', 'UNIVERSITY', 'Phân hiệu Đại học Lâm nghiệp Việt Nam tại Đồng Nai', 'Phân hiệu Đại học Lâm nghiệp Việt Nam tại Đồng Nai', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('cd414cf5-772c-4cb7-86d6-a9fa36865c0c', 'UNIVERSITY', 'Phân viện Học viện Hành chính Quốc gia khu vực Tây Nguyên', 'Phân viện Học viện Hành chính Quốc gia khu vực Tây Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('cde0d49a-a7fe-4cf8-a2fd-341d6661504b', 'UNIVERSITY', 'Trường Đại học Y Hà Nội', 'Trường Đại học Y Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ce118996-9de5-4907-97b9-d67e56c33329', 'UNIVERSITY', 'Trường Đại học Đông Đô', 'Trường Đại học Đông Đô', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ce683860-3454-4f3b-8ced-eacd80d064fe', 'UNIVERSITY', 'Trường Cao đẳng Lạc Việt - Đà Nẵng', 'Trường Cao đẳng Lạc Việt - Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('cebfb4be-9545-4da9-b49a-313ecd0883e5', 'UNIVERSITY', 'Trường Cao đẳng Xây dựng Nam Định', 'Trường Cao đẳng Xây dựng Nam Định', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ceee3fc2-7da5-4c8e-896f-91651c02f039', 'UNIVERSITY', 'Trường Cao đẳng Y Dược Sài Gòn', 'Trường Cao đẳng Y Dược Sài Gòn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('cf62a5ce-b134-4fb6-890b-95c9d4d3667c', 'UNIVERSITY', 'Trường Đại học FPT', 'Trường Đại học FPT', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d0ab5b41-3ca8-4dbc-a903-c60aa528c9c3', 'UNIVERSITY', 'Trường Đại học Phòng cháy Chữa cháy', 'Trường Đại học Phòng cháy Chữa cháy', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d10de8ac-2be4-4e81-9c44-2e0e92eff506', 'UNIVERSITY', 'Trường Cao đẳng nghề Nguyễn Trãi', 'Trường Cao đẳng nghề Nguyễn Trãi', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d1bec783-0240-481b-bc66-f3dc7af126ab', 'UNIVERSITY', 'Trường Cao đẳng nghề Phú Yên', 'Trường Cao đẳng nghề Phú Yên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d1c34c92-2356-4d96-98f4-25462cd8ce0e', 'UNIVERSITY', 'Trường Đại học Khoa học Huế', 'Trường Đại học Khoa học Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d20fd632-ce57-4078-8a7c-a31f3702ccd1', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ và Quản trị Sonadezi', 'Trường Cao đẳng Công nghệ và Quản trị Sonadezi', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d2a9fb04-8939-4ce9-8ae5-1a6a594377f2', 'UNIVERSITY', 'Trường Đại học Sư phạm Thể dục Thể thao Thành phố Hồ Chí Minh', 'Trường Đại học Sư phạm Thể dục Thể thao Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d2afe6a2-0d9a-4bf3-8e98-8816e3603e6e', 'UNIVERSITY', 'Trường Đại học Khánh Hòa', 'Trường Đại học Khánh Hòa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d2b18769-dc40-438a-ab89-7640bd16bf46', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Hải Phòng', 'Trường Cao đẳng Cộng đồng Hải Phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d2d00221-93fd-4b39-95c4-3eb5ebbc6a3a', 'UNIVERSITY', 'Trường Cao đẳng Miền Nam', 'Trường Cao đẳng Miền Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d3599b9a-8cb4-47fc-8ab9-87c8a152a70b', 'UNIVERSITY', 'Trường Cao đẳng Điện lực miền Trung', 'Trường Cao đẳng Điện lực miền Trung', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d504dc60-59b5-4efb-a298-58f121f366ad', 'UNIVERSITY', 'Trường Cao đẳng nghề Du lịch Sài Gòn', 'Trường Cao đẳng nghề Du lịch Sài Gòn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d5423bd5-bd03-43ba-92b2-02109883a049', 'UNIVERSITY', 'Phân hiệu Đại học Khoa học Tự nhiên tại Bến Tre', 'Phân hiệu Đại học Khoa học Tự nhiên tại Bến Tre', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d54b5255-0256-46c6-9341-6e258b0bd70e', 'UNIVERSITY', 'Trường Cao đẳng nghề Dịch vụ Hàng không AIRSERCO', 'Trường Cao đẳng nghề Dịch vụ Hàng không AIRSERCO', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d697b1ae-2012-4aa3-b4d2-a69e77e933d1', 'UNIVERSITY', 'Trường Dự bị Đại Học Thành phố Hồ Chí Minh', 'Trường Dự bị Đại Học Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d7cb5b47-6d32-44a9-83d8-ff45259637bc', 'UNIVERSITY', 'Trường Cao đẳng Công nghiệp và Thương mại', 'Trường Cao đẳng Công nghiệp và Thương mại', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d7edcad7-be27-465c-b9c0-9deecce94378', 'UNIVERSITY', 'Trường Cao đẳng Giao thông vận tải TP.HCM', 'Trường Cao đẳng Giao thông vận tải TP.HCM', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d80f1f46-7aca-40cc-92fd-7e1da4f5200b', 'UNIVERSITY', 'Học viện Biên phòng', 'Học viện Biên phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d857f70c-d194-4768-adb0-8c919fed71ab', 'UNIVERSITY', 'Trường Cao đẳng Y tế Thanh Hóa', 'Trường Cao đẳng Y tế Thanh Hóa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d8618ba0-f2cb-4a30-b72c-ec88c4ffe7b8', 'UNIVERSITY', 'Trường Đại học Kiên Giang', 'Trường Đại học Kiên Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d8a1463f-a6e1-4ac0-918a-f4e0447d434f', 'UNIVERSITY', 'Trường Đại học Y Dược, Đại học Thái Nguyên', 'Trường Đại học Y Dược, Đại học Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d8bf2061-6960-4c10-b88a-c8099387b75f', 'UNIVERSITY', 'Trường Cao đẳng nghề Tây Sài Gòn', 'Trường Cao đẳng nghề Tây Sài Gòn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d8f85e2c-82b1-4650-9c90-2b4368040018', 'UNIVERSITY', 'Trường Đại học Nội vụ Hà Nội', 'Trường Đại học Nội vụ Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d917990c-48bc-41ae-8af7-2293409a543b', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Vĩnh Long', 'Trường Cao đẳng Sư phạm Vĩnh Long', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d9280de0-6b17-42d7-93be-28a1779e39c5', 'UNIVERSITY', 'Trường Đại học Cửu Long', 'Trường Đại học Cửu Long', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d9e6b414-c476-419e-9c60-1b8a5bf64cdb', 'UNIVERSITY', 'Trường Đại học Mỹ thuật Việt Nam', 'Trường Đại học Mỹ thuật Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('d9fd31b3-bf79-49ec-8096-73d740904dfa', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế - Kế hoạch Đà Nẵng', 'Trường Cao đẳng Kinh tế - Kế hoạch Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('da1fd394-6de0-4ccd-a792-48f54488af22', 'UNIVERSITY', 'Trường Cao đẳng Giao thông vận tải Trung ương V', 'Trường Cao đẳng Giao thông vận tải Trung ương V', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('da6d4b1d-69b5-410d-94fa-07485bd3b8d3', 'UNIVERSITY', 'Trường Đại học Y Hải Phòng', 'Trường Đại học Y Hải Phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('dae116c5-d1a9-433a-bf53-5968cd3f1d36', 'UNIVERSITY', 'Trường Cao đẳng Thương mại', 'Trường Cao đẳng Thương mại', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('db1324a9-14b5-4d3e-a347-03eaba44ec5e', 'UNIVERSITY', 'Học viện Khoa học, Công nghệ và Đổi mới sáng tạo', 'Học viện Khoa học, Công nghệ và Đổi mới sáng tạo', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('dbc09853-9fef-46ca-9425-f75709c93c3c', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế Công nghệ Thành phố Hồ Chí Minh', 'Trường Cao đẳng Kinh tế Công nghệ Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('dd0f1a13-0a02-4ee5-aa68-240a9dbb865a', 'UNIVERSITY', 'Trường Đại học Ngoại thương, cơ sở Quảng Ninh', 'Trường Đại học Ngoại thương, cơ sở Quảng Ninh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('dd1daacd-6650-4c59-8509-02ca0aed6f22', 'UNIVERSITY', 'Trường Đại học Vinh', 'Trường Đại học Vinh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('dd4409e1-b3fd-4f17-90a0-b3a7f0b73447', 'UNIVERSITY', 'Trường Cao đẳng nghề Bắc Giang', 'Trường Cao đẳng nghề Bắc Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('dd5ccad6-59c2-4fa2-82c0-f99307efa973', 'UNIVERSITY', 'Trường Cao đẳng nghề Công thương Việt Nam', 'Trường Cao đẳng nghề Công thương Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('dd8322e0-9fa4-4f2c-a664-6f0d14ba0612', 'UNIVERSITY', 'Trường Cao đẳng Công nghiệp Việt Đức', 'Trường Cao đẳng Công nghiệp Việt Đức', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ddbe4d21-2450-4777-b4a4-57f12e91e7e7', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật Công nghiệp', 'Trường Cao đẳng Kỹ thuật Công nghiệp', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ddf8c441-606f-490b-8056-cdc89b190026', 'UNIVERSITY', 'Trường Đại học Văn Lang', 'Trường Đại học Văn Lang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('deb3075e-490f-47e0-8bdc-ed69fa9728e2', 'UNIVERSITY', 'Học viện Hải quân', 'Học viện Hải quân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('defa6a88-c55e-4183-ad83-5d0168f1b28c', 'UNIVERSITY', 'Trường Cao đẳng Nghề Kỹ thuật-Công nghệ Tuyên Quang', 'Trường Cao đẳng Nghề Kỹ thuật-Công nghệ Tuyên Quang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('df61f829-5ed3-4823-8ca4-a9934ecf6597', 'UNIVERSITY', 'Trường Cao đẳng Y tế Bình Định', 'Trường Cao đẳng Y tế Bình Định', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('df63bfdc-e690-4a55-aa5d-5b50a0947c24', 'UNIVERSITY', 'Trường Cao đẳng nghề số 3 - Bộ Quốc phòng', 'Trường Cao đẳng nghề số 3 - Bộ Quốc phòng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e042ff35-c75c-4c98-8b09-cd3dad96a230', 'UNIVERSITY', 'Trường Đại học Tài nguyên và Môi trường Thành phố Hồ Chí Minh', 'Trường Đại học Tài nguyên và Môi trường Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e04f49cd-ceba-4200-af5e-7449126bf71e', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Hậu Giang', 'Trường Cao đẳng Cộng đồng Hậu Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e0ae1910-64b2-45c4-87ee-9ccb859a599b', 'UNIVERSITY', 'Trường Cao đẳng Tâm Trí', 'Trường Cao đẳng Tâm Trí', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e0b9e8f3-e6d7-4302-b9de-a41484d1bca2', 'UNIVERSITY', 'Trường Đại học Văn Hiến', 'Trường Đại học Văn Hiến', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e14605a1-3057-4a52-b6fc-8826f55c9eeb', 'UNIVERSITY', 'Trường Cao đẳng Phát thanh Truyền hình II', 'Trường Cao đẳng Phát thanh Truyền hình II', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e159c9b6-bfae-4442-a72b-7653f4b63a16', 'UNIVERSITY', 'Phân hiệu Đại học Đà Nẵng tại Kon Tum', 'Phân hiệu Đại học Đà Nẵng tại Kon Tum', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e1f82640-d9d4-47d9-92f3-40849fd11312', 'UNIVERSITY', 'Trường Cao đẳng Y Dược Hồ Chí Minh', 'Trường Cao đẳng Y Dược Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e2086e41-87de-4207-aaf5-2886000af4d9', 'UNIVERSITY', 'Trường Đại học Công nghệ Giao thông Vận tải', 'Trường Đại học Công nghệ Giao thông Vận tải', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e245851b-840f-4d53-844c-781b40aa53e0', 'UNIVERSITY', 'Trường Cao đẳng nghề Bách Khoa', 'Trường Cao đẳng nghề Bách Khoa', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e2e32cb0-29b2-4d77-a8f1-a6e34d26573d', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế - Công nghệ TP.HCM', 'Trường Cao đẳng Kinh tế - Công nghệ TP.HCM', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e3c8e2bb-b8d9-4423-9ea0-af9dd4fdf13e', 'UNIVERSITY', 'Phân hiệu Đại học Công nghệ Giao thông Vận tải tại Vĩnh Phúc', 'Phân hiệu Đại học Công nghệ Giao thông Vận tải tại Vĩnh Phúc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e5bef9ad-097e-46b7-a97a-644e9a8290b5', 'UNIVERSITY', 'Trường Cao đẳng Cơ điện Phú Thọ', 'Trường Cao đẳng Cơ điện Phú Thọ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e5e41574-b62b-4611-9fb1-f845f09fb2e1', 'UNIVERSITY', 'Trường Cao đẳng Công nghiệp In', 'Trường Cao đẳng Công nghiệp In', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e6700266-c685-410b-b256-4a70c81c6423', 'UNIVERSITY', 'Trường Cao đẳng nghề Thương mại và Công nghiệp', 'Trường Cao đẳng nghề Thương mại và Công nghiệp', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e6a4603c-1483-4534-91db-428280355eba', 'UNIVERSITY', 'Trường Đại học Quốc tế, Đại học Quốc gia Thành phố Hồ Chí Minh', 'Trường Đại học Quốc tế, Đại học Quốc gia Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e74014d4-e432-4b60-82e7-4aa8e89d2268', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ và Nông lâm Đông Bắc', 'Trường Cao đẳng nghề Công nghệ và Nông lâm Đông Bắc', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e7e61ecd-68a8-4b19-9059-9ee19f580472', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ Tây Nguyên', 'Trường Cao đẳng Công nghệ Tây Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e834a2c1-12e8-42b1-91a2-289bdf575044', 'UNIVERSITY', 'Học viện Quốc phòng Việt Nam', 'Học viện Quốc phòng Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e8f31371-c363-4d35-8915-025173c409bf', 'UNIVERSITY', 'Trường Đại học Khoa học và Công nghệ Hà Nội', 'Trường Đại học Khoa học và Công nghệ Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('e9e47b64-a054-4618-b16f-5176fc976c99', 'UNIVERSITY', 'Trường Cao đẳng Nghề Kỹ thuật y tế Thăng Long', 'Trường Cao đẳng Nghề Kỹ thuật y tế Thăng Long', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ea082f55-fcce-4ee5-ba66-f65fda0e9c75', 'UNIVERSITY', 'Trường Đại học Kỹ thuật Công nghiệp, Đại học Thái Nguyên', 'Trường Đại học Kỹ thuật Công nghiệp, Đại học Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ea41d0b6-eadc-4da9-8cac-c57293ea899a', 'UNIVERSITY', 'Trường Đại học Văn hóa - Nghệ thuật Quân đội', 'Trường Đại học Văn hóa - Nghệ thuật Quân đội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('eb19529f-f079-4a5e-b7d5-1ca47108a181', 'UNIVERSITY', 'Trường Đại học Kinh tế, Đại học Quốc gia Hà Nội', 'Trường Đại học Kinh tế, Đại học Quốc gia Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('eb2e2a32-7c0c-48b7-a6c2-66454ba382e1', 'UNIVERSITY', 'Trường Đại học Phan Châu Trinh', 'Trường Đại học Phan Châu Trinh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ec24a0da-5b2c-47d6-acd4-f3fba46ae4c9', 'UNIVERSITY', 'Trường Đại học Kiến trúc Đà Nẵng', 'Trường Đại học Kiến trúc Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ec97031a-a7a2-4689-acf7-26793d0486de', 'UNIVERSITY', 'Cao đẳng Kinh tế Đối ngoại', 'Cao đẳng Kinh tế Đối ngoại', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ecd030a1-c271-44d7-8049-d103e8aa6c52', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ Hà Tĩnh', 'Trường Cao đẳng nghề Công nghệ Hà Tĩnh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ed15aec5-fe81-4718-99bf-0aea7c6aa93b', 'UNIVERSITY', 'Trường Đại học Đại Nam', 'Trường Đại học Đại Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ed25a508-2262-4694-886a-168ff9d674ac', 'UNIVERSITY', 'Trường Đại học Nông Lâm Huế', 'Trường Đại học Nông Lâm Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ed925239-5483-4248-91dd-b0a86937f0a0', 'UNIVERSITY', 'Trường Dự bị Đại học dân tộc Sầm Sơn', 'Trường Dự bị Đại học dân tộc Sầm Sơn', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('edc3b21b-3948-49e1-ba19-a722552b90a9', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Hà Tây', 'Trường Cao đẳng Cộng đồng Hà Tây', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('edfdbcd7-3f10-4aac-902b-b18f1d774fdd', 'UNIVERSITY', 'Trường Cao đẳng nghề Trà Vinh', 'Trường Cao đẳng nghề Trà Vinh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ee8d00d2-513c-4964-a169-2276ccd525ca', 'UNIVERSITY', 'Trường Đại học Kinh tế - Tài chính Thành phố Hồ Chí Minh', 'Trường Đại học Kinh tế - Tài chính Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('eebfc8e2-2cd2-44cd-994a-019d581d9c93', 'UNIVERSITY', 'Trường Cao đẳng Đại Việt Đà Nẵng', 'Trường Cao đẳng Đại Việt Đà Nẵng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('eec71093-52c8-42a5-be78-ceb48ada6cb0', 'UNIVERSITY', 'Trường Cao đẳng nghề Quảng Bình', 'Trường Cao đẳng nghề Quảng Bình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('eeef2ab6-81eb-4d9d-8c94-a5c3b1e9878b', 'UNIVERSITY', 'Trường Đại học Tôn Đức Thắng, cơ sở Cà Mau', 'Trường Đại học Tôn Đức Thắng, cơ sở Cà Mau', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('eef1193e-0159-4fa0-a69f-6d26a286da64', 'UNIVERSITY', 'Trường Cao đẳng nghề Công nghệ cao Đồng Nai', 'Trường Cao đẳng nghề Công nghệ cao Đồng Nai', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ef6588a1-e6f5-40d2-8fc7-a7d4f0af51ca', 'UNIVERSITY', 'Trường Đại học Xây dựng miền Trung', 'Trường Đại học Xây dựng miền Trung', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f002a428-b156-474b-a159-1c04b8de73e7', 'UNIVERSITY', 'Trường Cao đẳng nghề Sông Đà', 'Trường Cao đẳng nghề Sông Đà', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f0a4e232-e771-4188-9a07-0e52bb138c5a', 'UNIVERSITY', 'Trường Đại học Kinh tế Nghệ An', 'Trường Đại học Kinh tế Nghệ An', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f0bdf09e-3ca4-4c1b-af08-f9e3655b99a9', 'UNIVERSITY', 'Trường Đại học Sư phạm Kỹ thuật Nam Định', 'Trường Đại học Sư phạm Kỹ thuật Nam Định', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f0d31b3a-0e31-4675-b637-2683a6785aa1', 'UNIVERSITY', 'Trường Cao đẳng nghề Thái Bình', 'Trường Cao đẳng nghề Thái Bình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f1416971-b318-42c3-90a4-e702dcb761a6', 'UNIVERSITY', 'Trường Cao đẳng Nghề Kỹ thuật và Nghiệp vụ Hà Nội', 'Trường Cao đẳng Nghề Kỹ thuật và Nghiệp vụ Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f159159d-b696-4a63-8902-8e9c4ddcc942', 'UNIVERSITY', 'Trường Cao đẳng Kinh tế - Kỹ thuật Vinatex', 'Trường Cao đẳng Kinh tế - Kỹ thuật Vinatex', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f15be939-352d-4fc7-a5cc-9cc36a5bc34e', 'UNIVERSITY', 'Trường Cao đẳng nghề Việt Nam - Singapore', 'Trường Cao đẳng nghề Việt Nam - Singapore', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f169b899-d9a1-42ec-ae4e-e89f16a33cf4', 'UNIVERSITY', 'Trường Đại học Lao động - Xã hội', 'Trường Đại học Lao động - Xã hội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f17ed748-29b2-4558-a01d-71592b6c3d04', 'UNIVERSITY', 'Trường Đại học Sư phạm Kỹ thuật Hưng Yên', 'Trường Đại học Sư phạm Kỹ thuật Hưng Yên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f1aa9dfb-1186-43c9-8f1a-b06568c197d0', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Hà Nam', 'Trường Cao đẳng Sư phạm Hà Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f1b3739a-b014-42bc-88f3-594a795271a0', 'UNIVERSITY', 'Học viện An ninh Nhân dân', 'Học viện An ninh Nhân dân', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f1cd02e4-3036-4d46-9049-5e098c1c9dc2', 'UNIVERSITY', 'Học viện Quân y', 'Học viện Quân y', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f1ed9666-3f52-4348-8ee8-bed992d645e3', 'UNIVERSITY', 'Trường Đại học Mở Thành phố Hồ Chí Minh', 'Trường Đại học Mở Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f20ba347-e2e0-4fc9-9cc9-289b6b049f1d', 'UNIVERSITY', 'Trường Cao đẳng nghề Bách khoa Hà Nội', 'Trường Cao đẳng nghề Bách khoa Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f2875206-2ed2-4530-b27c-e93849a71bcd', 'UNIVERSITY', 'Học viện Thanh thiếu niên Việt Nam', 'Học viện Thanh thiếu niên Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f317c2f3-166e-4314-a784-7ad7d6da72f6', 'UNIVERSITY', 'Trường Đại học Hà Hoa Tiên', 'Trường Đại học Hà Hoa Tiên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f3463199-8e6e-445d-a3fc-e8a1b9f1d3b6', 'UNIVERSITY', 'Trường Đại học Kinh tế Huế', 'Trường Đại học Kinh tế Huế', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f491a583-c16e-4fea-ad66-2c71499b44c6', 'UNIVERSITY', 'Trường Cao đẳng Y tế Lâm Đồng', 'Trường Cao đẳng Y tế Lâm Đồng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f58a4146-eb2e-408e-92fa-44bf119ef811', 'UNIVERSITY', 'Học viện Công nghệ Bưu chính Viễn thông', 'Học viện Công nghệ Bưu chính Viễn thông', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f60b9dcd-678e-4e82-8276-f2b27c2591bc', 'UNIVERSITY', 'Trường Đại học Khoa học, Đại học Thái Nguyên', 'Trường Đại học Khoa học, Đại học Thái Nguyên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f65546b3-8b21-486a-b171-b6f43266004a', 'UNIVERSITY', 'Trường Cao đẳng nghề Quốc tế Nam Việt', 'Trường Cao đẳng nghề Quốc tế Nam Việt', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f6fe0fb0-8e4a-45a6-98e3-cb6d4310bee6', 'UNIVERSITY', 'Trường Đại học Kỹ thuật Y tế Hải Dương', 'Trường Đại học Kỹ thuật Y tế Hải Dương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f7c22ae2-2582-4741-a53d-01fb00e1134d', 'UNIVERSITY', 'Trường Cao đẳng Việt Nam-Hàn Quốc Bình Dương', 'Trường Cao đẳng Việt Nam-Hàn Quốc Bình Dương', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f81686cd-c034-4ded-b26b-2d08791f74be', 'UNIVERSITY', 'Trường Đại học Tân Tạo', 'Trường Đại học Tân Tạo', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f8961484-7308-4769-b588-15b7b5f13b45', 'UNIVERSITY', 'Trường Đại học Thương mại', 'Trường Đại học Thương mại', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f8a3f166-57c6-4297-8069-b2c6b165cafb', 'UNIVERSITY', 'Trường Đại học Hòa Bình', 'Trường Đại học Hòa Bình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f8f3f93d-be95-428c-a576-5a274353ad0c', 'UNIVERSITY', 'Trường Đại học Thành Đông', 'Trường Đại học Thành Đông', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('f9b09d04-9a95-45ce-b1eb-d2c98236040f', 'UNIVERSITY', 'Trường Cao đẳng nghề Bình Thuận', 'Trường Cao đẳng nghề Bình Thuận', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('fa20cab1-d689-4c63-be95-62e455556905', 'UNIVERSITY', 'Trường Cao đẳng Cộng đồng Hà Nội', 'Trường Cao đẳng Cộng đồng Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('fa8cbedf-0d19-40ce-bd65-d28039c95e32', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Điện Biên', 'Trường Cao đẳng Sư phạm Điện Biên', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('faf177a9-99ec-4b48-8b1d-e356100b6db5', 'UNIVERSITY', 'Học viện Tư Pháp', 'Học viện Tư Pháp', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('faf64baa-0e9f-402d-9a7c-9bd8c61f61b9', 'UNIVERSITY', 'Trường Đại học Hùng Vương Thành phố Hồ Chí Minh', 'Trường Đại học Hùng Vương Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('fb1499be-4e31-4e05-9e8d-6219d6960dae', 'UNIVERSITY', 'Trường Cao đẳng Công nghệ và Nông lâm Nam Bộ', 'Trường Cao đẳng Công nghệ và Nông lâm Nam Bộ', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('fb68c172-7ffd-4db5-9d08-4afc6e290cd3', 'UNIVERSITY', 'Khoa Quốc tế, Đại học Quốc gia Hà Nội', 'Khoa Quốc tế, Đại học Quốc gia Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('fc3da0c2-a3f9-43d9-9679-c2d783b9dade', 'UNIVERSITY', 'Trường Đại học Y Dược Thành phố Hồ Chí Minh', 'Trường Đại học Y Dược Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('fc7e8d29-3784-4b5f-905a-ff9921901c88', 'UNIVERSITY', 'Trường Đại học Công nghiệp Thực phẩm Thành phố Hồ Chí Minh', 'Trường Đại học Công nghiệp Thực phẩm Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('fd1e1ce1-cda9-4e68-820d-537b216df7a1', 'UNIVERSITY', 'Học viện Xây dựng Đảng', 'Học viện Xây dựng Đảng', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('fd928e07-2f5a-4a6e-a476-b7cb0133c598', 'UNIVERSITY', 'Trường Cao đẳng Kỹ thuật và Công nghệ tỉnh Hà Giang', 'Trường Cao đẳng Kỹ thuật và Công nghệ tỉnh Hà Giang', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('fdd55cc0-008a-4805-ac1a-3ca21ef24528', 'UNIVERSITY', 'Học viện Âm nhạc Quốc gia Việt Nam', 'Học viện Âm nhạc Quốc gia Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('fe079632-9bb8-471f-a6de-2a821f13a647', 'UNIVERSITY', 'Trường Cao đẳng Giao thông vận tải Đường thủy II', 'Trường Cao đẳng Giao thông vận tải Đường thủy II', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('fe4a10ca-201f-434b-a451-b2aec51e127a', 'UNIVERSITY', 'Trường Cao đẳng Than - Khoáng sản Việt Nam', 'Trường Cao đẳng Than - Khoáng sản Việt Nam', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('fe8369b3-ac29-47a2-ad6c-cf1307400930', 'UNIVERSITY', 'Khoa Quản trị Kinh doanh, Đại học Quốc gia Hà Nội', 'Khoa Quản trị Kinh doanh, Đại học Quốc gia Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('fed6f367-60a5-4baa-953e-1c799565ce08', 'UNIVERSITY', 'Trường Cao đẳng nghề Việt-Đức Hà Tĩnh', 'Trường Cao đẳng nghề Việt-Đức Hà Tĩnh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ff367e38-e8bb-4cde-913c-55ffb1f695c1', 'UNIVERSITY', 'Trường Cao đẳng Sư phạm Hòa Bình', 'Trường Cao đẳng Sư phạm Hòa Bình', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ff7ef719-cbed-4c4d-81fb-56515e58200c', 'UNIVERSITY', 'Đại học Thủy lợi cơ sở 2, Thành phố Hồ Chí Minh', 'Đại học Thủy lợi cơ sở 2, Thành phố Hồ Chí Minh', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ffb1becf-baba-42b8-a4c1-9a20da25d729', 'UNIVERSITY', 'Khoa Sau đại học, Đại học Quốc gia Hà Nội', 'Khoa Sau đại học, Đại học Quốc gia Hà Nội', 'VN', '2021-04-29 11:02:18.880674', NULL),
+('ffb2870e-38ee-4aa9-9908-b9fd753f222f', 'UNIVERSITY', 'Trường Cao đẳng Công nghiệp Cao Su', 'Trường Cao đẳng Công nghiệp Cao Su', 'VN', '2021-04-29 11:02:18.880674', NULL);

@@ -1,5 +1,5 @@
 package com.nvgroupitech.truelove.enums;
 
 public enum Category {
-	JOB_TITLE,UNIVERSITY
+	JOB_TITLE,UNIVERSITY,COMPANY
 }
