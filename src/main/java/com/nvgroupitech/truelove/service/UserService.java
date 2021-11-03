@@ -20,4 +20,6 @@ public interface UserService {
     void updateOnboardStatus(boolean onboard,String username);
 
 	void updateAvatar(UserEntity user);
+	
+	void saveUser(UserEntity user);
 }

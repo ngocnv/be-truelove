@@ -18,6 +18,7 @@ import org.hibernate.annotations.GenericGenerator;
 import com.nvgroupitech.truelove.enums.DatingType;
 import com.nvgroupitech.truelove.enums.Gender;
 import com.nvgroupitech.truelove.enums.LanguageCode;
+import com.nvgroupitech.truelove.enums.Literacy;
 
 @Entity
 @Table(name = "users")
@@ -66,7 +67,26 @@ public class UserEntity extends CommonAudit implements Serializable {
     @Column(name = "gender")
     @Enumerated(EnumType.STRING)
     private Gender gender;
+    
+    @Column(name="job_title")
+    private String jobTitle;
+    
+    @Column(name="company")
+    private String company;
+    
+    @Column(name="university")
+    private String university;
+    
+    @Column(name="post_university")
+    private String postUniversity;
+    
+    @Column(name="literacy")
+    @Enumerated(EnumType.STRING)
+    private Literacy literacy;
 
+    @Column(name="introduction")
+    private String introduction;
+    
     @Column(name="avatar")
     private String avatar;
     
@@ -184,6 +204,54 @@ public class UserEntity extends CommonAudit implements Serializable {
 
 	public void setOnboard(boolean isOnboard) {
 		this.isOnboard = isOnboard;
+	}
+
+	public String getJobTitle() {
+		return jobTitle;
+	}
+
+	public void setJobTitle(String jobTitle) {
+		this.jobTitle = jobTitle;
+	}
+
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		this.company = company;
+	}
+
+	public String getUniversity() {
+		return university;
+	}
+
+	public void setUniversity(String university) {
+		this.university = university;
+	}
+
+	public String getPostUniversity() {
+		return postUniversity;
+	}
+
+	public void setPostUniversity(String postUniversity) {
+		this.postUniversity = postUniversity;
+	}
+
+	public Literacy getLiteracy() {
+		return literacy;
+	}
+
+	public void setLiteracy(Literacy literacy) {
+		this.literacy = literacy;
+	}
+
+	public String getIntroduction() {
+		return introduction;
+	}
+
+	public void setIntroduction(String introduction) {
+		this.introduction = introduction;
 	}
 
 }

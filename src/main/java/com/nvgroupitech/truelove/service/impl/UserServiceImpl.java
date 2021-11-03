@@ -58,5 +58,10 @@ public class UserServiceImpl implements UserService {
 	public void updateAvatar(UserEntity user) {
 		userRepository.save(user);
 	}
+
+	@Override
+	public void saveUser(UserEntity user) {
+		userRepository.save(user);
+	}
 	
 }
