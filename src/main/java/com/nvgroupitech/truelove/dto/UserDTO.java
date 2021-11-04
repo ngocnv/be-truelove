@@ -14,6 +14,7 @@ import com.nvgroupitech.truelove.annotation.EnumNamePattern;
 import com.nvgroupitech.truelove.enums.DatingType;
 import com.nvgroupitech.truelove.enums.Gender;
 import com.nvgroupitech.truelove.enums.LanguageCode;
+import com.nvgroupitech.truelove.enums.Literacy;
 
 
 
@@ -58,6 +59,19 @@ public class UserDTO extends BaseDTO implements Serializable {
 	
 	@NotBlank(message="{avatar.notblank}")	
 	private String avatar;
+	
+	private String jobTitle;
+	
+	
+	private String company;
+	
+	private String university;
+	
+	private String postUniversity;
+	
+	private Literacy literacy;
+	
+	private String introduction;
 	
 	private Boolean isOnboard;
 	
@@ -164,6 +178,62 @@ public class UserDTO extends BaseDTO implements Serializable {
 	}
 
 	public void setOnboard(Boolean isOnboard) {
+		this.isOnboard = isOnboard;
+	}
+
+	public String getJobTitle() {
+		return jobTitle;
+	}
+
+	public void setJobTitle(String jobTitle) {
+		this.jobTitle = jobTitle;
+	}
+
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		this.company = company;
+	}
+
+	public String getUniversity() {
+		return university;
+	}
+
+	public void setUniversity(String university) {
+		this.university = university;
+	}
+
+	public String getPostUniversity() {
+		return postUniversity;
+	}
+
+	public void setPostUniversity(String postUniversity) {
+		this.postUniversity = postUniversity;
+	}
+
+	public Literacy getLiteracy() {
+		return literacy;
+	}
+
+	public void setLiteracy(Literacy literacy) {
+		this.literacy = literacy;
+	}
+
+	public String getIntroduction() {
+		return introduction;
+	}
+
+	public void setIntroduction(String introduction) {
+		this.introduction = introduction;
+	}
+
+	public Boolean getOnboard() {
+		return isOnboard;
+	}
+
+	public void setIsOnboard(Boolean isOnboard) {
 		this.isOnboard = isOnboard;
 	}
     
